@@ -21,8 +21,8 @@
             "pages": ["index", "quickstart", "development"]
           },
           {
-            "group": "Customization",
-            "pages": ["essentials/settings", "essentials/navigation"]
+            "group": "Fleet Management",
+            "pages": ["essentials/settings", "essentials/navigation", "essentials/drivers", "essentials/vehicles"]
           },
           {
             "group": "Writing content",
