@@ -22,7 +22,11 @@
           },
           {
             "group": "Fleet Management",
-            "pages": ["essentials/settings", "essentials/navigation", "essentials/drivers", "essentials/vehicles"]
+            "pages": ["essentials/drivers", "essentials/vehicles"]
+          },
+          {
+            "group": "Trip Management",
+            "pages": ["essentials/expenditure"]
           },
           {
             "group": "Writing content",
