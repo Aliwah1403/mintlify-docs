@@ -4,59 +4,143 @@
   "name": "Travada Systems User Guides",
   "colors": {
     "primary": "#053030",
-    "light": "#07C983",
+    "light": "#1cb447",
     "dark": "#15803D"
   },
   "fonts": {
     "family": "Urbanist"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
+  "favicon": {
+    "light": "/images/Logo-Green.svg",
+    "dark": "/images/Logo-Lime.svg"
+  },
+ "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting started",
-            "pages": ["index", "quickstart", "development"]
-          },
-          {
-            "group": "Fleet Management",
-            "pages": ["essentials/settings", "essentials/navigation", "essentials/drivers", "essentials/vehicles"]
-          },
-          {
-            "group": "Writing content",
+            "group": "Introduction",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "introduction",
+              "getting-started/quick-start",
+              "getting-started/user-roles"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Initial Setup",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "getting-started/adding-vehicles",
+              "getting-started/adding-drivers",
+              "getting-started/recording-first-trip"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Features",
         "groups": [
           {
-            "group": "API documentation",
-            "pages": ["api-reference/introduction"]
+            "group": "Dashboard",
+            "pages": [
+              "features/dashboard/overview",
+              "features/dashboard/financial-summary",
+              "features/dashboard/charts-insights"
+            ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Trip Management",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "features/expenditure/overview",
+              "features/expenditure/adding-trip",
+              "features/expenditure/editing-trip",
+              "features/expenditure/filtering-data"
+            ]
+          },
+          {
+            "group": "Fleet Management",
+            "pages": [
+              "features/vehicles/overview",
+              "features/vehicles/adding-vehicle",
+              "features/vehicles/editing-vehicle",
+              "features/vehicles/disabling-vehicles",
+              "features/vehicles/vehicle-types"
+            ]
+          },
+          {
+            "group": "Driver Management",
+            "pages": [
+              "features/drivers/overview",
+              "features/drivers/adding-driver",
+              "features/drivers/editing-driver",
+              "features/drivers/disabling-drivers"
+            ]
+          },
+          {
+            "group": "Income Tracking",
+            "pages": [
+              "features/incomes/overview",
+              "features/incomes/viewing-all-income",
+              "features/incomes/rate-fees",
+              "features/incomes/detention-fees"
+            ]
+          },
+          {
+            "group": "Expense Tracking",
+            "pages": [
+              "features/expenses/overview",
+              "features/expenses/viewing-expenses",
+              "features/expenses/fuel-costs",
+              "features/expenses/other-expenses",
+              "features/expenses/fuel-discounts"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "features/reports/overview",
+              "features/reports/generating-rate-report",
+              "features/reports/generating-expense-report",
+              "features/reports/managing-reports",
+              "features/reports/sharing-reports"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "features/settings/overview",
+              "features/settings/appearance",
+              "features/settings/notifications",
+              "features/settings/account"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "How-to Guides",
+        "groups": [
+          {
+            "group": "Workflows",
+            "pages": [
+              "guides/complete-trip-workflow",
+              "guides/month-end-reporting",
+              "guides/bulk-fuel-discount",
+              "guides/vehicle-performance-analysis",
+              "guides/client-invoicing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Help & Support",
+            "pages": [
+              "faq/common-issues",
+              "faq/data-entry-tips",
+              "faq/report-problems",
+              "faq/contact-support"
             ]
           }
         ]
@@ -65,33 +149,33 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Travada Homepage",
+          "href": "https://travadasys.com",
+          "icon": "house"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "mailto:aliwahcurtis5@gmail.com",
+          "icon": "headset"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/Travada-Green-Alternative.png",
+    "dark": "/logo/light.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:aliwahcurtis5@gmail.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to App",
+      "href": "https://travadasys.com"
     }
   },
   "contextual": {
@@ -106,11 +190,9 @@
       "vscode"
     ]
   },
-  "footer": {
+   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://travadasys.com"
     }
   }
 }
