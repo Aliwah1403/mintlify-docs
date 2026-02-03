@@ -163,13 +163,14 @@
   },
   "logo": {
     "light": "/images/Travada-Green-Alternative.png",
-    "dark": "/logo/light.svg"
+    "dark": "/logo/light.svg",
+    "href": "https://travadasys.com"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:aliwahcurtis5@gmail.com"
+        "href": "mailto:support@travadasys.com"
       }
     ],
     "primary": {
@@ -194,5 +195,8 @@
     "socials": {
       "website": "https://travadasys.com"
     }
+  },
+  "appearance": {
+    "default": "system"
   }
 }
