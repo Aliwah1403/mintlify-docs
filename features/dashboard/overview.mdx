@@ -1,4 +1,433 @@
 ---
-title: 'Overview'
+title: Dashboard Overview
+description: Understanding your Travada dashboard and key metrics
+icon: "gauge"
 ---
 
+## Overview
+
+The Dashboard is your command center in Travada. It provides an at-a-glance view of your business performance, showing income, expenses, profitability, and operational metrics in one consolidated view.
+
+<img src="/images/dashboard-overview.png" alt="Travada Dashboard" />
+
+## When to Use the Dashboard
+
+Visit your dashboard to:
+- ✅ Check daily financial performance
+- ✅ Monitor overall profitability
+- ✅ Identify top-performing routes and vehicles
+- ✅ Spot trends in trip completion
+- ✅ Review expense breakdowns
+- ✅ Get a quick business health check
+
+<Tip>
+  **Best Practice:** Start each day by reviewing your dashboard. It takes less than 2 minutes and gives you complete situational awareness of your operations.
+</Tip>
+
+## Dashboard Layout
+
+The dashboard is organized into several sections, each providing specific insights:
+
+### 1. Financial Summary Cards (Top Section)
+
+Three key metrics displayed prominently:
+
+<CardGroup cols={3}>
+  <Card title="Total Income" icon="coins">
+    Revenue from all completed trips (Rate + Detention fees)
+  </Card>
+  <Card title="Total Expense" icon="receipt">
+    All costs incurred across your fleet
+  </Card>
+  <Card title="Total Revenue" icon="chart-line">
+    Your profit/loss (Income - Expenses)
+  </Card>
+</CardGroup>
+
+<img src="/images/financial-summary-cards.png" alt="Financial Summary Cards" />
+
+Each card shows:
+- **Current Value** - The metric for your selected time period
+- **Comparison** - Growth or decline vs. previous period
+- **Trend Indicator** - ↑ (increase) or ↓ (decrease)
+
+<Info>
+  **Example:** If Total Income shows "KES 12,700.00" with "↑ 15%", this means income increased by 15% compared to the previous period.
+</Info>
+
+### 2. Financial Overview Chart
+
+A bar chart comparing income vs expenses over time.
+
+<img src="/images/financial-overview-chart.png" alt="Financial Overview Bar Chart" />
+
+**What it shows:**
+- Dark Green bars = Income
+- Lime Green bars = Expenses
+- X-axis = Time periods (days, weeks, or months depending on date filter)
+- Y-axis = Amount(in your preferred currency)
+
+**How to read it:**
+- Taller dark green bars = Higher income periods
+- Gap between dark and lime = Your profit margin
+- Lime green bars taller than dark green = Loss period (expenses exceeded income)
+
+<Tip>
+  Look for patterns: Are certain days of the week more profitable? Are expenses rising faster than income?
+</Tip>
+
+### 3. Top Destinations by Revenue
+
+A bar chart showing which destinations generate the most income.
+
+<img src="/images/top-destinations-chart.png" alt="Top Destinations by Revenue" />
+
+**Displays:**
+- Top 5 highest revenue destinations
+- Horizontal bars showing relative income amounts
+- Actual revenue figures
+
+**Interactive Features:**
+
+<Note>
+  **Click any destination bar** to see the 5 most recent trips to that destination, including:
+  - Vehicle registration
+  - Driver name
+  - Trip date
+  - Income earned
+  - Expenses incurred
+  - Net revenue
+</Note>
+
+<img src="/images/destination-trips-popup.png" alt="Recent Trips to Destination" />
+
+**Use this to:**
+- Focus on high-value routes
+- Review trip details for specific destinations
+- Negotiate better rates for top destinations
+- Allocate vehicles strategically
+- Identify which clients generate most business
+
+<Info>
+  **Example:** If "ARTCAFFE KISUMU" shows KES 98,400, this destination has generated the most revenue in your selected time period.
+</Info>
+
+### 4. Expense Breakdown (Pie Chart)
+
+Visual breakdown of where your money is being spent.
+
+<img src="/images/expense-breakdown-chart.png" alt="Expense Breakdown Pie Chart" />
+
+**Categories shown:**
+- **Fuel** - Usually the largest expense
+- **Mileage Fee** - Driver allowances
+- **Repair Cost** - Vehicle maintenance
+- **Extra Cost** - Miscellaneous expenses
+- **Parking** - Parking fees
+
+**Each segment shows:**
+- Category name
+- Percentage of total expenses
+- Actual amount in KES
+
+<Warning>
+  If fuel costs exceed 60-70% of total expenses, you may have opportunities to optimize fuel efficiency or negotiate better rates with fuel stations.
+</Warning>
+
+### 5. Trip Completion Trend
+
+A line chart showing daily trip volume by vehicle type.
+
+<img src="/images/trip-completion-trend.png" alt="Trip Completion Trend Line Chart" />
+
+**What it tracks:**
+- Number of trips completed per day
+- Separate lines for each vehicle type (Truck, Canter, etc.)
+- Trends over time
+
+**Colors:**
+- Green line = Trucks
+- Dark green line = Canters
+- (Additional colors for other vehicle types)
+
+**Use this to:**
+- Monitor operational activity levels
+- Identify busy vs slow periods
+- Plan vehicle maintenance during low-activity days
+- Track seasonal patterns
+
+### 6. Vehicle Performance
+
+A table showing top-performing and underperforming vehicles.
+
+<img src="/images/vehicle-performance-table.png" alt="Vehicle Performance Table" />
+
+**Columns:**
+- Vehicle registration number
+- Number of trips completed
+- Total income generated
+- Total expenses incurred
+- Net profit (or loss)
+
+**Sections:**
+- **Top Profitable Vehicles** - Your money-makers
+- **Unprofitable Vehicles** - Vehicles losing money
+- **Vehicles with No Trips** - Idle vehicles
+
+**Filter Options:**
+
+Use the dropdown in the top right to filter by:
+- All Vehicles (default)
+- Specific vehicle types (Truck, Canter, Dump Truck, etc.)
+
+<img src="/images/vehicle-filter-dropdown.png" alt="Vehicle Filter Dropdown" />
+
+**Interactive Features:**
+
+<Note>
+  **Click any vehicle** in the performance chart to see the 5 most recent trips for that vehicle, showing detailed trip information and profitability.
+</Note>
+
+<Tip>
+  **Action Item:** If a vehicle consistently shows in the "Unprofitable" section, investigate why. It might need maintenance, have route inefficiencies, or indicate driver issues.
+</Tip>
+
+## Date Filtering
+
+Control what data you see using the date filter in the top right:
+
+<img src="/images/date-filter-buttons.png" alt="Date Filter Options" />
+
+**Quick filters:**
+- **7D** - Last 7 days
+- **1M** - Last month (default)
+- **3M** - Last 3 months
+- **6M** - Last 6 months
+- **Custom** - Select specific date range
+
+**How it works:**
+- Click any button to instantly update all dashboard metrics
+- All charts and cards refresh based on your selection
+- Your selection persists across sessions
+
+<Info>
+  **Pro Tip:** Use 7D for daily operations monitoring, 1M for month-end reviews, and 3M/6M for strategic planning.
+</Info>
+
+## Understanding "N/A" Values
+
+You might see "N/A" (Not Available) in some dashboard cards:
+
+<AccordionGroup>
+  <Accordion title="Total Expense shows N/A" icon="receipt">
+    **Cause:** No expense data recorded for the selected period
+    
+    **Means:** 
+    - No trips with expenses have been recorded
+    - Or all recorded trips have zero expenses
+    
+    **Action:** Record trips with at least one expense field filled (Fuel, Parking, etc.)
+  </Accordion>
+  
+  <Accordion title="Charts appear empty" icon="chart-simple">
+    **Cause:** No data for the selected time period
+    
+    **Solutions:**
+    - Extend your date range
+    - Verify trips have been recorded
+    - Check if trips are from a different time period
+  </Accordion>
+</AccordionGroup>
+
+## Dashboard Customization
+
+You can customize which charts appear on your dashboard using the **Edit** button.
+
+<img src="/images/dashboard-edit-button.png" alt="Dashboard Edit Button" />
+
+### How to Customize Charts
+
+<Steps>
+  <Step title="Click Edit Button">
+    Located in the bottom right corner of the dashboard
+  </Step>
+  
+  <Step title="Select Charts to Display">
+    A "Customise charts view" dialog will open showing available charts:
+    
+    **Top Destinations**
+    - Top destinations by revenue over selected period
+    - ✓ Checked = Visible
+    - ☐ Unchecked = Hidden
+    
+    **Expense Analysis**
+    - Expense patterns over selected period
+    - Includes the Expense Breakdown pie chart
+    - ✓ Checked = Visible
+    - ☐ Unchecked = Hidden
+    
+    <img src="/images/customize-charts-dialog.png" alt="Customize Charts Dialog" />
+  </Step>
+  
+  <Step title="Preview Your Selection">
+    Both charts are shown with live data in the dialog so you can see what you're choosing
+  </Step>
+  
+  <Step title="Apply Changes">
+    Click **Apply** to save your dashboard layout
+    
+    Or click **Cancel** to keep current settings
+  </Step>
+</Steps>
+
+<Tip>
+  **Use Case:** If you primarily focus on vehicle performance and financial overview, you can hide Top Destinations and Expense Analysis to reduce dashboard clutter and focus on what matters most to you.
+</Tip>
+
+### Default Charts (Always Visible)
+
+These charts cannot be hidden and always appear on the dashboard:
+- Financial Summary Cards (Income, Expense, Profit)
+- Financial Overview bar chart
+- Trip Completion Trend
+- Vehicle Performance
+- Most Recent Trips table
+
+## Dashboard Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Daily Check-In" icon="calendar-day">
+    Review dashboard every morning to stay on top of operations
+  </Card>
+  
+  <Card title="Compare Periods" icon="arrows-left-right">
+    Use date filters to compare current vs. previous periods
+  </Card>
+  
+  <Card title="Monitor Trends" icon="chart-line-up">
+    Watch for upward or downward trends in key metrics
+  </Card>
+  
+  <Card title="Act on Insights" icon="lightbulb">
+    Use vehicle performance data to make operational decisions
+  </Card>
+</CardGroup>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="Why don't Income and Revenue match?" icon="coins">
+    **Answer:** They measure different things!
+    
+    - **Total Income** = All revenue from trips (Rate + Detention)
+    - **Total Revenue** = Profit after expenses (Income - Expenses)
+    
+    Revenue will always be less than Income (unless you have no expenses).
+    
+    **Example:**
+    - Income: KES 100,000
+    - Expenses: KES 60,000
+    - Revenue (Profit): KES 40,000
+  </Accordion>
+  
+  <Accordion title="Can I export dashboard data?" icon="download">
+    **Current Status:** Direct dashboard export is not available
+    
+    **Alternative:** Generate detailed reports from the Reports section, which can be shared and contain all the underlying data.
+    
+    See [Generating Reports](/features/reports/generating-rate-report) for details.
+  </Accordion>
+  
+  <Accordion title="How often does the dashboard update?" icon="arrows-rotate">
+    **Answer:** Real-time
+    
+    The dashboard updates immediately when you:
+    - Record a new trip
+    - Edit existing data
+    - Apply fuel discounts
+    - Change date filters
+    
+    No need to refresh the page manually.
+  </Accordion>
+  
+  <Accordion title="What if I see negative revenue?" icon="arrow-trend-down">
+    **Meaning:** Your expenses exceeded your income for that period
+    
+    **Common causes:**
+    - High repair costs
+    - Low trip volume
+    - Expensive fuel period
+    - One-time major expense
+    
+    **Action:** 
+    - Review expense breakdown to identify the main cost driver
+    - Check vehicle performance for underperforming vehicles
+    - Investigate if rates need adjustment
+  </Accordion>
+</AccordionGroup>
+
+## Quick Wins from Dashboard Insights
+
+Use your dashboard data to make quick improvements:
+
+### If fuel costs are too high:
+1. Check the Expense Breakdown pie chart
+2. Go to Expenses → Fuel to see which vehicles use most fuel
+3. Apply fuel discounts from partner stations
+4. Consider route optimization for high-fuel vehicles
+
+### If certain vehicles are unprofitable:
+1. Check Vehicle Performance table
+2. Identify consistently unprofitable vehicles
+3. Review their trip history in Expenditure
+4. Consider reassigning to different routes or scheduling maintenance
+
+### If certain destinations are highly profitable:
+1. Check Top Destinations chart
+2. Identify your top 2-3 revenue generators
+3. Focus marketing efforts on those clients/routes
+4. Allocate your best vehicles to those destinations
+
+## What's Next?
+
+Dive deeper into specific dashboard sections:
+
+<CardGroup cols={2}>
+  <Card
+    title="Financial Summary"
+    icon="coins"
+    href="/features/dashboard/financial-summary"
+  >
+    Understand income, expenses, and revenue metrics in detail
+  </Card>
+  <Card
+    title="Charts & Insights"
+    icon="chart-mixed"
+    href="/features/dashboard/charts-insights"
+  >
+    Learn to interpret trends and patterns in your data
+  </Card>
+  <Card
+    title="Vehicle Performance Analysis"
+    icon="truck"
+    href="/guides/vehicle-performance-analysis"
+  >
+    Master the art of fleet optimization
+  </Card>
+  <Card
+    title="Generate Reports"
+    icon="file-chart-column"
+    href="/features/reports/overview"
+  >
+    Create detailed reports from your dashboard data
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're not seeing expected data on your dashboard:
+
+1. Check [Common Issues](/faq/common-issues) for solutions
+2. Verify trips have been recorded correctly
+3. Ensure date filters include your data
+4. [Contact Support](/faq/contact-support) if issues persist
