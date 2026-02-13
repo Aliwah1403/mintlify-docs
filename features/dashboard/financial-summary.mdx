@@ -1,4 +1,369 @@
 ---
-title: 'Financial Summary'
+title: Financial Summary
+description: Deep dive into income, expenses, and revenue metrics
+icon: "money-bill-trend-up"
 ---
 
+## Overview
+
+The Financial Summary section at the top of your dashboard provides the three most critical metrics for understanding your business health. These numbers tell you at a glance whether you're making money, how much you're spending, and your overall profitability.
+
+<img
+  src="/images/financial-summary-section.png"
+  alt="Financial Summary Cards"
+/>
+
+## The Three Key Metrics
+
+### 1. Total Income
+
+**What it measures:** All revenue earned from completed trips
+
+**Calculation:**
+
+```
+Total Income = Sum of all Rate Fees + Sum of all Detention Fees
+```
+
+**Example:**
+
+- Trip 1: Rate KES 15,000 + Detention KES 0 = KES 15,000
+- Trip 2: Rate KES 98,400 + Detention KES 0 = KES 98,400
+- Trip 3: Rate KES 125,000 + Detention KES 5,000 = KES 130,000
+- **Total Income = KES 243,400**
+
+<Info>
+  Income includes both Rate fees (base transport charges) and Detention fees
+  (container delay charges). Most trips only have Rate fees.
+</Info>
+
+**What the percentage means:**
+
+The percentage shows growth or decline compared to the **previous period** of the same length.
+
+**Example:**
+
+- Current period (Last 30 days): KES 243,400
+- Previous period (30 days before that): KES 200,000
+- Growth: +21.7% ↑
+
+<Tip>
+  A green upward arrow (↑) indicates growth, while a red downward arrow (↓)
+  indicates decline.
+</Tip>
+
+### 2. Total Expense
+
+**What it measures:** All costs incurred during trips
+
+**Calculation:**
+
+```
+Total Expense = Fuel + Clerk Fee + Mileage Fee + Parking + Repair + Extra Costs
+```
+
+**Example:**
+
+- Fuel: KES 150,000
+- Clerk Fees: KES 10,000
+- Mileage: KES 15,000
+- Parking: KES 2,000
+- Repairs: KES 45,000
+- Extra: KES 3,000
+- **Total Expense = KES 225,000**
+
+<Warning>
+  If Total Expense shows "N/A", it means no expense data has been recorded. Make
+  sure you're filling in expense fields when recording trips.
+</Warning>
+
+**Expense percentage:**
+
+Shows how your spending has changed compared to the previous period.
+
+**Example:**
+
+- Current period: KES 225,000
+- Previous period: KES 180,000
+- Increase: +25% ↑
+
+<Note>
+  An increase in expenses isn't always bad - it might correlate with increased
+  trip volume. The key is comparing it to your income growth.
+</Note>
+
+### 3. Total Revenue
+
+**What it measures:** Your net profit (or loss) after expenses
+
+**Calculation:**
+
+```
+Total Revenue = Total Income - Total Expense
+```
+
+**Example:**
+
+- Total Income: KES 243,400
+- Total Expense: KES 225,000
+- **Total Revenue = KES 18,400**
+
+This is your **actual profit** for the period.
+
+**Understanding the percentage:**
+
+Shows profit growth or decline vs. previous period.
+
+**Example scenarios:**
+
+**Scenario 1 - Healthy Growth:**
+
+- Revenue: KES 50,000
+- Change: +30% ↑ (green)
+- **Meaning:** Your profitability is improving
+
+**Scenario 2 - Declining Profit:**
+
+- Revenue: KES 20,000
+- Change: -15% ↓ (red)
+- **Meaning:** Profit margins are shrinking
+
+**Scenario 3 - Loss:**
+
+- Revenue: -KES 10,000 (negative)
+- **Meaning:** Expenses exceeded income this period
+
+<Warning>
+  Negative revenue means you're operating at a loss. Review your expense
+  breakdown and vehicle performance to identify issues.
+</Warning>
+
+## Reading the Metrics Together
+
+The three metrics work together to tell your business story:
+
+### Healthy Business Pattern
+
+| Metric        | Value       | Change |
+| ------------- | ----------- | ------ |
+| Total Income  | KES 500,000 | ↑ 20%  |
+| Total Expense | KES 350,000 | ↑ 15%  |
+| Total Revenue | KES 150,000 | ↑ 30%  |
+
+**Analysis:** Income growing faster than expenses = increasing profitability ✅
+
+### Warning Pattern
+
+| Metric        | Value       | Change |
+| ------------- | ----------- | ------ |
+| Total Income  | KES 400,000 | ↑ 10%  |
+| Total Expense | KES 380,000 | ↑ 25%  |
+| Total Revenue | KES 20,000  | ↓ 60%  |
+
+**Analysis:** Expenses growing faster than income = shrinking margins ⚠️
+
+### Crisis Pattern
+
+| Metric        | Value       | Change |
+| ------------- | ----------- | ------ |
+| Total Income  | KES 300,000 | ↓ 15%  |
+| Total Expense | KES 350,000 | ↑ 10%  |
+| Total Revenue | -KES 50,000 | ↓ 200% |
+
+**Analysis:** Declining income + rising expenses = operating loss 🚨
+
+## Period Comparison
+
+The comparison percentages are calculated based on your **date filter selection**:
+
+<Tabs>
+  <Tab title="7D (7 Days)">
+    **Current:** Last 7 days **Previous:** 7 days before that **Example:** -
+    Current: Feb 3-9 - Previous: Jan 27 - Feb 2
+  </Tab>
+
+<Tab title="1M (1 Month)">
+  **Current:** Last 30 days **Previous:** 30 days before that **Example:** -
+  Current: Jan 10 - Feb 9 - Previous: Dec 11 - Jan 9
+</Tab>
+
+<Tab title="3M (3 Months)">
+  **Current:** Last 90 days **Previous:** 90 days before that **Example:** -
+  Current: Nov 11 - Feb 9 - Previous: Aug 13 - Nov 10
+</Tab>
+
+  <Tab title="Custom Range">
+    **Current:** Your selected range **Previous:** Same number of days before
+    **Example:** - Current: Jan 1-31 (31 days) - Previous: Dec 1-31 (31 days)
+  </Tab>
+</Tabs>
+
+<Info>
+  The system automatically calculates the comparison period - you don't need to
+  select it manually.
+</Info>
+
+## When Numbers Don't Make Sense
+
+<AccordionGroup>
+  <Accordion title="Income and Revenue are the same" icon="equals">
+    **Cause:** You have no recorded expenses **Check:** - Are you recording
+    trips with expense fields filled in? - Is Total Expense showing "N/A"?
+    **Solution:** Ensure you're entering expense data when recording trips
+  </Accordion>
+
+<Accordion title="Massive percentage changes (500%+)" icon="arrow-trend-up">
+  **Cause:** Very low baseline in previous period **Example:** - Previous
+  period: KES 10,000 - Current period: KES 60,000 - Change: +500% This is
+  mathematically correct but can look alarming. **Common when:** - Just started
+  using Travada - Business had a very slow previous period - Comparing full
+  month to partial month
+</Accordion>
+
+<Accordion title="All metrics showing 0%" icon="chart-line">
+  **Cause:** No data in previous comparison period **Scenarios:** - First time
+  using Travada - Selected date range with no historical data **Solution:**
+  Record more trips to build historical data for comparisons
+</Accordion>
+
+  <Accordion title="Revenue higher than Income" icon="triangle-exclamation">
+    **Problem:** This is impossible mathematically **Cause:** Data entry error
+    or system issue **Action:** 1. Check Total Expense - is it showing negative?
+    (shouldn't be) 2. Verify trip data in Expenditure page 3. Contact support if
+    issue persists
+  </Accordion>
+</AccordionGroup>
+
+## Using Financial Summary for Decision Making
+
+### Monthly Review Workflow
+
+<Steps>
+  <Step title="Check Overall Profitability">
+    - Is Total Revenue positive?
+    - Is it growing month-over-month?
+  </Step>
+  
+  <Step title="Analyze Income Trends">
+    - Is Total Income growing?
+    - If declining, is it seasonal or a business issue?
+  </Step>
+  
+  <Step title="Review Expense Growth">
+    - Are expenses growing proportionally to income?
+    - If expenses growing faster, investigate why
+  </Step>
+  
+  <Step title="Calculate Profit Margin">
+    ```
+    Profit Margin = (Total Revenue ÷ Total Income) × 100
+    ```
+    
+    **Example:**
+    - Revenue: KES 50,000
+    - Income: KES 200,000
+    - Margin: 25%
+    
+    **Benchmarks:**
+    - 20-30% = Healthy
+    - 10-20% = Acceptable
+    - < 10% = Concerning
+  </Step>
+  
+  <Step title="Take Action">
+    Based on your analysis:
+    - Increase rates if margins too low
+    - Reduce costs if expenses too high
+    - Focus on high-revenue routes
+    - Investigate underperforming vehicles
+  </Step>
+</Steps>
+
+### Weekly Operations Check
+
+<CardGroup cols="2">
+  <Card title="Compare to Last Week" icon="calendar-week">
+    Switch to 7D filter and check if this week outperformed last week
+  </Card>
+
+<Card title="Spot Anomalies" icon="magnifying-glass-chart">
+  Look for unusual spikes or drops in any metric
+</Card>
+
+<Card title="Track Progress" icon="chart-line-up">
+  Are you on track to meet monthly targets?
+</Card>
+
+  <Card title="Quick Adjustments" icon="sliders">
+    Make operational tweaks based on trends
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Set Financial Targets" icon="bullseye">
+    Establish monthly targets for: - Minimum Total Income - Maximum Total
+    Expense - Target Total Revenue (profit goal) Compare actual vs. targets each
+    month.
+  </Accordion>
+
+<Accordion title="Monitor Profit Margins" icon="percent">
+  Track your profit margin trend: ``` This Month: (Revenue ÷ Income) × 100 Last
+  Month: (Revenue ÷ Income) × 100 ``` Aim for consistent or improving margins.
+</Accordion>
+
+<Accordion title="Document Unusual Periods" icon="note-sticky">
+  If metrics are unusual due to: - Major repairs - Seasonal slowdown - New
+  vehicle purchases - Rate negotiations Keep notes so you understand historical
+  data later.
+</Accordion>
+
+  <Accordion title="Compare Consistently" icon="arrows-left-right">
+    Always compare same-length periods: - Week vs. week - Month vs. month -
+    Quarter vs. quarter Don't compare 7 days to 30 days.
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+<CardGroup cols="2">
+  <Card
+    title="Charts & Insights"
+    icon="chart-mixed"
+    href="/features/dashboard/charts-insights"
+  >
+    Learn to interpret visual data and spot trends
+  </Card>
+  <Card
+    title="Expense Breakdown"
+    icon="pie-chart"
+    href="/features/expenses/overview"
+  >
+    See detailed expense categories and patterns
+  </Card>
+  <Card
+    title="Income Tracking"
+    icon="money-bill-wave"
+    href="/features/incomes/overview"
+  >
+    Understand rate fees and detention charges
+  </Card>
+  <Card
+    title="Month-End Reporting"
+    icon="calendar-days"
+    href="/guides/month-end-reporting"
+  >
+    Master the complete month-end review process
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If your financial metrics seem incorrect:
+
+1. Verify all trips are recorded with complete data
+2. Check that expenses aren't being double-counted
+3. Ensure date filters are set correctly
+4. Review [Common Issues](/faq/common-issues)
+5. [Contact Support](/faq/contact-support) with specific metric questions

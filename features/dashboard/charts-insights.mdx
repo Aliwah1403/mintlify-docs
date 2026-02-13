@@ -1,4 +1,540 @@
 ---
-title: 'Charts Insights'
+title: Charts & Insights
+description: How to read and interpret dashboard visualizations
+icon: "chart-mixed"
 ---
 
+## Overview
+
+Travada's dashboard includes four powerful visualizations that transform your trip data into actionable insights. This guide will help you understand what each chart shows and how to use them for better business decisions.
+
+## The Four Key Charts
+
+<CardGroup cols={2}>
+  <Card title="Financial Overview" icon="chart-column">
+    Income vs. Expenses bar chart
+  </Card>
+  <Card title="Top Destinations" icon="map-location-dot">
+    Highest revenue routes
+  </Card>
+  <Card title="Expense Breakdown" icon="chart-pie">
+    Cost category distribution
+  </Card>
+  <Card title="Trip Completion Trend" icon="chart-line">
+    Daily operational activity
+  </Card>
+</CardGroup>
+
+---
+
+## 1. Financial Overview (Bar Chart)
+
+This chart compares your income and expenses side-by-side over time.
+
+<img
+  src="/images/financial-overview-bar-chart.png"
+  alt="Financial Overview Chart"
+/>
+
+### Reading the Chart
+
+**Axes:**
+
+- **X-axis (Horizontal):** Time periods (dates)
+- **Y-axis (Vertical):** Amount in KES
+
+**Bars:**
+
+- **Green bars:** Total Income for that period
+- **Red bars:** Total Expenses for that period
+
+**What to Look For:**
+
+### Healthy Pattern
+
+```
+Green bars consistently taller than red bars = Profitable operation ✅
+```
+
+<img src="/images/healthy-financial-pattern.png" alt="Healthy Pattern" />
+
+### Warning Pattern
+
+```
+Red bars approaching or matching green bars = Thin margins ⚠️
+```
+
+<img src="/images/warning-financial-pattern.png" alt="Warning Pattern" />
+
+### Crisis Pattern
+
+```
+Red bars taller than green bars = Operating at loss 🚨
+```
+
+<img src="/images/crisis-financial-pattern.png" alt="Crisis Pattern" />
+
+### Trend Analysis
+
+<AccordionGroup>
+  <Accordion
+    title="Gap widening (green bars pulling away)"
+    icon="arrows-left-right-to-line"
+  >
+    **Meaning:** Profit margins improving **Causes:** - Better rate negotiations
+    - Fuel cost reductions - More efficient operations - Fewer repair incidents
+    **Action:** Document what's working and replicate it
+  </Accordion>
+
+<Accordion title="Gap narrowing (red catching green)" icon="compress">
+  **Meaning:** Profit margins shrinking **Causes:** - Rising fuel costs -
+  Increased repairs - Lower rates accepted - More expensive routes **Action:**
+  Review expense breakdown and adjust operations
+</Accordion>
+
+<Accordion title="Both bars declining" icon="arrow-trend-down">
+  **Meaning:** Lower business volume **Causes:** - Seasonal slowdown - Lost
+  clients - Fewer available trips - Market conditions **Action:** Focus on
+  maintaining margins, consider marketing
+</Accordion>
+
+  <Accordion title="Both bars growing" icon="arrow-trend-up">
+    **Meaning:** Business expansion **Causes:** - More clients - Additional
+    vehicles - New routes - Increased demand **Action:** Ensure growth is
+    profitable (check gap between bars)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 2. Top Destinations by Revenue
+
+Shows which destinations generate the most income for your business.
+
+<img src="/images/top-destinations-chart.png" alt="Top Destinations Chart" />
+
+### Reading the Chart
+
+**Format:** Horizontal bar chart
+
+**Shows:** Top 5 destinations ranked by revenue
+
+**Example:**
+
+```
+ARTCAFFE KISUMU  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  KES 98,400
+JAVA CBD         ▓▓▓▓▓▓▓▓▓▓       KES 65,000
+GM               ▓▓▓▓▓▓▓          KES 45,000
+PORTS            ▓▓▓▓             KES 28,000
+CMC              ▓▓               KES 15,000
+```
+
+### How to Use This Data
+
+**Interactive Drill-Down:**
+
+Click on any destination bar to see detailed trip information:
+
+<img src="/images/destination-drill-down.png" alt="Destination Trip Details" />
+
+**What you'll see:**
+
+- **Registration** - Which vehicle made the trips
+- **Driver** - Who drove each trip
+- **Date** - When trips occurred
+- **Income** - Revenue per trip
+- **Expenses** - Costs per trip
+- **Revenue** - Profit per trip (shown in green)
+
+The popup shows the **5 most recent trips** to that destination, allowing you to:
+
+- Verify trip profitability
+- See which vehicles service that route
+- Check driver assignments
+- Review recent trip patterns
+
+<Tabs>
+  <Tab title="Focus Resources">
+    **Action:** Prioritize your best vehicles for top destinations **Example:**
+    - If ARTCAFFE KISUMU is your #1 revenue source - Assign your most reliable
+    truck to that route - Ensure minimal delays for those trips
+  </Tab>
+
+<Tab title="Negotiate Rates">
+  **Action:** Use volume data in rate discussions **Example:** - "We've
+  completed 20 trips to your location this month" - "Our consistent service
+  justifies a volume discount/rate increase"
+</Tab>
+
+<Tab title="Identify Opportunities">
+  **Action:** Spot underserved high-value routes **Example:** - If JAVA CBD is
+  #2 but only has 3 trips - Each trip is very profitable - Consider marketing
+  more aggressively to that client
+</Tab>
+
+  <Tab title="Risk Management">
+    **Action:** Diversify if one destination dominates **Example:** - If one
+    destination = 70% of revenue - You're vulnerable if that client leaves -
+    Actively pursue other high-value routes
+  </Tab>
+</Tabs>
+
+### Questions to Ask
+
+<CardGroup cols={2}>
+  <Card title="Frequency vs. Value" icon="scale-balanced">
+    Is this destination profitable per-trip, or just high volume?
+  </Card>
+  <Card title="Distance Factor" icon="route">
+    Are shorter routes more profitable per km than long routes?
+  </Card>
+  <Card title="Client Reliability" icon="handshake">
+    Do top destinations pay on time and consistently?
+  </Card>
+  <Card title="Growth Potential" icon="chart-line-up">
+    Can you increase trips to top-performing destinations?
+  </Card>
+</CardGroup>
+
+---
+
+## 3. Expense Breakdown (Pie Chart)
+
+Visualizes where your money is being spent by category.
+
+<img
+  src="/images/expense-breakdown-pie-chart.png"
+  alt="Expense Breakdown Pie Chart"
+/>
+
+### Reading the Chart
+
+**Segments:**
+
+- **Fuel** (usually largest)
+- **Mileage Fee**
+- **Repair Cost**
+- **Extra Cost**
+- **Parking**
+
+**Each segment shows:**
+
+- Category name
+- Percentage of total
+- Actual amount
+
+**Example:**
+
+```
+Fuel:        65% (KES 146,250)
+Mileage:     15% (KES 33,750)
+Repairs:     12% (KES 27,000)
+Extra:        5% (KES 11,250)
+Parking:      3% (KES 6,750)
+```
+
+### Typical Expense Ratios
+
+<Tabs>
+  <Tab title="Healthy Distribution">
+    **Pattern:**
+    - Fuel: 50-65%
+    - Mileage: 10-20%
+    - Repairs: 5-15%
+    - Other: 10-20%
+    
+    **Meaning:** Normal operating expenses ✅
+  </Tab>
+  
+  <Tab title="High Fuel Costs">
+    **Pattern:**
+    - Fuel: 70-85%
+    - Everything else combined: 15-30%
+    
+    **Warning Signs:**
+    - Inefficient routes
+    - Old vehicles with poor fuel economy
+    - Not using fuel discounts
+    
+    **Actions:**
+    - Apply fuel discounts from partner stations
+    - Review route efficiency
+    - Consider vehicle maintenance
+  </Tab>
+  
+  <Tab title="High Repair Costs">
+    **Pattern:**
+    - Repairs: 25%+
+    - Fuel: < 50%
+    
+    **Warning Signs:**
+    - Aging fleet
+    - Deferred maintenance catching up
+    - Specific vehicle issues
+    
+    **Actions:**
+    - Check Vehicle Performance table
+    - Identify vehicles with highest repair costs
+    - Consider retiring or replacing problem vehicles
+  </Tab>
+  
+  <Tab title="Balanced Low Costs">
+    **Pattern:**
+    - All categories under 20%
+    - No clear largest expense
+    
+    **Possible Meanings:**
+    - Very efficient operations ✅
+    - Or incomplete expense recording ⚠️
+    
+    **Verify:** Are all expenses being captured?
+  </Tab>
+</Tabs>
+
+### Using Expense Data
+
+<AccordionGroup>
+  <Accordion title="Reducing Fuel Costs" icon="gas-pump">
+    **Strategies:** 1. Apply fuel discounts from partner stations ([Learn
+    how](/features/expenses/fuel-discounts)) 2. Optimize routes to reduce
+    distance 3. Maintain vehicles for better fuel efficiency 4. Train drivers on
+    fuel-efficient driving 5. Track fuel usage per vehicle to spot anomalies
+  </Accordion>
+
+<Accordion title="Managing Repair Costs" icon="wrench">
+  **Strategies:** 1. Implement preventive maintenance schedule 2. Track repair
+  costs per vehicle 3. Identify chronic problem vehicles 4. Budget for expected
+  repairs 5. Consider replacement vs. repair for old vehicles
+</Accordion>
+
+  <Accordion title="Controlling Extra Costs" icon="receipt">
+    **Review regularly:** - Car washes: Can you negotiate monthly rates? -
+    Traffic fines: Are drivers following rules? - Toll fees: Can routes avoid
+    unnecessary tolls? - Emergency expenses: Can you prevent with better
+    planning?
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 4. Trip Completion Trend (Line Chart)
+
+Shows daily operational activity across your fleet.
+
+<img
+  src="/images/trip-completion-trend-chart.png"
+  alt="Trip Completion Trend"
+/>
+
+### Reading the Chart
+
+**Lines:**
+
+- Each line represents a vehicle type
+- **Green line:** Trucks
+- **Dark green line:** Canters
+- **Orange line:** Dump Trucks
+- **Blue line:** Reefer Trucks
+- _(etc. for other types)_
+
+**Axes:**
+
+- **X-axis:** Dates
+- **Y-axis:** Number of trips
+
+### Patterns to Recognize
+
+<Tabs>
+  <Tab title="Consistent Activity">
+    **Pattern:** Relatively flat lines with minor variations **Meaning:** Stable
+    operations **Example:** ``` Mon: 5 trips Tue: 6 trips Wed: 5 trips Thu: 7
+    trips Fri: 5 trips ``` **Good for:** Predictable revenue, easier planning
+  </Tab>
+
+<Tab title="Weekly Patterns">
+  **Pattern:** Peaks on certain days, valleys on others **Common:** - High
+  Mon-Fri - Low Sat-Sun **Or:** - Low Mon (planning) - Peak Tue-Thu - Drop Fri
+  (end of week) **Use this to:** - Schedule maintenance on low days - Plan
+  driver schedules - Anticipate cash flow
+</Tab>
+
+<Tab title="Growth Trend">
+  **Pattern:** Lines trending upward over time **Meaning:** Increasing business
+  volume **Monitor:** - Is profit growing proportionally? - Do you need more
+  vehicles? - Are drivers managing workload?
+</Tab>
+
+  <Tab title="Decline Trend">
+    **Pattern:** Lines trending downward **Possible causes:** - Seasonal
+    slowdown - Lost clients - Competition - Market conditions **Actions:** -
+    Compare to same period last year - Review client relationships - Adjust
+    fleet size if sustained
+  </Tab>
+</Tabs>
+
+### Trend Indicators
+
+At the bottom of this chart, you'll see a trend statement:
+
+**Example 1:**
+
+```
+"Trending up by 12.5% 📈"
+```
+
+**Meaning:** Trip volume increased 12.5% compared to previous period
+
+**Example 2:**
+
+```
+"Trending down by 8.3% 📉"
+```
+
+**Meaning:** Trip volume decreased 8.3% compared to previous period
+
+<Info>
+  This percentage compares the most recent day to the previous day in your
+  selected date range.
+</Info>
+
+---
+
+## Using All Charts Together
+
+### Monthly Business Review Process
+
+<Steps>
+  <Step title="Financial Overview First">
+    Check overall profitability - Are you making money? - Are margins healthy?
+  </Step>
+
+<Step title="Trip Volume Second">
+  Review Trip Completion Trend - Is activity consistent? - Any concerning
+  patterns?
+</Step>
+
+<Step title="Expense Analysis Third">
+  Study Expense Breakdown - Where is money going? - Any categories too high?
+</Step>
+
+<Step title="Revenue Focus Fourth">
+  Examine Top Destinations - Which routes are most valuable? - Should you focus
+  resources differently?
+</Step>
+
+  <Step title="Action Items Fifth">
+    Based on insights from all four charts: - Adjust operations - Update pricing
+    - Reallocate vehicles - Address cost issues
+  </Step>
+</Steps>
+
+### Cross-Chart Analysis Examples
+
+<AccordionGroup>
+  <Accordion title="High activity + Low profit" icon="chart-mixed">
+    **Scenario:** - Trip Completion Trend: High, stable - Financial Overview:
+    Small gap between income/expense **Diagnosis:** You're busy but not
+    profitable **Solution:** - Check Expense Breakdown for cost drivers - Review
+    Top Destinations - are low-margin routes dominating? - Consider raising
+    rates or reducing costs
+  </Accordion>
+
+<Accordion title="Low activity + High expenses" icon="triangle-exclamation">
+  **Scenario:** - Trip Completion Trend: Declining - Expense Breakdown: High
+  repair costs **Diagnosis:** Fewer trips + expensive maintenance = trouble
+  **Solution:** - Check Vehicle Performance for problem vehicles - Consider
+  fleet right-sizing - Focus marketing on high-value routes
+</Accordion>
+
+  <Accordion title="Growing revenue + Flat trips" icon="chart-line-up">
+    **Scenario:** - Financial Overview: Income increasing - Trip Completion
+    Trend: Stable/flat **Diagnosis:** Higher rates or better clients (not just
+    more volume) **Analysis:** - Check Top Destinations for high-value routes -
+    This is efficient growth - maintain quality over quantity
+  </Accordion>
+</AccordionGroup>
+
+## Interactive Dashboard Features
+
+Travada's dashboard includes several interactive elements to help you drill down into your data:
+
+### Click-Through Analysis
+
+<AccordionGroup>
+  <Accordion title="Top Destinations → Trip Details" icon="map-location-dot">
+    **How to use:** 1. Click any bar in the Top Destinations chart 2. A popup
+    shows the 5 most recent trips to that destination 3. Review vehicle, driver,
+    date, income, expenses, and revenue per trip **Use cases:** - Verify which
+    vehicles service your best clients - Check if trips to that destination are
+    consistently profitable - Identify patterns in driver assignments
+  </Accordion>
+
+<Accordion title="Vehicle Performance → Trip History" icon="truck">
+  **How to use:** 1. Click any vehicle in the Vehicle Performance section 2. See
+  the 5 most recent trips for that specific vehicle 3. Review profitability
+  trends for that vehicle **Use cases:** - Investigate why a vehicle is
+  unprofitable - Verify recent activity for idle vehicles - Check if a vehicle
+  needs maintenance based on expenses
+</Accordion>
+
+  <Accordion title="Dashboard Customization" icon="sliders">
+    **How to use:** 1. Click the **Edit** button in the bottom right 2. Toggle
+    charts on/off in the customization dialog 3. Click **Apply** to save your
+    layout **Available toggles:** - Top Destinations (can hide) - Expense
+    Analysis (can hide) **Always visible:** - Financial Summary - Financial
+    Overview - Trip Completion Trend - Vehicle Performance
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Regular Reviews" icon="calendar-check">
+    Check all four charts weekly minimum, daily for active monitoring
+  </Card>
+
+<Card title="Compare Periods" icon="calendar-days">
+  Use date filters to compare current vs. previous weeks/months
+</Card>
+
+<Card title="Document Insights" icon="note-sticky">
+  Keep notes on unusual patterns and what caused them
+</Card>
+
+  <Card title="Act on Data" icon="bolt">
+    Don't just observe - use insights to make operational changes
+  </Card>
+</CardGroup>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Vehicle Performance"
+    icon="truck"
+    href="/guides/vehicle-performance-analysis"
+  >
+    Deep dive into per-vehicle profitability
+  </Card>
+  <Card
+    title="Month-End Reporting"
+    icon="calendar-days"
+    href="/guides/month-end-reporting"
+  >
+    Complete monthly review workflow
+  </Card>
+  <Card
+    title="Expense Management"
+    icon="receipt"
+    href="/features/expenses/overview"
+  >
+    Detailed expense tracking and analysis
+  </Card>
+  <Card
+    title="Income Optimization"
+    icon="coins"
+    href="/features/incomes/overview"
+  >
+    Maximize revenue from your operations
+  </Card>
+</CardGroup>
