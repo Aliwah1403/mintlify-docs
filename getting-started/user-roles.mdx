@@ -1,0 +1,201 @@
+---
+title: User Roles & Permissions
+description: Understanding Admin and Staff roles in Travada
+icon: "users"
+---
+
+## Overview
+
+Travada has two user roles with different permission levels to help you manage access and maintain data security across your organization.
+
+## User Role Types
+
+<CardGroup cols={2}>
+  <Card
+    title="Admin"
+    icon="user-shield"
+    iconType="duotone"
+  >
+    Full system access with all permissions enabled
+  </Card>
+  <Card
+    title="Staff"
+    icon="user"
+    iconType="duotone"
+  >
+    Limited access for day-to-day operations
+  </Card>
+</CardGroup>
+
+## Admin Role
+
+### Capabilities
+
+Admins have **full access** to all Travada features and can perform all actions, including:
+
+<AccordionGroup>
+  <Accordion title="Fleet & Driver Management" icon="truck">
+    - Add, edit, and delete vehicles
+    - Enable/disable vehicles
+    - Add, edit, and delete drivers
+    - Enable/disable drivers
+    - View disabled vehicles and drivers
+  </Accordion>
+  
+  <Accordion title="Trip & Financial Management" icon="money-bill">
+    - Record new trips and expenditures
+    - Edit existing trip data
+    - Delete trips
+    - View all income and expense data
+    - Apply fuel discounts (individual and bulk)
+    - Remove fuel discounts
+  </Accordion>
+  
+  <Accordion title="Reporting & Analytics" icon="chart-bar">
+    - Generate all types of reports (Rate, Expense, Detention)
+    - Delete generated reports
+    - View all dashboard analytics
+    - Access vehicle performance metrics
+  </Accordion>
+  
+  <Accordion title="System Settings" icon="gear">
+    - Access organization settings
+    - Manage notification preferences
+    - Change appearance settings
+    - Access account settings
+  </Accordion>
+</AccordionGroup>
+
+### Who Should Be an Admin?
+
+Assign the Admin role to:
+- Business owners
+- Operations managers
+- Finance managers
+- Senior staff who need full oversight
+
+<Warning>
+  **Important:** Only assign the Admin role to trusted team members, as they can delete critical data and access sensitive financial information.
+</Warning>
+
+## Staff Role
+
+### Capabilities
+
+Staff users have **limited access** focused on day-to-day operations:
+
+<AccordionGroup>
+  <Accordion title="What Staff CAN Do" icon="check">
+    - View the dashboard and analytics
+    - Record new trips and expenditures
+    - View income and expense data
+    - View existing vehicles and drivers
+    - View generated reports
+    - Update their own account settings
+    - Change appearance preferences
+  </Accordion>
+  
+  <Accordion title="What Staff CANNOT Do" icon="xmark">
+    - Add, edit, or delete vehicles
+    - Add, edit, or delete drivers
+    - Enable/disable vehicles or drivers
+    - Delete trips or financial data
+    - Apply or remove fuel discounts
+    - Generate new reports
+    - Delete generated reports
+    - Access organization settings
+  </Accordion>
+</AccordionGroup>
+
+### Who Should Be Staff?
+
+Assign the Staff role to:
+- Trip recording clerks
+- Data entry operators
+- Junior staff who only need to input trip information
+- Team members who should view but not modify fleet/driver data
+
+## Permission Comparison Table
+
+| Feature | Admin | Staff |
+|---------|-------|-------|
+| View Dashboard | ✅ | ✅ |
+| Record New Trips | ✅ | ✅ |
+| Edit/Delete Trips | ✅ | ❌ |
+| Add Vehicles | ✅ | ❌ |
+| Edit/Delete Vehicles | ✅ | ❌ |
+| Disable Vehicles | ✅ | ❌ |
+| Add Drivers | ✅ | ❌ |
+| Edit/Delete Drivers | ✅ | ❌ |
+| Disable Drivers | ✅ | ❌ |
+| View Income/Expenses | ✅ | ✅ |
+| Apply Fuel Discounts | ✅ | ❌ |
+| Generate Reports | ✅ | ❌ |
+| Delete Reports | ✅ | ❌ |
+| Organization Settings | ✅ | ❌ |
+| Personal Settings | ✅ | ✅ |
+
+## Admin-Only Features
+
+Throughout this documentation, features that are **Admin-only** will be clearly marked with this badge:
+
+<Note>
+  🔒 **Admin Only** - This action requires Administrator permissions
+</Note>
+
+When you see this badge, remember that Staff users will not have access to perform that action.
+
+## How to Identify Your Role
+
+You can identify your current role by:
+
+1. Looking at your user profile in the top right corner
+2. Attempting to access restricted features (Admin-only features will be hidden or disabled for Staff users)
+3. Checking with your system administrator
+
+## Requesting Role Changes
+
+If you need different permissions:
+
+<Steps>
+  <Step title="Contact Your Admin">
+    Reach out to your organization's Travada administrator
+  </Step>
+  <Step title="Explain Your Needs">
+    Describe which features you need access to and why
+  </Step>
+  <Step title="Admin Updates Role">
+    Your administrator can change your role from the Organization Settings
+  </Step>
+</Steps>
+
+<Tip>
+  **Best Practice:** Follow the principle of least privilege - users should only have the minimum permissions needed to perform their job functions.
+</Tip>
+
+## Security Recommendations
+
+<CardGroup cols={2}>
+  <Card title="Limit Admin Accounts" icon="shield-halved">
+    Only create Admin accounts for users who absolutely need full system access
+  </Card>
+  <Card title="Regular Audits" icon="magnifying-glass">
+    Periodically review who has Admin access and adjust as needed
+  </Card>
+  <Card title="Strong Passwords" icon="lock">
+    Ensure all users, especially Admins, use strong, unique passwords
+  </Card>
+  <Card title="Role Training" icon="graduation-cap">
+    Train users on their role's capabilities and limitations
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<Card
+  title="Continue to Quick Start"
+  icon="rocket"
+  href="/getting-started/quick-start"
+>
+  Now that you understand user roles, proceed with setting up your system
+</Card>

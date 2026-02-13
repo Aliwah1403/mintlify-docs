@@ -1,0 +1,348 @@
+---
+title: Generating Rate Reports
+description: Create professional income reports for clients and invoicing
+icon: "file-invoice-dollar"
+---
+
+<Note>
+  🔒 **Admin Only** - Generating reports requires Administrator permissions
+</Note>
+
+## Overview
+
+Rate Reports help you create professional, shareable income summaries for specific clients, trips, or time periods. These reports are essential for:
+
+- **Client billing** - Share trip details with clients for invoice generation
+- **Internal accounting** - Provide finance teams with structured income data
+- **Client communications** - Professional documentation of services rendered
+- **Record keeping** - Maintain organized trip history by client
+
+## When to Generate a Rate Report
+
+Generate a Rate Report when you need to:
+
+✅ Bill a client for trips completed during a specific period  
+✅ Provide trip documentation to your finance/accounting team  
+✅ Share service delivery confirmation with clients  
+✅ Create backup records of income for specific routes or vehicles
+
+<Info>
+  **Future Feature:** Travada will soon include automatic invoice generation. For now, use Rate Reports to provide your finance team with the data needed to create invoices manually.
+</Info>
+
+## Understanding Report Components
+
+A Rate Report includes:
+
+| Component | Description |
+|-----------|-------------|
+| **Report Name** | Custom title you assign (e.g., "Artcaffe February Report") |
+| **Client/Customer** | Name of the client being billed |
+| **Trip Details** | Vehicle, destination, dates for all trips in the report |
+| **Rate Fees** | Amount charged per trip |
+| **Detention Fees** | Any detention charges (for container trucks) |
+| **Container Info** | Container number, weight, size (for big trucks only) |
+| **Pickup Location** | Where cargo was picked up (for container trucks) |
+| **VAT Calculation** | Automatic tax calculation at your specified rate |
+| **Total Amount** | Sum of all charges including VAT |
+
+## How to Generate a Rate Report
+
+<Steps>
+  <Step title="Navigate to Income">
+    Click **Incomes** in the sidebar, then select the **Rate** tab
+    
+    <img src="/images/income-rate-tab.png" alt="Income Rate Tab" />
+  </Step>
+  
+  <Step title="Filter Your Data">
+    Use the date range picker and filters to show only the trips you want to include in the report:
+    
+    - **Date Range**: Select start and end dates (e.g., 01 Jan 2026 - 31 Jan 2026)
+    - **Vehicle Registration**: Filter by specific vehicle if needed
+    - **Destination**: Filter by specific destination if needed
+    
+    <img src="/images/rate-filters.png" alt="Rate Filters" />
+    
+    The **Total Rate Fee** at the top right will update to show the sum of filtered trips
+  </Step>
+  
+  <Step title="Click Generate Report">
+    In the top right area, click the **Generate Report** button
+    
+    <img src="/images/generate-report-button.png" alt="Generate Report Button" />
+  </Step>
+  
+  <Step title="Enter Report Details">
+    In the "Generate Report" dialog, fill in the required information:
+    
+    ### Basic Information
+    - **Report Name**: Enter a descriptive name (e.g., "Artcaffe February Report", "Ports Q1 2026")
+    - **Report Expiry Date**: Default is 30 days from today, but you can change this
+    - **Client/Customer**: Enter the client's name who will receive this report
+    
+    <img src="/images/rate-report-basic.png" alt="Rate Report Basic Info" />
+  </Step>
+  
+  <Step title="Add Container Details (Optional)">
+    **For Big Trucks (Trailer Trucks) only:**
+    
+    If your trips involved containers, fill in:
+    - **Container No**: The container identification number (e.g., ABCD1234567)
+    - **Container Weight**: Weight in Kg (e.g., 1500 Kg)
+    - **Container Size**: Size in Ft (e.g., 40 Ft)
+    - **Pickup Location**: Where the container was picked up
+    
+    <img src="/images/container-details.png" alt="Container Details" />
+    
+    <Note>
+      If your report includes trips from different vehicle types or multiple containers, you may need to generate separate reports for each container or consolidate the information manually.
+    </Note>
+  </Step>
+  
+  <Step title="Configure VAT">
+    - **Include VAT**: Check this box if you want VAT included in the report
+    - **VAT Rate (%)**: Enter your applicable VAT rate (default is 16% for Kenya)
+    
+    <img src="/images/vat-settings.png" alt="VAT Settings" />
+    
+    The report will automatically calculate:
+    - Subtotal (before VAT)
+    - VAT amount
+    - Grand Total (including VAT)
+  </Step>
+  
+  <Step title="Generate the Report">
+    Click the **Generate Report** button at the bottom
+    
+    <img src="/images/generate-button.png" alt="Generate Button" />
+    
+    Travada will create the report and redirect you to the Reports page
+  </Step>
+</Steps>
+
+## Accessing Generated Reports
+
+After generation, your report is stored in the **Reports** section:
+
+1. Click **Reports** in the sidebar
+2. Find your report in the "All Reports" table
+3. You can see:
+   - Report Type (Rate Fee Report)
+   - Report Name
+   - Date Generated
+   - Created By (your name)
+   - Expiry period
+   - Number of views
+
+<img src="/images/reports-list.png" alt="Reports List" />
+
+## Sharing Reports with Clients
+
+<Steps>
+  <Step title="Open Reports Page">
+    Navigate to **Reports** in the sidebar
+  </Step>
+  
+  <Step title="Find Your Report">
+    Locate the report you want to share in the table
+  </Step>
+  
+  <Step title="Copy Link">
+    Click the **⋮** (three dots) in the Actions column
+    
+    Select **Copy link** from the dropdown
+    
+    <img src="/images/copy-report-link.png" alt="Copy Report Link" />
+    
+    A shareable link will be copied to your clipboard
+  </Step>
+  
+  <Step title="Share with Client">
+    Paste the link in an email or message to your client:
+    
+    **Example email:**
+    ```
+    Dear [Client Name],
+    
+    Please find your trip summary report for [Period] using the link below:
+    [Paste copied link]
+    
+    This report includes all trips completed during this period along with 
+    container details and VAT calculations.
+    
+    Please review and let us know if you have any questions.
+    
+    Best regards,
+    [Your Name]
+    ```
+  </Step>
+</Steps>
+
+<Warning>
+  **Report Expiry:** Reports expire after the period you set (default 30 days). After expiration, the link will no longer work. Set longer expiry periods for reports that clients may need to reference later.
+</Warning>
+
+## Report Actions
+
+From the Reports page, you can:
+
+### View Report
+- Click **⋮** → **Open report** to view the full report details
+- This also increments the "Views" counter
+
+### Copy Link
+- Click **⋮** → **Copy link** to get a shareable URL
+
+### Delete Report
+- Click **⋮** → **Delete report** to permanently remove it
+- Use this to clean up old or incorrect reports
+
+<img src="/images/report-actions.png" alt="Report Actions Menu" />
+
+<Tip>
+  Before deleting a report, make sure your client or finance team has already saved or downloaded any necessary information.
+</Tip>
+
+## Report Filters & Search
+
+On the Reports page, you can:
+
+- Switch between **All Reports**, **Recent**, and **Expiring Soon** tabs
+- Use the search bar to find reports by name
+- Sort by date, report type, or creator
+
+<img src="/images/report-filters.png" alt="Report Filters" />
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use Descriptive Names" icon="tag">
+    Name reports clearly with the client name and period:
+    - ✅ Good: "Artcaffe February 2026", "Unilever Q1 Rate Report"
+    - ❌ Poor: "Report 1", "Client Report", "Feb"
+  </Accordion>
+  
+  <Accordion title="Verify Data Before Generating" icon="clipboard-check">
+    Double-check your filtered data before clicking Generate Report. Once generated, you can't edit the report—you'll need to delete and recreate it.
+  </Accordion>
+  
+  <Accordion title="Set Appropriate Expiry Dates" icon="calendar-days">
+    - For monthly client reports: 60-90 days
+    - For quarterly summaries: 120 days
+    - For annual records: 365+ days
+  </Accordion>
+  
+  <Accordion title="Clean Up Old Reports" icon="trash-can">
+    Periodically delete expired or obsolete reports to keep your Reports page organized.
+  </Accordion>
+  
+  <Accordion title="Confirm VAT Requirements" icon="percent">
+    Check with your client or accounting team whether VAT should be included before generating the report.
+  </Accordion>
+</AccordionGroup>
+
+## Common Scenarios
+
+<AccordionGroup>
+  <Accordion title="Monthly Client Billing" icon="calendar-days">
+    **Scenario:** You need to bill Artcaffe for all trips in February
+    
+    **Steps:**
+    1. Filter dates: 01 Feb 2026 - 28 Feb 2026
+    2. Filter destination: "ARTCAFFE KISUMU" (if applicable)
+    3. Verify total rate fee matches expected amount
+    4. Generate report with client name "Artcaffe"
+    5. Include VAT if required
+    6. Share link with finance team or client
+  </Accordion>
+  
+  <Accordion title="Container Trip Summary" icon="box">
+    **Scenario:** Client needs documentation of container trips
+    
+    **Steps:**
+    1. Filter by date range for the trips
+    2. Filter by vehicle if only specific trucks were used
+    3. Fill in Container No, Weight, Size, and Pickup Location
+    4. Generate report with all container details
+    5. Share with client for their customs/clearance needs
+  </Accordion>
+  
+  <Accordion title="Multi-Destination Report" icon="route">
+    **Scenario:** Client has trips to multiple destinations
+    
+    **Option A (Combined):**
+    - Filter by client's destinations only
+    - Generate one report with all trips
+    
+    **Option B (Separate):**
+    - Generate individual reports per destination
+    - Name clearly: "Client - Destination - Period"
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Report shows wrong total amount" icon="calculator">
+    **Cause:** Filters may not be capturing all intended trips
+    
+    **Solution:**
+    - Clear all filters and manually verify which trips should be included
+    - Check date ranges carefully (ensure you're using the correct month/year)
+    - Verify the "Total Rate Fee" at top right matches your expectation
+  </Accordion>
+  
+  <Accordion title="Can't include both rate and detention in one report" icon="money-bill-wave">
+    **Current Limitation:** Rate Reports show only Rate Fees. Detention fees are tracked separately.
+    
+    **Workaround:**
+    - Generate a Rate Report for rate fees
+    - Generate a separate Detention Report (if feature is available)
+    - Manually combine totals if needed for client invoicing
+  </Accordion>
+  
+  <Accordion title="Report link not working" icon="link-slash">
+    **Possible Causes:**
+    - Report has expired
+    - Report was deleted
+    
+    **Solution:**
+    - Check the expiry date in the Reports table
+    - Generate a new report if needed
+    - Extend expiry dates for important reports in the future
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Generate Expense Reports"
+    icon="file-chart-column"
+    href="/features/reports/generating-expense-report"
+  >
+    Learn how to create expense summaries
+  </Card>
+  <Card
+    title="Manage Reports"
+    icon="folder-open"
+    href="/features/reports/managing-reports"
+  >
+    Organize and maintain your generated reports
+  </Card>
+  <Card
+    title="Understanding Detention Fees"
+    icon="clock"
+    href="/features/incomes/detention-fees"
+  >
+    Learn about detention fee tracking
+  </Card>
+  <Card
+    title="Client Invoicing Workflow"
+    icon="file-invoice"
+    href="/guides/client-invoicing"
+  >
+    Master the end-to-end billing process
+  </Card>
+</CardGroup>

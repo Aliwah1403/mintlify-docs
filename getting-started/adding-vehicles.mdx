@@ -1,0 +1,247 @@
+---
+title: Adding Vehicles
+description: Add your fleet vehicles to Travada for trip tracking
+icon: "truck-front"
+---
+
+
+## Overview
+
+Vehicles are the foundation of your Travada system. Before you can record trips, you need to add your vehicles to the platform. Each vehicle is identified by its registration number and classified by type and ownership.
+
+## Prerequisites
+
+Before adding vehicles, ensure you have:
+- List of vehicle registration numbers (license plates)
+- Information about vehicle types
+- Ownership status (owned vs hired) for each vehicle
+
+## Vehicle Information Required
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| **Vehicle Registration** | License plate number (max 8 characters) | KBE 127H, KDA 631Q |
+| **Vehicle Type** | Category of vehicle from dropdown | Dump Truck, Reefer Truck, Canter |
+| **Vehicle Ownership** | Whether owned or hired | Owned or Hired |
+
+## How to Add a Vehicle
+
+<Steps>
+  <Step title="Navigate to Vehicles Page">
+    Click **Vehicles** in the left sidebar
+    
+    Then click **Add/Manage Vehicles**
+    
+    <img src="/images/vehicles-navigation.png" alt="Navigate to Vehicles" />
+  </Step>
+  
+  <Step title="Open Add Vehicle Form">
+    Click the **Add Vehicle** button in the top right corner
+    
+    <img src="/images/add-vehicle-button.png" alt="Add Vehicle Button" />
+    
+    A side panel will open with the vehicle form
+  </Step>
+  
+  <Step title="Enter Vehicle Registration">
+    In the **Vehicle Registration** field, enter the license plate number
+    
+    - Use uppercase letters (automatically converted)
+    - Maximum 8 characters
+    - Format: ABC 123X or ABCD 1234
+    
+    <img src="/images/vehicle-registration-field.png" alt="Vehicle Registration Field" />
+    
+    <Warning>
+      **Important:** Each registration number must be unique. You cannot add duplicate registrations.
+    </Warning>
+  </Step>
+  
+  <Step title="Select Vehicle Type">
+    Click the **Vehicle Type** dropdown and select the appropriate type:
+    
+    **Available Types:**
+    - **Truck** - Standard transport truck
+    - **Dump Truck** - For construction materials (tipper trucks)
+    - **Reefer Truck** - Refrigerated transport (cold chain)
+    - **Box Truck** - Dry goods rigid truck
+    - **Trailer Truck** - Container/articulated trucks
+    - **Canter** - Small delivery trucks
+    - **Passenger Transport Vehicle** - Vans for people/tours
+    
+    <img src="/images/vehicle-type-dropdown.png" alt="Vehicle Type Dropdown" />
+    
+    <Tip>
+      Choose the type that best matches your vehicle's primary use. This helps with reporting and analytics later. See [Vehicle Types](/features/vehicles/vehicle-types) for detailed descriptions.
+    </Tip>
+  </Step>
+  
+  <Step title="Select Ownership Status">
+    Click the **Vehicle Ownership** dropdown and choose:
+    
+    - **Owned** - Vehicle belongs to your company
+    - **Hired** - Vehicle is leased or rented
+    
+    <img src="/images/vehicle-ownership-dropdown.png" alt="Vehicle Ownership Dropdown" />
+    
+    <Info>
+      This helps you track which vehicles are assets vs. expenses in your fleet analysis.
+    </Info>
+  </Step>
+  
+  <Step title="Save the Vehicle">
+    Click the **Add vehicle** button at the bottom of the form
+    
+    <img src="/images/add-vehicle-save.png" alt="Save Vehicle Button" />
+    
+    If successful, you'll see:
+    - A success notification
+    - The vehicle appears in the vehicles list
+    - The form closes automatically
+  </Step>
+</Steps>
+
+## After Adding a Vehicle
+
+Once added, your vehicle will:
+- ✅ Appear in the vehicles list on the Vehicles page
+- ✅ Be available in the vehicle dropdown when recording trips
+- ✅ Show in vehicle performance reports
+- ✅ Be included in fleet analytics
+
+<img src="/images/vehicle-added-success.png" alt="Vehicle Successfully Added" />
+
+## Adding Multiple Vehicles
+
+To add multiple vehicles efficiently:
+
+<Tabs>
+  <Tab title="One at a Time">
+    1. Click **Add Vehicle**
+    2. Fill in details
+    3. Click **Add vehicle**
+    4. Repeat for each vehicle
+    
+    **Best for:** 1-5 vehicles
+  </Tab>
+  
+  <Tab title="Batch Entry">
+    1. Prepare a list with all vehicle details
+    2. Keep the add form open
+    3. Add each vehicle quickly using your list
+    4. Verify each entry before moving to next
+    
+    **Best for:** 5-20 vehicles
+    
+    <Tip>
+      Keep a spreadsheet open with all vehicle details for quick reference during batch entry.
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="Form won't submit / Add button is disabled" icon="circle-exclamation">
+    **Cause:** Required fields are missing or invalid
+    
+    **Solution:**
+    - Ensure all three fields are filled in
+    - Check that Vehicle Registration is not too long (max 8 characters)
+    - Verify you selected items from dropdowns (not just typed)
+    - Refresh page and try again if dropdowns seem stuck
+  </Accordion>
+  
+  <Accordion title="Error: Registration already exists" icon="copy">
+    **Cause:** This registration number is already in the system
+    
+    **Solution:**
+    - Check the Vehicles page to see if vehicle was already added
+    - Verify you typed the correct registration (check for typos)
+    - If vehicle was previously disabled, you may need to re-enable it instead
+    - If this is a different vehicle with same registration, contact support
+  </Accordion>
+  
+  <Accordion title="Vehicle not showing in trip recording dropdown" icon="eye-slash">
+    **Cause:** Page hasn't refreshed after adding vehicle
+    
+    **Solution:**
+    1. Refresh your browser (F5 or Cmd+R)
+    2. Or navigate to Expenditure and back
+    3. Vehicle should now appear in dropdown
+    
+    If still not showing:
+    - Verify vehicle was actually saved (check Vehicles page)
+    - Ensure vehicle is not disabled
+    - Log out and log back in
+  </Accordion>
+  
+  <Accordion title="Accidentally selected wrong vehicle type" icon="rotate-left">
+    **Solution:** You can edit the vehicle after creation
+    
+    See [Editing Vehicles](/features/vehicles/editing-vehicle) for instructions.
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Use Standard Format" icon="text">
+    Use consistent registration format: "ABC 123X" for easier searching and sorting
+  </Card>
+  
+  <Card title="Add All Vehicles Upfront" icon="layer-group">
+    Add your entire fleet at once to avoid interruptions during trip recording
+  </Card>
+  
+  <Card title="Choose Correct Type" icon="truck">
+    Select the accurate vehicle type for better reporting and analytics
+  </Card>
+  
+  <Card title="Document Hired Vehicles" icon="file-contract">
+    Mark hired vehicles correctly to track rental costs separately
+  </Card>
+</CardGroup>
+
+## What's Next?
+
+After adding your vehicles:
+
+<CardGroup cols={2}>
+  <Card
+    title="Add Drivers"
+    icon="users"
+    href="/getting-started/adding-drivers"
+  >
+    Set up your driver profiles next
+  </Card>
+  <Card
+    title="Record Your First Trip"
+    icon="route"
+    href="/getting-started/recording-first-trip"
+  >
+    Start tracking trips with your new vehicles
+  </Card>
+  <Card
+    title="Manage Vehicles"
+    icon="sliders"
+    href="/features/vehicles/overview"
+  >
+    Learn about editing, disabling, and managing vehicles
+  </Card>
+  <Card
+    title="Vehicle Types Guide"
+    icon="book-open"
+    href="/features/vehicles/vehicle-types"
+  >
+    Understand each vehicle type in detail
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble adding vehicles:
+
+1. Review [Common Issues](/faq/common-issues)
+2. Check [Data Entry Tips](/faq/data-entry-tips)
+3. [Contact Support](/faq/contact-support) for assistance

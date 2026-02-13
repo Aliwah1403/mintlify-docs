@@ -1,0 +1,257 @@
+---
+title: "Managing Fuel Discounts"
+description: "Track fuel savings from partner stations with individual and bulk discount tools"
+icon: "gas-pump"
+---
+
+<Note>
+  🔒 **Admin Only** - Applying and removing fuel discounts requires Administrator permissions
+</Note>
+
+## Overview
+
+Travada helps you track fuel discounts received from partner petrol stations. This feature allows you to:
+
+- Record discounts for individual trips
+- Apply the same discount to multiple trips at once (bulk discount)
+- Calculate total fuel savings
+- See fuel cost vs. discounted cost comparisons
+
+## Why Track Fuel Discounts?
+
+Fuel is typically one of the largest expenses in logistics operations. By tracking discounts:
+
+✅ You know exactly how much money you're saving from fuel partnerships\
+✅ You can see which vehicles benefit most from discounted fuel\
+✅ Your expense reports show true out-of-pocket costs\
+✅ You can negotiate better rates with fuel stations by showing usage volume
+
+## Understanding Fuel Discount Calculation
+
+When you add a fuel discount, Travada calculates:
+
+```
+Liters Filled = Fuel Cost ÷ Standard Price per Liter
+Total Discount = (Standard Price - Discounted Price) × Liters Filled
+```
+
+**Example:**
+
+- Standard fuel price: KES 150 per liter
+- You paid: KES 12,000 for fuel
+- Liters filled: 12,000 ÷ 150 = 80 liters
+- Discounted price: KES 145 per liter
+- Discount saved: (150 - 145) × 80 = **KES 400**
+
+## Individual Fuel Discount
+
+Use this method when applying a discount to a **single vehicle's trip**.
+
+### When to Use Individual Discounts
+
+- Only one vehicle fueled at a partner station
+- Different vehicles got different discount rates
+- You're correcting or updating a specific trip's discount
+
+### How to Apply Individual Discount
+
+<Steps>
+  <Step title="Navigate to Fuel Costs">
+    Click **Expenses** in the sidebar, then select the **Fuel** tab
+
+    ![Fuel Tab Navigation](/images/fuel-tab.png)
+  </Step>
+  <Step title="Locate the Trip">
+    Find the trip you want to add a discount to in the fuel expenses table
+  </Step>
+  <Step title="Open Actions Menu">
+    Click the **⋮** (three dots) button on the right side of the row
+
+    Select **Add Discount** from the dropdown menu
+  </Step>
+  <Step title="Enter Discount Details">
+    In the "Add Fuel Discount" dialog, fill in:
+
+    - **Standard Fuel Price (KES per litre)**: Enter the regular price (e.g., 150)
+    - **Discounted Fuel Price (KES per litre)**: Enter the discounted rate (e.g., 145)
+    - **Litres (Fuel filled)**: This is auto-calculated based on your fuel cost
+
+    ![Fuel Discount Dialog](/Screenshot2026-01-30at9.33.07am-1.png)
+  </Step>
+  <Step title="Calculate Discount">
+    Click **Calculate Discount** to calculate the discount based on the Fuel Prices you entered above.
+  </Step>
+  <Step title="Save Fuel Discount">
+    Click **Save Discount**
+
+    The discount will now appear in the "Fuel Discount" column for that trip
+  </Step>
+</Steps>
+
+<Tip>
+  The **Litres (Fuel filled)** field auto-calculates when you enter the Standard Fuel Price. This ensures accuracy based on the actual fuel cost already recorded.
+</Tip>
+
+## Bulk Fuel Discount
+
+Use this method when applying the **same discount to multiple vehicles** that fueled at the same station.
+
+### When to Use Bulk Discounts
+
+- Multiple vehicles fueled at the same partner station
+- All vehicles got the same discount rate
+- You want to save time instead of adding discounts one-by-one
+
+### How to Apply Bulk Discount
+
+<Steps>
+  <Step title="Navigate to Fuel Costs">
+    Go to **Expenses** → **Fuel** tab
+  </Step>
+  <Step title="Select Multiple Trips">
+    Check the boxes next to all trips you want to apply the discount to
+
+    ![Bulk Select Fuel Trips](/Screenshot2026-01-30at9.33.15am.png)
+
+    A selection toolbar will appear at the bottom showing how many trips are selected
+  </Step>
+  <Step title="Click Add Discount">
+    In the selection toolbar, click the **Add discount** button
+
+    ![Bulk Discount Toolbar](/Screenshot2026-01-30at9.33.20am.png)
+  </Step>
+  <Step title="Enter Discount Details">
+    In the "Add Fuel Discount to X expenses" dialog:
+
+    - **Standard Fuel Price (KES per litre)**: Enter the regular price
+    - **Discounted Fuel Price (KES per litre)**: Enter the discounted rate
+    - **Litres (Fuel filled)**: Shows total litres across all selected trips
+
+    The **Total Fuel Cost (Selected)** and **Total Calculated Discount** will display
+  </Step>
+  <Step title="Calculate Discount">
+    Click **Calculate Discount** to apply the same per-litre discount to all selected trips
+
+    All selected trips will now show the fuel discount in their respective rows
+  </Step>
+</Steps>
+
+<Check>
+  **Time Saver:** If 10 vehicles all fueled at the same Shell station with a KES 5 per liter discount, you can apply the discount to all 10 trips in one go instead of 10 separate actions.
+</Check>
+
+## Removing Fuel Discounts
+
+If you need to remove a discount (e.g., it was applied incorrectly):
+
+### Remove Individual Discount
+
+1. Navigate to **Expenses** → **Fuel**
+2. Find the trip with the discount
+3. Click **⋮** (three dots) and select **Remove Discount**
+4. Confirm the removal
+
+### Remove Bulk Discounts
+
+1. Select multiple trips with discounts (using checkboxes)
+2. Click **Remove discount** in the selection toolbar
+3. Click the **X** button to confirm removal for all selected trips
+
+![Remove Bulk Discount](/images/remove-bulk-discount.png)
+
+<Warning>
+  Removing a discount is permanent and cannot be undone. You'll need to re-enter the discount details if you remove it by mistake.
+</Warning>
+
+## Viewing Total Fuel Savings
+
+To see your total fuel discount savings:
+
+1. Navigate to **Expenses** → **Fuel**
+2. Look at the top right summary card
+
+![Fuel Cost Summary](/images/fuel-summary.png)
+
+You'll see:
+
+- **Fuel Cost**: Total amount spent on fuel (before discounts)
+- **Fuel Discount**: Total savings from all discounts applied
+
+<Note>
+  **Example:** If your Fuel Cost is KES 205,604 and your Fuel Discount is KES 3,500, your actual out-of-pocket fuel expense is KES 202,104.
+</Note>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Apply Discounts Regularly" icon="calendar-check">
+    Set a schedule to apply discounts (e.g., weekly) rather than letting them pile up. This keeps your expense data accurate.
+  </Accordion>
+  <Accordion title="Verify Partner Station Rates" icon="clipboard-check">
+    Confirm the discount rate with your fuel station partner before applying to ensure accuracy.
+  </Accordion>
+  <Accordion title="Use Bulk for Consistency" icon="layer-group">
+    When multiple vehicles fuel at the same station on the same day, use bulk discount to ensure consistency.
+  </Accordion>
+  <Accordion title="Document Station Partnerships" icon="handshake">
+    Keep a record outside Travada of which stations offer discounts and at what rates for quick reference.
+  </Accordion>
+</AccordionGroup>
+
+## Common Mistakes to Avoid
+
+<Warning>
+  **Mistake 1:** Entering the discounted price in the "Fuel Cost" field when recording the trip
+
+  **Solution:** Always enter the **actual amount paid** in Fuel Cost, then apply the discount separately to show the savings.
+</Warning>
+
+<Warning>
+  **Mistake 2:** Applying discounts with incorrect standard price
+
+  **Solution:** Double-check the current market fuel price before applying discounts to ensure accurate calculations.
+</Warning>
+
+<Warning>
+  **Mistake 3:** Forgetting to apply discounts consistently
+
+  **Solution:** Create a checklist or reminder to review and apply fuel discounts at the end of each week.
+</Warning>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Discount calculation seems wrong" icon="triangle-exclamation">
+    **Check:**
+
+    - Is the Standard Fuel Price correct for that date?
+    - Did you enter the Discounted Price correctly?
+    - Is the original Fuel Cost in the trip accurate?
+
+    **Solution:** Remove the discount and reapply with verified numbers.
+  </Accordion>
+  <Accordion title="Can't select multiple trips for bulk discount" icon="square-check">
+    **Check:**
+
+    - Are all trips showing fuel costs (not KES 0)?
+    - Do you have Admin permissions?
+
+    **Solution:** Only trips with fuel costs can have discounts applied. Verify you're selecting the correct rows.
+  </Accordion>
+  <Accordion title="Discount not showing in reports" icon="file-invoice">
+    **Issue:** Fuel discounts are tracked separately from expenses
+
+    **Solution:** View the Fuel tab specifically, or check if your report type includes discount details. Future report versions may include discount breakdowns.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="View Other Expenses" icon="receipt" href="/features/expenses/other-expenses">
+    Learn about tracking parking, repairs, and other costs
+  </Card>
+  <Card title="Generate Expense Reports" icon="file-chart-column" href="/features/reports/generating-expense-report">
+    Create comprehensive expense reports for accounting
+  </Card>
+</CardGroup>

@@ -1,0 +1,512 @@
+---
+title: Common Issues & Solutions
+description: Quick solutions to frequently encountered problems in Travada
+icon: "circle-question"
+---
+
+## Quick Reference
+
+Use the search or table of contents to jump to your issue, or browse through common problems below.
+
+## Setup & Getting Started
+
+<AccordionGroup>
+  <Accordion title="Can't add a vehicle - form won't submit" icon="truck">
+    **Possible Causes:**
+    - Required fields are empty
+    - Vehicle registration format is incorrect
+    - Vehicle type or ownership not selected
+    
+    **Solutions:**
+    1. Ensure all three fields are filled:
+       - Vehicle Registration (max 8 characters)
+       - Vehicle Type (select from dropdown)
+       - Vehicle Ownership (select Owned or Hired)
+    
+    2. Check that Vehicle Registration doesn't contain special characters
+    
+    3. Try clicking the dropdown menus even if they appear filled - sometimes the value needs to be re-selected
+    
+    <Tip>
+      Vehicle registration should be in format like "KBE 127H" or "KDA 631Q" - standard Kenyan format works best
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Can't add a driver - missing permissions" icon="user-slash">
+    **Cause:** You need Admin permissions to add drivers
+    
+    **Solution:**
+    - Check if you have Admin access (look for the Admin badge in your profile)
+    - If you're Staff, contact your administrator to add the driver
+    - Or request Admin permissions if your role requires it
+    
+    <Note>
+      See [User Roles & Permissions](/getting-started/user-roles) for details on role capabilities
+    </Note>
+  </Accordion>
+  
+  <Accordion title="Don't see my newly added vehicle in trip form" icon="eye-slash">
+    **Cause:** Page hasn't refreshed after adding vehicle
+    
+    **Solution:**
+    1. Refresh your browser page (F5 or Cmd+R)
+    2. Or navigate away and back to Expenditure
+    3. The vehicle should now appear in the dropdown
+    
+    If still not showing:
+    - Verify the vehicle was actually saved (check the Vehicles page)
+    - Ensure the vehicle is not disabled
+  </Accordion>
+</AccordionGroup>
+
+## Trip Recording Issues
+
+<AccordionGroup>
+  <Accordion title="Trip form won't advance to second page" icon="hand">
+    **Cause:** Required fields on page 1 are not filled
+    
+    **Solution:**
+    Ensure these fields are completed:
+    - ✅ Trip Date selected
+    - ✅ Vehicle Registration selected
+    - ✅ Driver selected
+    - ✅ Destination entered (text field)
+    
+    <Warning>
+      The Destination field must have at least one character. Even if you don't have a specific destination, enter "TBD" or a placeholder.
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Accidentally entered wrong vehicle for a trip" icon="rotate-left">
+    **Problem:** Trip recorded with incorrect vehicle assignment
+    
+    **Current Limitation:** You cannot edit the vehicle or driver after trip submission
+    
+    **Workaround:**
+    1. Note all the trip details (date, destination, costs)
+    2. Delete the incorrect trip (Admin only)
+    3. Re-record the trip with the correct vehicle
+    
+    <Tip>
+      **Pro Tip:** Before clicking Submit, double-check the vehicle registration matches the trip you're recording
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="All my expense fields show KES 0 - can I leave them empty?" icon="zero">
+    **Answer:** Yes! You don't need to fill in every expense field.
+    
+    **How It Works:**
+    - Only fill in the expenses that actually occurred for that trip
+    - Empty fields automatically default to KES 0
+    - This ensures your expense reports are accurate
+    
+    **Example:**
+    - If a trip had no parking fees, leave Parking Cost empty
+    - If no repairs were needed, leave Repair Cost empty
+    
+    The system will calculate totals based only on fields you filled in.
+  </Accordion>
+  
+  <Accordion title="Entered wrong amount for fuel - how do I fix it?" icon="pen-to-square">
+    **Problem:** Need to edit trip costs after submission
+    
+    **Current Limitation:** Trip editing is not yet available in the current version
+    
+    **Workaround (Admin only):**
+    1. Note all the trip details
+    2. Delete the trip
+    3. Re-record with correct amounts
+    
+    **Future Feature:** Trip editing is coming in a future Travada update
+  </Accordion>
+</AccordionGroup>
+
+## Income & Expense Tracking
+
+<AccordionGroup>
+  <Accordion title="My dashboard shows 'N/A' for Total Expense" icon="chart-mixed">
+    **Cause:** No expense data has been recorded yet
+    
+    **Solution:**
+    This is normal if you:
+    - Just started using Travada
+    - Haven't recorded any trips with expenses
+    - Recorded trips with only Rate fees but no expense fields filled
+    
+    **To Fix:**
+    1. Record trips with at least one expense field filled (Fuel, Parking, etc.)
+    2. Refresh the dashboard
+    3. Total Expense should now display a value
+  </Accordion>
+  
+  <Accordion title="Income and revenue show the same amount - is this correct?" icon="equals">
+    **Answer:** It depends on your data!
+    
+    **Explanation:**
+    - **Total Income** = Rate fees + Detention fees
+    - **Total Revenue** = Total Income - Total Expenses
+    
+    If you have:
+    - Income recorded but no expenses → Revenue = Income ✅
+    - Both income and expenses → Revenue should be less than Income ✅
+    
+    **If they match when you have expenses:**
+    - Check that your trip records include expense fields
+    - Verify expenses are showing on the Expenses page
+  </Accordion>
+  
+  <Accordion title="Can't see yesterday's trip on the dashboard" icon="calendar-xmark">
+    **Cause:** Date filter is set to a different time period
+    
+    **Solution:**
+    1. Look for the date range selector (top right on most pages)
+    2. Current options: 7D (7 days), 1M (1 month), 3M, 6M, or custom date range
+    3. Ensure your date range includes yesterday
+    4. If using custom range, verify start and end dates are correct
+    
+    <img src="/images/date-filter.png" alt="Date Filter" />
+  </Accordion>
+</AccordionGroup>
+
+## Fuel Discount Problems
+
+<AccordionGroup>
+  <Accordion title="Can't apply fuel discount - button is grayed out" icon="gas-pump">
+    **Cause:** Either you lack permissions or no trips are selected
+    
+    **Solutions:**
+    1. **Check permissions:** Only Admins can apply fuel discounts
+    2. **For individual discount:** Ensure you clicked the ⋮ menu on a row with fuel cost > 0
+    3. **For bulk discount:** 
+       - Select trips using checkboxes
+       - Verify selected trips have fuel costs (not KES 0)
+       - Click "Add discount" in the bottom toolbar
+  </Accordion>
+  
+  <Accordion title="Fuel discount calculation shows unexpected number" icon="calculator">
+    **Common Causes:**
+    - Incorrect Standard Fuel Price entered
+    - Discounted Price higher than Standard Price (should be lower!)
+    - Original Fuel Cost in trip was wrong
+    
+    **How to Fix:**
+    1. Verify current market fuel price for that date
+    2. Check that Discounted Price < Standard Price
+    3. Remove the discount and reapply with correct values
+    
+    **Example of Correct Values:**
+    - Standard Price: KES 150/L
+    - Discounted Price: KES 145/L (must be lower!)
+    - If Fuel Cost is KES 12,000 → Discount should be positive
+  </Accordion>
+  
+  <Accordion title="Applied discount to wrong trips - how do I undo?" icon="undo">
+    **Solution:** Remove the discount, then reapply to correct trips
+    
+    **For Individual:**
+    1. Click ⋮ on the incorrect trip
+    2. Select "Remove Discount"
+    3. Confirm removal
+    
+    **For Bulk:**
+    1. Select all trips with incorrect discounts (checkboxes)
+    2. Click "Remove discount" in toolbar
+    3. Click X to confirm
+    4. Then select correct trips and reapply
+    
+    <Note>
+      Removing discounts is permanent - you'll need to re-enter the values when reapplying
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Report Generation
+
+<AccordionGroup>
+  <Accordion title="Can't generate report - missing permissions" icon="lock">
+    **Cause:** Only Admins can generate reports
+    
+    **Solution:**
+    - Contact your administrator to generate the report for you
+    - Or request Admin permissions if your role requires report generation
+    - Provide your admin with the specific date range and client details needed
+  </Accordion>
+  
+  <Accordion title="Generated report shows wrong trips or amounts" icon="file-excel">
+    **Cause:** Incorrect filters applied before generation
+    
+    **Problem:** You can't edit a report once generated
+    
+    **Solution:**
+    1. Delete the incorrect report (⋮ → Delete report)
+    2. Go back to Income → Rate tab
+    3. Clear all filters
+    4. Carefully set correct filters:
+       - Date range
+       - Vehicle (if needed)
+       - Destination (if needed)
+    5. Verify the "Total Rate Fee" is correct before clicking Generate Report
+    6. Generate a new report
+  </Accordion>
+  
+  <Accordion title="Report link says 'Expired' when I share it" icon="link-slash">
+    **Cause:** Report expiry date has passed
+    
+    **Solution:**
+    Reports expire after the period you set (default 30 days).
+    
+    **To Fix:**
+    1. Generate a new report
+    2. Set a longer expiry period this time (e.g., 90 days)
+    3. Share the new link
+    
+    **Best Practice:**
+    - For client reports: 60-90 day expiry
+    - For internal monthly reports: 30-45 days
+    - For annual summaries: 365 days
+  </Accordion>
+  
+  <Accordion title="Need both rate and detention in one report" icon="file-invoice">
+    **Current Limitation:** Rate and Detention are separate report types
+    
+    **Workaround:**
+    1. Generate a Rate Report for rate fees
+    2. Check if Detention Reports are available (feature may be in development)
+    3. Manually combine totals if needed for invoicing
+    
+    **Future Feature:** Combined income reports coming in future version
+  </Accordion>
+</AccordionGroup>
+
+## Vehicle & Driver Management
+
+<AccordionGroup>
+  <Accordion title="Need to temporarily stop using a vehicle - what should I do?" icon="truck">
+    **Solution:** Disable the vehicle instead of deleting it
+    
+    **Why Disable Instead of Delete:**
+    - ✅ Keeps all historical trip data
+    - ✅ Can re-enable later if vehicle returns to service
+    - ✅ Maintains data integrity
+    
+    **How to Disable:**
+    1. Go to Vehicles → Disabled Vehicles
+    2. Click "+ Disable Vehicle" button
+    3. Select vehicle(s) to disable
+    4. Confirm
+    
+    Disabled vehicles won't appear in trip recording dropdowns but remain in reports for historical trips.
+    
+    <Note>
+      See [Disabling Vehicles](/features/vehicles/disabling-vehicles) for detailed instructions
+    </Note>
+  </Accordion>
+  
+  <Accordion title="Driver contract ended - should I delete them?" icon="user-xmark">
+    **Best Practice:** Disable instead of delete
+    
+    **Why:**
+    - Historical trips remain linked to the driver
+    - You can re-enable if driver returns
+    - Reports stay accurate
+    
+    **How to Disable:**
+    1. Go to Drivers → Inactive Drivers
+    2. Click "+ Disable Driver"
+    3. Select driver(s)
+    4. Confirm
+    
+    <Warning>
+      **Never delete** drivers who have historical trips in the system - this can cause data integrity issues
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Disabled multiple vehicles by mistake - how to undo?" icon="rotate-left">
+    **Solution:** Re-enable them from Disabled Vehicles page
+    
+    **Steps:**
+    1. Go to Vehicles → Disabled Vehicles
+    2. Find the vehicles you want to re-enable
+    3. Click "Enable" on each vehicle card
+    4. Confirm the action
+    
+    Vehicles will immediately return to active status and appear in dropdown menus.
+  </Accordion>
+</AccordionGroup>
+
+## Data & Filtering
+
+<AccordionGroup>
+  <Accordion title="Can't find a specific trip in the expenditure table" icon="magnifying-glass">
+    **Possible Causes:**
+    - Date filter is excluding the trip
+    - Searching/filtering by wrong criteria
+    
+    **Solutions:**
+    1. **Clear all filters:**
+       - Reset date range to "All time" or expand to cover the trip date
+       - Clear any vehicle/driver/destination filters
+    
+    2. **Verify trip was actually recorded:**
+       - Check if you received a confirmation message
+       - Look in other date ranges
+    
+    3. **Use the Data Filter button:**
+       - Click "Data Filter" at top of expenditure table
+       - Systematically filter by vehicle, driver, or destination
+  </Accordion>
+  
+  <Accordion title="Date range filter not working" icon="calendar-days">
+    **Common Issues:**
+    - Selected dates don't include the data you're looking for
+    - Browser cache needs refresh
+    
+    **Solutions:**
+    1. Double-check the FROM and TO dates
+    2. Ensure the date format is correct (DD MMM YYYY)
+    3. Refresh the page (F5)
+    4. Try selecting a wider date range first, then narrow down
+    
+    <Tip>
+      Use the preset buttons (7D, 1M, 3M, 6M) for quick filtering instead of manual date selection
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## Settings & Account
+
+<AccordionGroup>
+  <Accordion title="Can't access Organization Settings" icon="building">
+    **Cause:** Staff users cannot access Organization Settings
+    
+    **Solution:**
+    - Organization Settings are Admin-only
+    - Contact your administrator for changes to organization settings
+    - You can still access:
+      - ✅ Personal Notifications
+      - ✅ Appearance settings
+      - ✅ Account/Profile settings
+  </Accordion>
+  
+  <Accordion title="Dark mode not saving my preference" icon="moon">
+    **Solution:** Ensure you click "Update preferences" after selecting theme
+    
+    **Steps:**
+    1. Go to Settings → General
+    2. Select Light, Dark, or System theme
+    3. Click "Update preferences" button at bottom
+    4. Refresh page to see changes
+    
+    If still not working:
+    - Clear browser cache
+    - Try a different browser
+  </Accordion>
+  
+  <Accordion title="Not receiving email notifications" icon="envelope">
+    **Possible Causes:**
+    - Notifications are turned off
+    - Email in spam/junk folder
+    - Incorrect email address
+    
+    **Solutions:**
+    1. Check Settings → Notifications
+    2. Ensure toggles are ON for:
+       - Report generation alerts
+       - Analytics data (if desired)
+    3. Check spam/junk folders
+    4. Verify email address in Profile settings
+    5. Add aliwahcurtis5@gmail.com to contacts to prevent spam filtering
+  </Accordion>
+</AccordionGroup>
+
+## Performance & Technical
+
+<AccordionGroup>
+  <Accordion title="Page loading very slowly" icon="hourglass">
+    **Possible Causes:**
+    - Large amount of data being loaded
+    - Internet connection issues
+    - Browser performance
+    
+    **Solutions:**
+    1. Use narrower date ranges when filtering
+    2. Close unused browser tabs
+    3. Clear browser cache and cookies
+    4. Try a different browser (Chrome, Firefox, Safari)
+    5. Check your internet connection speed
+    
+    <Tip>
+      For best performance, filter data to show only what you need rather than loading all historical data at once
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Changes not saving or appearing" icon="floppy-disk">
+    **Solutions:**
+    1. Check for error messages (usually red notifications)
+    2. Refresh the page to see if changes actually saved
+    3. Verify you have the necessary permissions (Admin vs Staff)
+    4. Check internet connection
+    5. Try logging out and logging back in
+    
+    If problem persists:
+    - Note what you were trying to do
+    - Take a screenshot of any error messages
+    - Contact support with these details
+  </Accordion>
+  
+  <Accordion title="Logged out unexpectedly" icon="right-from-bracket">
+    **Causes:**
+    - Session timeout (security feature)
+    - Browser cleared cookies
+    - Multiple login sessions
+    
+    **Solution:**
+    Simply log back in. Your data is safe and saved.
+    
+    **To Prevent:**
+    - Don't stay logged in for extended periods of inactivity
+    - Use browser's "Remember me" feature if available
+    - Avoid clearing cookies while logged in
+  </Accordion>
+</AccordionGroup>
+
+## Still Need Help?
+
+If your issue isn't covered here:
+
+<CardGroup cols={2}>
+  <Card
+    title="Contact Support"
+    icon="headset"
+    href="/faq/contact-support"
+  >
+    Get personalized help from the Travada team
+  </Card>
+  <Card
+    title="Report a Bug"
+    icon="bug"
+    href="/faq/contact-support#reporting-bugs"
+  >
+    Let us know about technical issues
+  </Card>
+  <Card
+    title="Data Entry Tips"
+    icon="keyboard"
+    href="/faq/data-entry-tips"
+  >
+    Best practices for accurate trip recording
+  </Card>
+  <Card
+    title="Feature Guides"
+    icon="book"
+    href="/features/dashboard/overview"
+  >
+    Detailed walkthroughs of each Travada feature
+  </Card>
+</CardGroup>
+
+## Feedback Welcome
+
+Found a solution to a problem not listed here? Let us know so we can add it to help other users!
+
+Contact: **aliwahcurtis5@gmail.com**
