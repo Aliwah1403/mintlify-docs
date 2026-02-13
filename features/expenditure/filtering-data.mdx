@@ -1,4 +1,369 @@
 ---
-title: 'Filtering Data'
+title: Filtering Trip Data
+description: Find and analyze specific trips using Travada's filtering tools
+icon: "filter"
 ---
 
+## Overview
+
+The Expenditure page can contain hundreds or thousands of trips. Travada's filtering tools help you quickly find specific trips, analyze patterns, and generate focused reports.
+
+<img src="/images/expenditure-filters.png" alt="Expenditure Filtering Tools" />
+
+## Available Filter Types
+
+Travada offers two main filtering approaches:
+
+<CardGroup cols={2}>
+  <Card title="Date Range Filter" icon="calendar-range">
+    Quick time-based filtering using preset buttons
+  </Card>
+  <Card title="Data Filter" icon="filter">
+    Multi-criteria filtering by vehicle, driver, destination
+  </Card>
+</CardGroup>
+
+## Date Range Filtering
+
+Located in the top right corner of the Expenditure page.
+
+<img src="/images/date-range-buttons.png" alt="Date Range Buttons" />
+
+### Quick Select Buttons
+
+Click any button for instant filtering:
+
+| Button        | Time Period    | Use Case                    |
+| ------------- | -------------- | --------------------------- |
+| **7D**        | Last 7 days    | Daily operations monitoring |
+| **1M**        | Last 30 days   | Monthly reviews (default)   |
+| **3M**        | Last 90 days   | Quarterly analysis          |
+| **6M**        | Last 6 months  | Semi-annual review          |
+| **📅 Custom** | Any date range | Specific period analysis    |
+
+### Custom Date Range
+
+For specific periods:
+
+<Steps>
+  <Step title="Click Calendar Icon">
+    Click the calendar/date button next to the quick filters
+  </Step>
+
+  <Step title="Select Start Date">
+    Click the first date of your desired range
+  </Step>
+
+  <Step title="Select End Date">Click the last date of your desired range</Step>
+
+  <Step title="Apply">
+    Table filters automatically to show only trips in that range
+  </Step>
+</Steps>
+
+**Common Custom Ranges:**
+
+- Specific month: Jan 1, 2026 - Jan 31, 2026
+- Quarter: Jan 1, 2026 - Mar 31, 2026
+- Client billing period: As per agreement dates
+- Tax year: Per your financial year
+
+<Tip>
+  **Pro Tip:** Use custom ranges for month-end reports or when billing clients
+  for specific periods.
+</Tip>
+
+## Data Filter (Multi-Criteria)
+
+Click the **Data Filter** button to open advanced filtering options.
+
+<img src="/images/data-filter-dialog.png" alt="Data Filter Dialog" />
+
+### Available Filter Criteria
+
+<AccordionGroup>
+  <Accordion title="Filter by Vehicle Registration" icon="truck">
+    **Purpose:** See all trips for a specific vehicle **How to use:** 1. Click
+    **Data Filter** 2. Click **Registration** dropdown 3. Select one or more
+    vehicles 4. Click **Apply** **Use cases:** - Vehicle performance analysis -
+    Maintenance scheduling (review repair costs) - Driver-vehicle assignment
+    verification - Client-dedicated vehicle tracking **Example:** Filter for
+    "KCG 877T" to see all trailer truck trips
+  </Accordion>
+
+  <Accordion title="Filter by Driver" icon="id-card">
+    **Purpose:** See all trips by a specific driver **How to use:** 1. Click
+    **Data Filter** 2. Click **Driver** dropdown 3. Select one or more drivers
+    4. Click **Apply** **Use cases:** - Driver performance evaluation -
+    Salary/bonus calculations - Verifying driver assignments - Investigating
+    specific driver issues **Example:** Filter for "John Kamau" to see all his
+    trips this month
+  </Accordion>
+
+  <Accordion title="Filter by Destination" icon="location-dot">
+    **Purpose:** See all trips to specific locations **How to use:** 1. Click
+    **Data Filter** 2. Click **Destination** dropdown 3. Select one or more
+    destinations 4. Click **Apply** **Use cases:** - Client-specific invoicing -
+    Route profitability analysis - Client service verification - Destination
+    pattern analysis **Example:** Filter for "ARTCAFFE KISUMU" to generate
+    client report
+  </Accordion>
+
+  <Accordion title="Combine Multiple Filters" icon="layer-group">
+    **Purpose:** Very specific trip searches **How to use:** 1. Select
+    vehicle(s) 2. Select driver(s) 3. Select destination(s) 4. All criteria
+    applied together (AND logic) **Use cases:** - Specific vehicle to specific
+    destination - Specific driver + specific route - Troubleshooting specific
+    scenarios **Example:** - Vehicle: KCG 877T - Destination: PORTS - Result:
+    All trailer trips to ports
+  </Accordion>
+</AccordionGroup>
+
+## Filter Combinations
+
+### Common Filtering Scenarios
+
+<Tabs>
+  <Tab title="Vehicle Performance Review">
+    **Goal:** Analyze one vehicle's performance **Steps:** 1. Set date range:
+    **1M** (or **3M** for deeper analysis) 2. Data Filter → Registration →
+    Select vehicle 3. Click Apply **What to look for:** - Total trips made -
+    Income generated - Expenses incurred - Repair costs frequency - Destinations
+    served **Action:** Determine if vehicle is profitable
+  </Tab>
+
+  <Tab title="Client Billing">
+    **Goal:** Generate report for specific client **Steps:** 1. Set date range:
+    Billing period (e.g., Jan 1-31) 2. Data Filter → Destination → Select client
+    destination(s) 3. Click Apply 4. Click Export or Generate Report **Result:**
+    All trips for that client in specified period
+  </Tab>
+
+  <Tab title="Driver Evaluation">
+    **Goal:** Review driver's work for the month **Steps:** 1. Set date range:
+    **1M** 2. Data Filter → Driver → Select driver 3. Click Apply **Review:** -
+    Number of trips - Destinations covered - Vehicles operated - Any extra costs
+    or issues **Use for:** Performance reviews, bonus calculations
+  </Tab>
+
+  <Tab title="Route Analysis">
+    **Goal:** Understand profitability of specific route **Steps:** 1. Set date
+    range: **3M** or **6M** 2. Data Filter → Destination → Select destination 3.
+    Click Apply **Analyze:** - Average rate per trip - Average expenses per trip
+    - Profit margin - Which vehicles serve this route - Frequency of trips
+    **Action:** Decide if route is worth keeping
+  </Tab>
+
+  <Tab title="Fuel Cost Investigation">
+    **Goal:** Why are fuel costs high? **Steps:** 1. Set date range: Last **1M**
+    2. Sort by Fuel column (highest first) 3. Or Data Filter → High fuel cost
+    trips **Look for:** - Which vehicles use most fuel - Long-distance routes -
+    Fuel inefficient vehicles - Missing fuel discounts **Action:** Apply fuel
+    discounts, optimize routes
+  </Tab>
+</Tabs>
+
+## Clearing Filters
+
+To return to viewing all trips:
+
+<Steps>
+  <Step title="Date Range">
+    Click **1M** button to reset to default 30-day view Or select "All Time" if
+    available
+  </Step>
+
+  <Step title="Data Filters">
+    Click **Data Filter** button Click **Clear All** or **Reset** Or manually
+    deselect all items
+  </Step>
+
+  <Step title="Verify">Table should now show all trips within date range</Step>
+</Steps>
+
+<Tip>
+  **Quick Reset:** Refresh the page (F5) to clear all filters and return to
+  default view
+</Tip>
+
+## Sorting Data
+
+Click any column header to sort:
+
+<Tabs>
+  <Tab title="By Date">
+    **Click:** Date column header **Toggles between:** - Newest first (default)
+    - Oldest first **Use for:** Chronological analysis
+  </Tab>
+
+  <Tab title="By Amount">
+    **Click:** Rate, Fuel, or any expense column **Toggles between:** - Highest
+    to lowest - Lowest to highest **Use for:** Finding expensive trips,
+    high-earners
+  </Tab>
+
+  <Tab title="By Vehicle/Driver">
+    **Click:** Registration or Driver column **Result:** Alphabetical ordering
+    **Use for:** Grouping by vehicle or driver
+  </Tab>
+</Tabs>
+
+## Export Filtered Data
+
+After filtering, you can export just the visible trips:
+
+<Steps>
+  <Step title="Apply Your Filters">Set up date range and data filters</Step>
+
+  <Step title="Click Export Button">
+    Located in the top right area of the page
+    <img src="/images/export-button.png" alt="Export Button" />
+  </Step>
+
+  <Step title="Choose Format">
+    - **Excel (.xlsx)** - For analysis in Excel - **CSV (.csv)** - For import to
+    other systems
+  </Step>
+
+  <Step title="Download">File downloads with only filtered trips</Step>
+</Steps>
+
+**What's exported:**
+
+- All visible columns
+- Only trips matching your filters
+- In the current sort order
+
+<Info>
+  **Use Case:** Export filtered data to send to your accountant, generate custom
+  reports, or backup specific periods.
+</Info>
+
+## Advanced Filtering Tips
+
+<CardGroup cols={2}>
+  <Card title="Progressive Filtering" icon="layer-group">
+    Start broad, then narrow: 1. Date range first 2. Then vehicle/driver 3. Then
+    specific destinations
+  </Card>
+
+  <Card title="Save Common Filters" icon="bookmark">
+    Document your common filter combinations: - Monthly client billing - Weekly
+    vehicle review - Driver performance checks
+  </Card>
+
+  <Card title="Combine with Dashboard" icon="gauge">
+    After filtering: - Check dashboard for filtered metrics - See trip
+    completion trends - Review expense breakdowns
+  </Card>
+
+  <Card title="Use for Troubleshooting" icon="magnifying-glass">
+    When investigating issues: - Filter to narrow scope - Sort to find patterns
+    - Export for detailed analysis
+  </Card>
+</CardGroup>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="Can I save filter presets?" icon="floppy-disk">
+    **Current Status:** Not yet available **Workaround:** Document your common
+    filters manually **Future Feature:** Filter presets are planned for future
+    release
+  </Accordion>
+
+  <Accordion title="Why are some trips not showing?" icon="eye-slash">
+    **Causes:** 1. Date filter too narrow 2. Data filter excluding them 3. No
+    trips match criteria **Solution:** Clear all filters and gradually reapply
+  </Accordion>
+
+  <Accordion title="Can I filter by expense amount?" icon="money-bill">
+    **Current:** No direct amount-based filtering **Workaround:** 1. Display all
+    trips 2. Click column header to sort by amount 3. Manually review high/low
+    amounts **Alternative:** Export to Excel and use Excel's filtering
+  </Accordion>
+
+  <Accordion title="Does filtering affect dashboard?" icon="gauge">
+    **Answer:** No, dashboard always shows all data **Note:** Filtering only
+    affects the Expenditure table view, not dashboard metrics or other pages
+  </Accordion>
+</AccordionGroup>
+
+## Performance Tips
+
+For large datasets (1000+ trips):
+
+<CardGroup cols={2}>
+  <Card title="Use Date Filters" icon="calendar">
+    Always set a date range before applying data filters
+  </Card>
+
+  <Card title="Be Specific" icon="crosshairs">
+    Narrow criteria reduce processing time
+  </Card>
+
+  <Card title="Export in Chunks" icon="table-cells">
+    For very large exports, filter by month and export separately
+  </Card>
+
+  <Card title="Clear When Done" icon="broom">
+    Reset filters when finished to improve page performance
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Regular Reviews" icon="calendar-check">
+    **Weekly:** Filter to last 7 days and review all entries for errors
+    **Monthly:** Filter by month and verify completeness before reports
+  </Accordion>
+
+  <Accordion title="Client Billing" icon="file-invoice">
+    **Before billing:** 1. Filter by client destination 2. Filter by billing
+    period 3. Verify all trips included 4. Export or generate report
+  </Accordion>
+
+  <Accordion title="Performance Analysis" icon="chart-line">
+    **Per vehicle:** 1. Filter by vehicle 2. Set 3M or 6M range 3. Analyze
+    income vs. expenses 4. Check repair frequency
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Generate Reports"
+    icon="file-chart-column"
+    href="/features/reports/generating-rate-report"
+  >
+    Create professional reports from filtered data
+  </Card>
+  <Card
+    title="Vehicle Performance"
+    icon="truck"
+    href="/guides/vehicle-performance-analysis"
+  >
+    Deep dive into per-vehicle analysis
+  </Card>
+  <Card
+    title="Month-End Process"
+    icon="calendar-days"
+    href="/guides/month-end-reporting"
+  >
+    Complete month-end workflow with filtering
+  </Card>
+  <Card title="Export Tips" icon="download" href="/faq/data-entry-tips">
+    Best practices for data export and analysis
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble filtering data:
+
+1. Clear all filters and start over
+2. Review [Common Issues](/faq/common-issues)
+3. Verify trips exist in selected date range
+4. [Contact Support](/faq/contact-support) for assistance

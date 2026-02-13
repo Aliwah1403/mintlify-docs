@@ -1,4 +1,400 @@
 ---
-title: 'Overview'
+title: Expenditure Overview
+description: Understanding trip recording and expense management
+icon: "receipt"
 ---
 
+## Overview
+
+The Expenditure page is where you record and manage all trip data in Travada. Each trip entry captures the vehicle used, driver assigned, destination, income earned, and expenses incurred. This is the foundation of your entire financial tracking system.
+
+<img src="/images/expenditure-page.png" alt="Expenditure Page Overview" />
+
+## What is Expenditure?
+
+In Travada, "Expenditure" refers to the complete trip recording system where you:
+- ✅ Record every trip your vehicles make
+- ✅ Capture income (Rate and Detention fees)
+- ✅ Log expenses (Fuel, Parking, Repairs, etc.)
+- ✅ Track which vehicle and driver handled each trip
+- ✅ Document destinations and dates
+
+<Info>
+  Every entry in Expenditure automatically updates your Dashboard, Income pages, Expense pages, and Reports. It's the single source of truth for all your financial data.
+</Info>
+
+## Page Layout
+
+The Expenditure page consists of two main sections:
+
+### 1. Action Bar (Top)
+
+<img src="/images/expenditure-action-bar.png" alt="Expenditure Action Bar" />
+
+Located at the top of the page:
+
+- **Data Filter** - Filter trips by multiple criteria
+- **Date Range** - Select time period to view
+- **Export** - Download trip data
+- **View Options** - Customize table display
+- **+ New Trip** - Record a new trip
+
+### 2. Trip Data Table (Main)
+
+<img src="/images/expenditure-table.png" alt="Expenditure Data Table" />
+
+A comprehensive table showing all recorded trips with columns:
+
+| Column | Description |
+|--------|-------------|
+| **Registration** | Vehicle license plate number |
+| **Driver** | Driver who made the trip |
+| **Destination** | Final destination of the trip |
+| **Rate** | Base trip charge (income) |
+| **Detention Fee** | Container delay charges (if applicable) |
+| **Fuel** | Fuel costs |
+| **Clerk Fee** | Depot clerk payments |
+| **Milage Fee** | Driver allowances |
+| **Parking** | Parking costs |
+| **Repair Cost** | Vehicle repairs |
+| **Extra Cost** | Miscellaneous expenses |
+| **Actions (⋮)** | Edit, delete, or view details |
+
+## Understanding the Data Flow
+
+When you record a trip in Expenditure:
+
+<Steps>
+  <Step title="Trip Recorded">
+    You enter all trip details in the New Trip form
+  </Step>
+  
+  <Step title="Data Saved">
+    Travada stores the complete trip record
+  </Step>
+  
+  <Step title="Dashboard Updates">
+    Financial summary cards refresh automatically:
+    - Total Income increases by Rate + Detention
+    - Total Expense increases by all costs
+    - Total Revenue recalculates (Income - Expenses)
+  </Step>
+  
+  <Step title="Charts Update">
+    All visualizations reflect the new data:
+    - Financial Overview shows new bars
+    - Trip Completion Trend adds a data point
+    - Expense Breakdown recalculates percentages
+    - Vehicle Performance updates for that vehicle
+  </Step>
+  
+  <Step title="Pages Populate">
+    Trip appears in relevant sections:
+    - Income → Rate tab (if rate fee exists)
+    - Income → Detention tab (if detention fee exists)
+    - Expenses → All tab
+    - Expenses → Fuel tab (if fuel cost exists)
+  </Step>
+  
+  <Step title="Reports Ready">
+    Data becomes available for report generation
+  </Step>
+</Steps>
+
+<Tip>
+  This automatic data flow is why accurate trip recording is so important - everything else in Travada depends on it!
+</Tip>
+
+## Key Features
+
+<AccordionGroup>
+  <Accordion title="Real-time Updates" icon="arrows-rotate">
+    Every trip recorded updates all connected pages and charts instantly. No manual syncing or refreshing required.
+  </Accordion>
+  
+  <Accordion title="Complete Audit Trail" icon="list-check">
+    Every trip is permanently recorded with:
+    - Date and time of entry
+    - Vehicle and driver assignment
+    - Full financial breakdown
+  </Accordion>
+  
+  <Accordion title="Flexible Filtering" icon="filter">
+    Find specific trips quickly using multiple filter options:
+    - Vehicle registration
+    - Driver name
+    - Destination
+    - Date range
+    - Expense categories
+  </Accordion>
+  
+  <Accordion title="Bulk Actions" icon="layer-group">
+    Select multiple trips to:
+    - Delete expenditures in bulk
+  </Accordion>
+  
+  <Accordion title="Export Capability" icon="download">
+    Download trip data for:
+    - External accounting systems
+    - Custom analysis in Excel
+    - Backup and archival
+  </Accordion>
+</AccordionGroup>
+
+## Common Workflows
+
+### Daily Operations
+
+**Morning Routine:**
+1. Navigate to Expenditure page
+2. Record all trips from previous day
+3. Verify data accuracy
+4. Check dashboard for updated metrics
+
+**Evening Review:**
+1. Filter to today's date
+2. Verify all trips recorded
+3. Check for any missing data
+4. Review total income/expenses for the day
+
+### Weekly Review
+
+**Every Monday:**
+1. Switch to 7D date filter
+2. Review last week's trip volume
+3. Identify any data entry gaps
+4. Verify driver and vehicle assignments
+
+### Month-End Process
+
+**End of Month:**
+1. Set date filter to full month
+2. Export all trip data
+3. Generate reports for clients
+4. Review monthly performance
+5. Archive important data
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Record Daily" icon="calendar-day">
+    Enter trips at the end of each day while details are fresh
+  </Card>
+  
+  <Card title="Double-Check Details" icon="circle-check">
+    Verify vehicle, driver, and amounts before submitting
+  </Card>
+  
+  <Card title="Use Consistent Naming" icon="signature">
+    Always write destinations the same way for easier filtering
+  </Card>
+  
+  <Card title="Keep Documents Ready" icon="folder-open">
+    Have receipts and trip sheets organized before data entry
+  </Card>
+</CardGroup>
+
+## What Each Column Means
+
+<Tabs>
+  <Tab title="Income Columns">
+    **Rate Fee**
+    - Base charge for the trip
+    - What you invoice the client
+    - Most common income source
+    
+    **Detention Fee**
+    - Extra charges for container delays
+    - Primarily for trailer trucks
+    - Not applicable to all trips
+  </Tab>
+  
+  <Tab title="Expense Columns">
+    **Fuel**
+    - Diesel or petrol costs
+    - Usually the largest expense
+    - Record actual amount paid
+    
+    **Clerk Fee**
+    - Payments to depot clerks
+    - For container clearance
+    - Common with ports/depot trips
+    
+    **Milage Fee**
+    - Driver allowances
+    - Long-distance compensation
+    - Per company policy
+    
+    **Parking**
+    - Parking fees at destinations
+    - Loading bay charges
+    - Overnight parking
+    
+    **Repair Cost**
+    - Emergency repairs
+    - Maintenance during trip
+    - Breakdown costs
+    
+    **Extra Cost**
+    - Car wash
+    - Traffic fines
+    - Toll fees
+    - Any other miscellaneous costs
+  </Tab>
+  
+  <Tab title="Identification Columns">
+    **Registration**
+    - Vehicle license plate
+    - Links to vehicle profile
+    - Used for performance tracking
+    
+    **Driver**
+    - Driver who operated vehicle
+    - Links to driver profile
+    - Used for assignment tracking
+    
+    **Destination**
+    - Final delivery point
+    - Used for route analysis
+    - Groups trips by location
+  </Tab>
+</Tabs>
+
+## Understanding Trip Status
+
+Trips in Travada are always "Completed" - meaning they've already happened and you're recording historical data. Unlike some systems, Travada doesn't track:
+- ❌ Scheduled/future trips
+- ❌ In-progress trips
+- ❌ Trip status changes
+
+**Why?** Travada is designed for **financial tracking**, not dispatch management. You record trips after they're completed to track income and expenses.
+
+<Note>
+  If you need to track scheduled or in-progress trips, consider using a separate dispatch system and then recording completed trips in Travada for financial tracking.
+</Note>
+
+## Data Accuracy Tips
+
+<AccordionGroup>
+  <Accordion title="Verify Before Submit" icon="clipboard-check">
+    **Common mistakes to catch:**
+    - Wrong vehicle selected
+    - Wrong driver assigned
+    - Decimal point errors in amounts
+    - Missing expense categories
+    
+    Take 10 seconds to review before clicking Submit.
+  </Accordion>
+  
+  <Accordion title="Use Trip Sheets" icon="file-lines">
+    **Paper trail:**
+    - Give drivers trip sheets to fill out
+    - Include spaces for all expense categories
+    - Have drivers submit at end of day
+    - Enter from completed trip sheets
+    
+    This reduces memory errors and missing data.
+  </Accordion>
+  
+  <Accordion title="Standardize Destinations" icon="location-dot">
+    **Create a master list:**
+    - JAVA CBD (not "java", "Java cbd", "JAVA-CBD")
+    - ARTCAFFE KISUMU (not "Artcaffe", "Art Caffe")
+    - GM (not "General Motors", "g.m.")
+    
+    Consistency enables better filtering and reporting.
+  </Accordion>
+  
+  <Accordion title="Keep Receipts" icon="receipt">
+    **Documentation:**
+    - Fuel receipts
+    - Parking tickets
+    - Repair invoices
+    - Any payment proofs
+    
+    File these with trip sheets for audit trail and verification.
+  </Accordion>
+</AccordionGroup>
+
+## Quick Actions
+
+From the Expenditure table, you can:
+
+### Per-Trip Actions (⋮ Menu)
+
+Click the three-dot menu on any trip row:
+- **View Details** - See complete trip information
+- **Edit Trip** - Modify trip data (if editing is enabled)
+- **Delete Trip** - Remove incorrect entries (Admin only)
+- **Add to Report** - Include in custom report
+
+### Bulk Actions (Select Multiple)
+
+Check boxes next to multiple trips:
+- **Apply Fuel Discount** - Bulk discount application
+- **Export Selected** - Download specific trips
+- **Generate Report** - Create report from selection
+
+## Performance Indicators
+
+Look for these patterns in your Expenditure data:
+
+<Tabs>
+  <Tab title="Healthy Patterns">
+    ✅ Consistent daily trip volume
+    ✅ Regular income per vehicle
+    ✅ Fuel costs under 65% of expenses
+    ✅ Minimal repair costs
+    ✅ All trips recorded promptly
+  </Tab>
+  
+  <Tab title="Warning Signs">
+    ⚠️ Declining trip volume
+    ⚠️ Increasing gap between trip date and entry date
+    ⚠️ Rising fuel costs as percentage
+    ⚠️ Frequent repair expenses
+    ⚠️ Trips with zero income
+  </Tab>
+</Tabs>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Adding Trips"
+    icon="plus"
+    href="/features/expenditure/adding-trip"
+  >
+    Learn the step-by-step process for recording trips
+  </Card>
+  <Card
+    title="Filtering Data"
+    icon="filter"
+    href="/features/expenditure/filtering-data"
+  >
+    Master the filtering tools to find specific trips
+  </Card>
+  <Card
+    title="Complete Trip Workflow"
+    icon="route"
+    href="/guides/complete-trip-workflow"
+  >
+    End-to-end guide from trip completion to report generation
+  </Card>
+  <Card
+    title="Data Entry Tips"
+    icon="keyboard"
+    href="/faq/data-entry-tips"
+  >
+    Best practices for accurate and efficient data entry
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble with the Expenditure page:
+
+1. Review [Recording Your First Trip](/getting-started/recording-first-trip)
+2. Check [Common Issues](/faq/common-issues)
+3. See [Data Entry Tips](/faq/data-entry-tips)
+4. [Contact Support](/faq/contact-support) for assistance
