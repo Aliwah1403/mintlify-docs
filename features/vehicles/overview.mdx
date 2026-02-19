@@ -1,0 +1,406 @@
+---
+title: Vehicle Management Overview
+description: Managing your fleet in Travada
+icon: "truck"
+---
+
+## Overview
+
+The Vehicles section in Travada is your fleet management hub. Here you manage all vehicle information, track performance, and control which vehicles are active in the system.
+
+<img src='/images/vehicles-page.png' alt='Vehicles Management Page' />
+
+## Why Vehicle Management Matters
+
+Your vehicles are the foundation of your logistics business. Proper vehicle management in Travada enables:
+
+- ✅ **Accurate trip tracking** - Assign trips to correct vehicles
+- ✅ **Performance analysis** - See which vehicles are profitable
+- ✅ **Cost attribution** - Track expenses per vehicle
+- ✅ **Fleet optimization** - Make data-driven decisions about your fleet
+- ✅ **Maintenance planning** - Identify vehicles needing service
+
+<Info>
+  Every trip in Travada must be assigned to a vehicle. Without vehicles in your
+  system, you cannot record trips.
+</Info>
+
+## Vehicles Page Layout
+
+### Navigation
+
+Access vehicle management from the sidebar:
+
+**Vehicles** → Two sub-sections:
+
+1. **Add/Manage Vehicles** - Main vehicle management page
+2. **Disabled Vehicles** - View and manage inactive vehicles
+
+<img src='/images/vehicles-sidebar.png' alt='Vehicles Sidebar Navigation' />
+
+### Main Page Sections
+
+<Tabs>
+  <Tab title='Vehicle List'>
+    **Primary view showing:** - All active vehicles - Registration numbers -
+    Vehicle types - Ownership status (Owned/Hired) - Action buttons (Edit,
+    Disable)
+    <img src='/images/vehicles-list.png' alt='Vehicles List' />
+  </Tab>
+
+<Tab title='Filter & Search'>
+  **Tools to find vehicles:** - Search by registration - Filter by vehicle type
+  - Filter by ownership status - Sort alphabetically
+</Tab>
+
+  <Tab title='Add Vehicle Button'>
+    **Located in top right:** - Opens vehicle creation form 
+    panel interface
+  </Tab>
+</Tabs>
+
+## Vehicle Information Tracked
+
+Each vehicle in Travada contains:
+
+| Field                   | Description                    | Editable |
+| ----------------------- | ------------------------------ | -------- |
+| **Registration Number** | License plate (e.g., KBE 127H) | Yes      |
+| **Vehicle Type**        | Category (Truck, Canter, etc.) | Yes      |
+| **Ownership Status**    | Owned or Hired                 | Yes      |
+| **Status**              | Active or Disabled             | Yes      |
+| **Trip Count**          | Total trips made               | Auto     |
+| **Performance Data**    | Income, expenses, profit       | Auto     |
+
+## Vehicle Types
+
+Travada currently supports 7 vehicle types, each designed for different logistics operations:
+
+<CardGroup cols={2}>
+  <Card title='Truck' icon='truck'>
+    Standard transport trucks for general cargo
+  </Card>
+  <Card title='Canter' icon='truck-pickup'>
+    Small delivery trucks for local/urban transport
+  </Card>
+  <Card title='Dump Truck' icon='truck-ramp-box'>
+    Construction material transport (tippers)
+  </Card>
+  <Card title='Reefer Truck' icon='temperature-low'>
+    Refrigerated trucks for cold chain (flowers, food)
+  </Card>
+  <Card title='Box Truck' icon='box-open'>
+    Rigid trucks for dry goods
+  </Card>
+  <Card title='Trailer Truck' icon='trailer'>
+    Container/articulated trucks for long-haul
+  </Card>
+  <Card title='Passenger Transport' icon='van-shuttle'>
+    Vans for people (school, tours, city routes)
+  </Card>
+</CardGroup>
+
+<Tip>
+  See [Vehicle Types](/features/vehicles/vehicle-types) for detailed
+  descriptions and use cases for each type.
+</Tip>
+
+## Ownership Status
+
+Vehicles can be marked as:
+
+**Owned**
+
+- Vehicles your company owns
+- Capital assets
+- Long-term fleet members
+
+**Hired**
+
+- Leased or rented vehicles
+- Temporary additions
+- Contract-based
+
+<Info>
+  This distinction helps with financial reporting, asset tracking, and cost
+  analysis. Hired vehicles may have different expense patterns than owned
+  vehicles.
+</Info>
+
+## Vehicle Lifecycle in Travada
+
+<Steps>
+  <Step title='Add Vehicle'>
+    User creates vehicle record with registration, type, and ownership See:
+    [Adding Vehicles](/features/vehicles/adding-vehicle)
+  </Step>
+
+<Step title='Assign to Trips'>
+  Vehicle appears in trip recording dropdowns users can assign trips to this
+  vehicle
+</Step>
+
+<Step title='Track Performance'>
+  System automatically calculates: - Total trips completed - Income generated -
+  Expenses incurred - Net profit/loss
+</Step>
+
+<Step title='Edit as Needed'>
+  Users can update vehicle type or ownership status See: [Editing
+  Vehicles](/features/vehicles/editing-vehicle)
+</Step>
+
+<Step title='Disable When Inactive'>
+  When vehicle is sold, contracts end, or temporarily out of service See:
+  [Disabling Vehicles](/features/vehicles/disabling-vehicles)
+</Step>
+
+  <Step title='Re-enable if Needed'>
+    Disabled vehicles can be reactivated later All historical data remains
+    intact
+  </Step>
+</Steps>
+
+## Key Features
+
+<AccordionGroup>
+  <Accordion title='Performance Tracking' icon='chart-line'>
+    **Automatic calculations per vehicle:** - Total trips made - Total income
+    earned - Total expenses incurred - Net profit or loss - Average per-trip
+    metrics **Visible in:** - Dashboard Vehicle Performance section - Reports
+    and analytics - Trip history views
+  </Accordion>
+
+<Accordion title='Active/Inactive Management' icon='toggle-on'>
+  **Disable vehicles without deleting:** - Preserves all historical data -
+  Removes from trip dropdowns - Can be re-enabled later - Maintains data
+  integrity **Use cases:** - Vehicle sold - Contract ended (hired vehicles) -
+  Under major repairs - Seasonal operations
+</Accordion>
+
+<Accordion title='Quick Search & Filter' icon='magnifying-glass'>
+  **Find vehicles easily:** - Search by registration number - Filter by vehicle
+  type - Filter by ownership status - Sort alphabetically **Useful for:** -
+  Large fleets (20+ vehicles) - Finding specific vehicles quickly - Analyzing by
+  vehicle category
+</Accordion>
+
+  <Accordion title='Bulk Operations' icon='layer-group'>
+    **Manage multiple vehicles:** - Disable multiple vehicles at once - Export
+    vehicle list - View performance comparisons **Saves time when:** - Ending
+    multiple contracts - Fleet restructuring - Season changes
+  </Accordion>
+</AccordionGroup>
+
+## Common Workflows
+
+### Daily Operations
+
+**Normal day-to-day:**
+
+- Vehicles remain in system
+- Used for trip assignments
+- Performance tracked automatically
+- No vehicle management needed
+
+<Info>
+  Most days you won't need to access vehicle management - vehicles just work in
+  the background!
+</Info>
+
+### Monthly Review
+
+**End of month:**
+
+1. Review Dashboard → Vehicle Performance
+2. Identify top performers
+3. Identify unprofitable vehicles
+4. Check for vehicles with no trips
+5. Investigate any anomalies
+
+### Fleet Changes
+
+**When adding new vehicles:**
+
+1. Navigate to Vehicles → Add/Manage Vehicles
+2. Click **Add Vehicle**
+3. Enter registration, type, ownership
+4. Vehicle immediately available for trips
+
+**When retiring vehicles:**
+
+1. Navigate to Vehicles → Disabled Vehicles
+2. Click **+ Disable Vehicle**
+3. Select vehicle(s) to disable
+4. Confirm - removes from active use
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title='Accurate Registration' icon='input-text'>
+    Enter license plates exactly as they appear - this is your unique identifier
+  </Card>
+
+<Card title='Correct Vehicle Type' icon='truck'>
+  Choose the right type for accurate categorization and reporting
+</Card>
+
+<Card title='Update Ownership Changes' icon='pen-to-square'>
+  If you buy a hired vehicle, update the ownership status
+</Card>
+
+  <Card title="Disable, Don't Delete" icon='toggle-off'>
+    Always disable inactive vehicles instead of deleting to preserve data
+  </Card>
+</CardGroup>
+
+## Vehicle Performance Insights
+
+From the Dashboard, you can see:
+
+### Top Profitable Vehicles
+
+Vehicles that generate the most profit:
+
+- High income generation
+- Lower expense ratios
+- Consistent performance
+
+**Action:** Prioritize these vehicles for high-value routes
+
+### Unprofitable Vehicles
+
+Vehicles losing money:
+
+- High repair costs
+- Low trip volume
+- Inefficient routes
+
+**Action:** Investigate why and address:
+
+- Need maintenance?
+- Wrong routes?
+- Should be retired?
+
+### Vehicles with No Trips
+
+Active but unused vehicles:
+
+- Not assigned any trips
+- Potentially forgotten
+- Maybe should be disabled
+
+**Action:** Verify status and disable if truly inactive
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title='How many vehicles can I add?' icon='truck'>
+    **Answer:** Unlimited Travada supports fleets of any size, from 1 vehicle to
+    100+ **Note:** Pricing may be per-vehicle - check with support for details
+  </Accordion>
+
+<Accordion title='Can I delete a vehicle?' icon='trash'>
+  **Yes:** You can delete a vehile from Travada  **Note:** After deleting, this
+  vehicle won't be available to make any more trips.
+</Accordion>
+
+<Accordion title='What if I entered the wrong registration?' icon='input-text'>
+  **Answer:** Click on the action button for that vehicle and edit it. **Note**: Past trips will remain linked to old registration
+</Accordion>
+
+  <Accordion
+    title='Do disabled vehicles appear in reports?'
+    icon='file-chart-column'
+  >
+    **Answer:** Yes, for historical data **Explanation:** - Disabled vehicles'
+    historical trips remain in reports - They just won't appear in future trip
+    dropdowns - Performance data is preserved
+  </Accordion>
+</AccordionGroup>
+
+## Vehicle vs. Driver Management
+
+Understanding the difference:
+
+| Aspect               | Vehicles        | Drivers           |
+| -------------------- | --------------- | ----------------- |
+| **What**             | Physical assets | Human resources   |
+| **Typical Count**    | 5-50            | 5-50              |
+| **Change Frequency** | Low (years)     | Medium (months)   |
+| **Key Metric**       | Profitability   | Performance       |
+| **Ownership**        | Owned/Hired     |     -             |
+| **When Inactive**    | Disable         | Disable           |
+
+<Tip>
+  Both vehicles and drivers should be disabled (not deleted) when no longer
+  active to preserve historical data integrity.
+</Tip>
+
+## Integration with Other Features
+
+Vehicles connect to:
+
+<Tabs>
+  <Tab title='Expenditure'>
+    **Trip Recording:** - Every trip requires vehicle selection - Only active
+    vehicles appear in dropdown - Trip history tracks per vehicle
+  </Tab>
+
+<Tab title='Dashboard'>
+  **Performance Metrics:** - Vehicle Performance section - Trip Completion Trend
+  by vehicle type - Top profitable vehicles - Unprofitable vehicles list
+</Tab>
+
+<Tab title='Reports'>
+  **Reporting:** - Filter reports by vehicle - Vehicle-specific invoices - Fleet
+  performance summaries
+</Tab>
+
+  <Tab title='Expenses'>
+    **Cost Tracking:** - Fuel costs per vehicle - Repair costs per vehicle -
+    Total expenses per vehicle
+  </Tab>
+</Tabs>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title='Adding Vehicles'
+    icon='plus'
+    href='/features/vehicles/adding-vehicle'
+  >
+    Step-by-step guide to add vehicles to your fleet
+  </Card>
+  <Card
+    title='Editing Vehicles'
+    icon='pen-to-square'
+    href='/features/vehicles/editing-vehicle'
+  >
+    Update vehicle type and ownership status
+  </Card>
+  <Card
+    title='Disabling Vehicles'
+    icon='ban'
+    href='/features/vehicles/disabling-vehicles'
+  >
+    Manage inactive vehicles properly
+  </Card>
+  <Card
+    title='Vehicle Types Guide'
+    icon='book-open'
+    href='/features/vehicles/vehicle-types'
+  >
+    Detailed description of each vehicle type
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble managing vehicles:
+
+1. Review [Adding Vehicles](/getting-started/adding-vehicles) for basics
+2. Check [Common Issues](/faq/common-issues)
+3. Verify user role (Admin required for management)
+4. [Contact Support](/faq/contact-support) for assistance

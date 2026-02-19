@@ -1,0 +1,348 @@
+---
+title: Editing Vehicles
+description: Update vehicle type and ownership status
+icon: "pen-to-square"
+---
+
+<Note>
+  🔒 **Admin Only** - Editing vehicles requires Administrator permissions
+</Note>
+
+## Overview
+
+You can edit certain vehicle details in Travada to keep your fleet information accurate. This page covers what you can edit, what you cannot, and how to make changes.
+
+## What You CAN Edit
+
+✅ **Vehicle Type** - Change from one category to another  
+✅ **Vehicle Ownership** - Switch between Owned and Hired
+
+## What You CANNOT Edit
+
+❌ **Vehicle Registration** - Permanently locked after creation  
+❌ **Historical Trip Data** - All past trips remain unchanged
+
+<Warning>
+  **Registration Number is permanent!** If you entered it wrong, you'll need to
+  disable the vehicle and create a new one with the correct registration.
+</Warning>
+
+## Why Registration Cannot Be Edited
+
+Registration serves as the unique identifier for all vehicle data:
+
+- Links to all historical trips
+- Connects to income and expense records
+- References in generated reports
+- Appears in analytics and dashboards
+
+**Changing it would:**
+
+- Break data integrity
+- Orphan historical trips
+- Corrupt existing reports
+- Create database inconsistencies
+
+<Info>
+  This is by design to protect your data. If you made a typo, see [Fixing Wrong
+  Registration](#fixing-wrong-registration) below.
+</Info>
+
+## How to Edit a Vehicle
+
+<Steps>
+  <Step title='Navigate to Vehicles'>
+    Click **Vehicles** → **Add/Manage Vehicles** in the sidebar
+  </Step>
+
+  <Step title='Find the Vehicle'>
+    Locate the vehicle in the list Use search or filters if you have many
+    vehicles
+  </Step>
+
+  <Step title='Open Edit Form'>
+    Click the **⋮** (three dots) button on the vehicle row Select **Edit** from
+    the dropdown menu
+    <img src='/images/vehicle-edit-menu.png' alt='Vehicle Edit Menu' />
+  </Step>
+
+  <Step title='Make Changes'>
+    The edit form opens showing current values: - Vehicle Registration (grayed
+    out/locked) - Vehicle Type (editable dropdown) - Vehicle Ownership (editable
+    dropdown)
+    <img src='/images/vehicle-edit-form.png' alt='Vehicle Edit Form' />
+    Update the fields you want to change
+  </Step>
+
+  <Step title='Save Changes'>
+    Click **Save** or **Update Vehicle** Changes apply immediately
+  </Step>
+
+  <Step title='Verify Update'>
+    Vehicle list updates with new information Success message confirms the
+    change
+  </Step>
+</Steps>
+
+## Editing Vehicle Type
+
+### When to Change Vehicle Type
+
+<Tabs>
+  <Tab title='Correction'>
+    **Wrong type was selected initially** **Example:** - Selected "Truck" but
+    it's actually a "Dump Truck" - Selected "Canter" but it's a "Box Truck"
+    **Action:** Edit to correct type for accurate reporting
+  </Tab>
+
+  <Tab title='Conversion'>
+    **Vehicle was modified/converted** **Example:** - Truck fitted with
+    refrigeration → Change to "Reefer Truck" - Flatbed converted to tipper →
+    Change to "Dump Truck" **Action:** Update to reflect current configuration
+  </Tab>
+
+  <Tab title='Reassignment'>
+    **Vehicle repurposed for different operations** **Example:** - General truck
+    now dedicated to containers → Change to "Trailer Truck" - Passenger van now
+    cargo delivery → Change to "Box Truck" **Action:** Update for better
+    categorization
+  </Tab>
+</Tabs>
+
+### Impact of Changing Vehicle Type
+
+When you change vehicle type:
+
+✅ **Future Data:**
+
+- New trips will be categorized under new type
+- Dashboard charts reflect new type
+- Reports use new type for new data
+
+📊 **Historical Data:**
+
+- Past trips remain under original type
+- Historical analytics unchanged
+- Existing reports not affected
+
+<Info>
+  **This is intentional.** Historical data shows what the vehicle was at the
+  time of those trips, ensuring accurate historical reporting.
+</Info>
+
+### Type Change Examples
+
+<AccordionGroup>
+  <Accordion title='Truck → Dump Truck' icon='arrows-left-right'>
+    **Scenario:** Initially categorized as general truck, but actually used for
+    construction materials **Before:** - Vehicle Type: Truck - 50 trips recorded
+    as "Truck" **After editing to Dump Truck:** - Vehicle Type: Dump Truck -
+    Previous 50 trips: Still show as "Truck" in history - New trips: Will be
+    "Dump Truck" **Result:** More accurate future categorization
+  </Accordion>
+
+  <Accordion title='Owned → Hired (see ownership section)' icon='handshake'>
+    See "Editing Ownership Status" below
+  </Accordion>
+</AccordionGroup>
+
+## Editing Ownership Status
+
+### When to Change Ownership
+
+<Tabs>
+  <Tab title='Purchase'>
+    **Bought a previously hired vehicle** **Change:** Hired → Owned **When:**
+    After completing purchase and transfer
+  </Tab>
+
+  <Tab title='Sale'>
+    **Sold an owned vehicle but still using on contract** **Change:** Owned →
+    Hired **When:** After sale but leasing back
+  </Tab>
+
+  <Tab title='Correction'>
+    **Wrong ownership selected initially** **Change:** Either direction
+    **When:** As soon as error is discovered
+  </Tab>
+</Tabs>
+
+### Impact of Changing Ownership
+
+Financial reporting implications:
+
+**Owned → Hired:**
+
+- Asset classification changes
+- May affect accounting reports
+- Future expenses categorized differently
+- Historical data preserved
+
+**Hired → Owned:**
+
+- Now treated as company asset
+- Different tax implications (consult accountant)
+- Expense vs. capital expenditure tracking
+
+<Warning>
+  **Accounting Impact:** Ownership changes may affect your financial statements.
+  Consult with your accountant before making changes, especially mid-fiscal
+  year.
+</Warning>
+
+## Common Editing Scenarios
+
+<AccordionGroup>
+  <Accordion title='Fix wrong vehicle type' icon='truck-monster'>
+    **Problem:** Selected Canter but should be Box Truck **Solution:** 1. Go to
+    Vehicles → Add/Manage Vehicles 2. Find the vehicle 3. Click ⋮ → Edit 4.
+    Change Vehicle Type to "Box Truck" 5. Save **Note:** Past trips remain as
+    "Canter" in history
+  </Accordion>
+
+  <Accordion title='Update after vehicle conversion' icon='wrench'>
+    **Problem:** Truck converted to refrigerated truck **Solution:** 1. Edit
+    vehicle 2. Change type from "Truck" to "Reefer Truck" 3. Save 4. Document
+    conversion date for your records **Benefit:** Future trips correctly
+    categorized as refrigerated
+  </Accordion>
+
+  <Accordion title='Purchased hired vehicle' icon='handshake-simple'>
+    **Problem:** Hired vehicle for 2 years, now purchased **Solution:** 1. Edit
+    vehicle 2. Change ownership from "Hired" to "Owned" 3. Save 4. Update your
+    accounting records **Result:** Now tracked as company asset
+  </Accordion>
+</AccordionGroup>
+
+## Fixing Wrong Registration
+
+Since registration cannot be edited, here's the workaround:
+
+<Steps>
+  <Step title='Document Correct Information'>
+    Write down: - Correct registration number - Vehicle type - Ownership status
+    - Any other details
+  </Step>
+
+  <Step title='Disable Wrong Vehicle'>
+    1. Go to Vehicles → Disabled Vehicles 2. Click **+ Disable Vehicle** 3.
+    Select the incorrectly registered vehicle 4. Confirm disable See: [Disabling
+    Vehicles](/features/vehicles/disabling-vehicles)
+  </Step>
+
+  <Step title='Add Vehicle with Correct Registration'>
+    1. Go to Vehicles → Add/Manage Vehicles 2. Click **Add Vehicle** 3. Enter
+    correct registration 4. Select type and ownership 5. Save See: [Adding
+    Vehicles](/features/vehicles/adding-vehicle)
+  </Step>
+
+  <Step title='Update Future Trips'>
+    - Old trips remain linked to old (wrong) registration - New trips use
+    correct registration - Both vehicles appear in historical reports
+  </Step>
+
+  <Step title='Add Note'>
+    Document the change: - "KBE 127H was typo for KBE 172H" - "Disabled on
+    [date] and recreated" - Keep in your records for audit trail
+  </Step>
+</Steps>
+
+<Warning>
+  **Downside:** Historical trips remain linked to the wrong registration. This
+  is unavoidable to maintain data integrity. Future workarounds may include bulk
+  trip reassignment.
+</Warning>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title='Verify Before Editing' icon='clipboard-check'>
+    Double-check new values before saving - ensure you're making correct change
+  </Card>
+
+  <Card title='Document Changes' icon='note-sticky'>
+    Keep notes of significant edits (type changes, ownership changes) for audit
+    trail
+  </Card>
+
+  <Card title='Consult Accountant' icon='calculator'>
+    For ownership changes, check with your accountant on timing and financial
+    impact
+  </Card>
+
+  <Card title='Inform Team' icon='users'>
+    Let drivers and ops team know about vehicle type changes that affect
+    operations
+  </Card>
+</CardGroup>
+
+## Permission Requirements
+
+| Action            | Admin | Staff |
+| ----------------- | ----- | ----- |
+| View Vehicles     | ✅    | ✅    |
+| Edit Vehicle Type | ✅    | ❌    |
+| Edit Ownership    | ✅    | ❌    |
+| Edit Registration | ❌    | ❌    |
+
+<Note>Staff users will not see the Edit option in the vehicle menu.</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title='Edit button not appearing' icon='eye-slash'>
+    **Cause:** Logged in as Staff, not Admin **Solution:** Request Admin to make
+    the edit or grant you Admin permissions
+  </Accordion>
+
+  <Accordion title='Changes not saving' icon='floppy-disk'>
+    **Possible causes:** - Network connection issue - Form validation error -
+    Session timeout **Solutions:** 1. Check internet connection 2. Verify
+    dropdown selections (not just typed) 3. Log out and log back in 4. Try again
+  </Accordion>
+
+  <Accordion title='Wrong vehicle edited' icon='triangle-exclamation'>
+    **Problem:** Edited the wrong vehicle by mistake **Solution:** 1.
+    Immediately edit again 2. Change back to original values 3. Then edit the
+    correct vehicle **Prevention:** Always verify registration before clicking
+    Edit
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title='Disabling Vehicles'
+    icon='ban'
+    href='/features/vehicles/disabling-vehicles'
+  >
+    Learn when and how to disable vehicles
+  </Card>
+  <Card
+    title='Vehicle Types'
+    icon='truck'
+    href='/features/vehicles/vehicle-types'
+  >
+    Understand all vehicle categories
+  </Card>
+  <Card
+    title='Vehicle Performance'
+    icon='chart-line'
+    href='/guides/vehicle-performance-analysis'
+  >
+    Analyze vehicle profitability
+  </Card>
+  <Card title='User Roles' icon='users-gear' href='/getting-started/user-roles'>
+    Understand Admin vs Staff permissions
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble editing vehicles:
+
+1. Verify your user role (Admin required)
+2. Check [Common Issues](/faq/common-issues)
+3. Review [User Roles](/getting-started/user-roles)
+4. [Contact Support](/faq/contact-support) for assistance
