@@ -1,0 +1,283 @@
+---
+title: Editing Drivers
+description: Update driver names and phone numbers
+icon: "user-pen"
+---
+
+<Note>
+  🔒 **Admin Only** - Editing drivers requires Administrator permissions
+</Note>
+
+## Overview
+
+You can edit driver information in Travada to keep your team records current. Unlike vehicles (where registration is locked), both driver name and phone number can be updated after creation.
+
+## What You CAN Edit
+
+✅ **Driver's Name** - Update to correct name or add clarifications  
+✅ **Phone Number** - Update when driver changes number
+
+## What You CANNOT Edit
+
+❌ **Historical Trip Assignments** - All past trips remain linked to this driver
+
+<Info>
+  **Good news:** Both driver fields are editable! This flexibility helps you
+  keep information current as situations change.
+</Info>
+
+## How to Edit a Driver
+
+<Steps>
+  <Step title="Navigate to Drivers">
+    Click **Drivers** → **Add/Manage Drivers** in the sidebar
+  </Step>
+
+  <Step title="Find the Driver">
+    Locate the driver in the list Use search if you have many drivers
+  </Step>
+
+  <Step title="Open Edit Form">
+    Click the **⋮** (three dots) button on the driver row Select **Edit** from
+    the dropdown menu
+    <img src="/images/driver-edit-menu.png" alt="Driver Edit Menu" />
+  </Step>
+
+  <Step title="Make Changes">
+    The edit form opens showing current values: - Driver's Name (editable) -
+    Phone Number (editable)
+    <img src="/images/driver-edit-form.png" alt="Driver Edit Form" />
+    Update the fields you want to change
+  </Step>
+
+  <Step title="Save Changes">
+    Click **Save** or **Update Driver** Changes apply immediately
+  </Step>
+
+  <Step title="Verify Update">
+    Driver list updates with new information Success message confirms the change
+  </Step>
+</Steps>
+
+## When to Edit Driver Name
+
+<AccordionGroup>
+  <Accordion title="Correct Typo" icon="spell-check">
+    **Scenario:** Name was misspelled when added **Example:** - Was: "John
+    Kamua" (typo) - Change to: "John Kamau" (correct) **Action:** Edit to
+    correct spelling
+  </Accordion>
+
+  <Accordion title="Add Clarification" icon="circle-plus">
+    **Scenario:** Need to distinguish from another driver with same name
+    **Example:** - Was: "John Kamau" - Change to: "John Kamau (Morning Shift)" -
+    Or: "John Kamau (KBE 127H)" if dedicated to vehicle **Action:** Add
+    identifier in parentheses
+  </Accordion>
+
+  <Accordion title="Update Full Name" icon="id-card">
+    **Scenario:** Initially used shortened name, now need full name **Example:**
+    - Was: "John" - Change to: "John Kamau Mwangi" **Action:** Add full official
+    name
+  </Accordion>
+
+  <Accordion title="Name Change" icon="signature">
+    **Scenario:** Driver legally changed their name (marriage, etc.)
+    **Example:** - Was: "Jane Wanjiru" - Change to: "Jane Omondi" **Action:**
+    Update to new legal name
+    <Tip>Document the name change in your HR records separately</Tip>
+  </Accordion>
+</AccordionGroup>
+
+## When to Edit Phone Number
+
+<AccordionGroup>
+  <Accordion title="Driver Got New Number" icon="phone-arrow-up-right">
+    **Most common reason** **Scenario:** Driver changed phone carriers or got
+    new SIM **Action:** 1. Verify new number with driver 2. Edit and update 3.
+    Test by calling/SMS if critical
+  </Accordion>
+
+  <Accordion title="Correct Wrong Number" icon="phone-xmark">
+    **Scenario:** Wrong number was entered initially **Action:** 1. Get correct
+    number 2. Edit and fix 3. Verify it works
+  </Accordion>
+
+  <Accordion title="Format Standardization" icon="list-check">
+    **Scenario:** Want consistent format across all drivers **Example:** - Was:
+    0712345678 - Change to: +254712345678 - Or vice versa **Action:** Update all
+    drivers to same format for consistency
+  </Accordion>
+</AccordionGroup>
+
+## Impact of Editing
+
+### Name Changes
+
+When you change a driver's name:
+
+✅ **Future References:**
+
+- New trips will show new name
+- Reports going forward use new name
+- Driver dropdown shows new name
+
+📊 **Historical Data:**
+
+- Past trips still show old name (as it was at the time)
+- Existing reports unchanged
+- Historical accuracy preserved
+
+<Info>
+  **This is intentional.** Historical trips show the driver name as it was when
+  the trip occurred, ensuring audit trail integrity.
+</Info>
+
+### Phone Number Changes
+
+When you update phone number:
+
+✅ **All References Update:**
+
+- New number shown everywhere
+- Historical trips don't show phone numbers anyway
+- Contact information current
+
+## Common Editing Scenarios
+
+<Tabs>
+  <Tab title="Fix Typo">
+    **Problem:** Driver name misspelled **Solution:** 1. Go to Drivers →
+    Add/Manage Drivers 2. Find driver 3. Click ⋮ → Edit 4. Fix spelling 5. Save
+    **Result:** Name corrected everywhere going forward
+  </Tab>
+
+  <Tab title="Update Contact">
+    **Problem:** Driver changed phone number **Solution:** 1. Get new number
+    from driver 2. Edit driver 3. Update phone field 4. Save **Result:** Current
+    contact information
+  </Tab>
+
+  <Tab title="Distinguish Duplicate">
+    **Problem:** Two drivers named "John Kamau" **Solution:** 1. Edit first
+    driver 2. Add identifier: "John Kamau (Senior)" 3. Save 4. Edit second
+    driver 5. Add different identifier: "John Kamau (Junior)" 6. Save
+    **Result:** Clear distinction in dropdowns
+  </Tab>
+</Tabs>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Verify Before Editing" icon="clipboard-check">
+    Confirm new information is correct before saving
+  </Card>
+
+  <Card title="Document Changes" icon="note-sticky">
+    Keep notes of significant edits (name changes) for HR records
+  </Card>
+
+  <Card title="Consistent Format" icon="equals">
+    Maintain same naming convention across all drivers
+  </Card>
+
+  <Card title="Inform Team" icon="users">
+    Let operations team know about driver name changes
+  </Card>
+</CardGroup>
+
+## Permission Requirements
+
+| Action       | Admin | Staff |
+| ------------ | ----- | ----- |
+| View Drivers | ✅    | ✅    |
+| Edit Name    | ✅    | ❌    |
+| Edit Phone   | ✅    | ❌    |
+
+<Note>Staff users will not see the Edit option in the driver menu.</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Edit button not appearing" icon="eye-slash">
+    **Cause:** Logged in as Staff, not Admin **Solution:** Request Admin to make
+    the edit or grant you Admin permissions
+  </Accordion>
+
+  <Accordion title="Changes not saving" icon="floppy-disk">
+    **Possible causes:** - Network connection issue - Form validation error -
+    Session timeout **Solutions:** 1. Check internet connection 2. Verify both
+    fields have content 3. Log out and log back in 4. Try again
+  </Accordion>
+
+  <Accordion title="Wrong driver edited" icon="triangle-exclamation">
+    **Problem:** Edited the wrong driver by mistake **Solution:** 1. Immediately
+    edit again 2. Change back to original values 3. Then edit the correct driver
+    **Prevention:** Always verify name before clicking Edit
+  </Accordion>
+
+  <Accordion
+    title="Name change not showing in old trips"
+    icon="clock-rotate-left"
+  >
+    **Not an issue:** This is by design **Explanation:** Historical trips
+    preserve original name for accuracy **Only affects:** New trips going
+    forward
+  </Accordion>
+</AccordionGroup>
+
+## Editing vs. Disabling vs. Deleting
+
+<Tabs>
+  <Tab title="Edit">
+    **When:** Information needs correction or update **Use for:** - Typos -
+    Phone number changes - Name clarifications **Result:** Driver stays active
+    with updated info
+  </Tab>
+
+  <Tab title="Disable">
+    **When:** Driver no longer working but history needed **Use for:** - Driver
+    resigned - Contract ended - Temporarily suspended **Result:** Removed from
+    dropdowns, history preserved See: [Disabling
+    Drivers](/features/drivers/disabling-drivers)
+  </Tab>
+
+  <Tab title="Delete">
+    **When:** Almost never! **Use for:** - Test driver with zero trips -
+    Duplicate by mistake **Result:** Complete removal (risky!)
+  </Tab>
+</Tabs>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Disabling Drivers"
+    icon="ban"
+    href="/features/drivers/disabling-drivers"
+  >
+    Learn when and how to disable drivers
+  </Card>
+  <Card title="Driver Overview" icon="book" href="/features/drivers/overview">
+    Understanding driver management
+  </Card>
+  <Card
+    title="Adding Drivers"
+    icon="user-plus"
+    href="/features/drivers/adding-driver"
+  >
+    How to add new drivers to your team
+  </Card>
+  <Card title="User Roles" icon="users-gear" href="/getting-started/user-roles">
+    Understand Admin vs Staff permissions
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble editing drivers:
+
+1. Verify your user role (Admin required)
+2. Check [Common Issues](/faq/common-issues)
+3. Review [User Roles](/getting-started/user-roles)
+4. [Contact Support](/faq/contact-support) for assistance

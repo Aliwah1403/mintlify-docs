@@ -1,0 +1,294 @@
+---
+title: Adding Drivers
+description: Add new drivers to your Travada system
+icon: "user-plus"
+---
+
+<Note>
+  🔒 **Admin Only** - Adding drivers requires Administrator permissions
+</Note>
+
+## Quick Start
+
+**To add a driver:**
+
+1. Navigate to **Drivers** → **Add/Manage Drivers**
+2. Click **Add Driver** button (top right)
+3. Fill in: Driver's Name, Phone Number
+4. Click **Add driver**
+
+<Info>
+  **New to Travada?** See [Adding Drivers (Getting
+  Started)](/getting-started/adding-drivers) for a beginner-friendly tutorial
+  with screenshots.
+</Info>
+
+## The Add Driver Form
+
+<img src="/images/add-driver-form.png" alt="Add Driver Form" />
+
+### Required Information
+
+<CardGroup cols={2}>
+  <Card title="Driver's Name" icon="signature">
+    Full legal name
+  </Card>
+  <Card title="Phone Number" icon="phone">
+    Contact number
+  </Card>
+</CardGroup>
+
+Both fields are required - the form won't submit without them.
+
+<Tip>**That's it!** Only 2 fields. Quick and simple.</Tip>
+
+## Driver Name Guidelines
+
+**Format recommendations:**
+
+- Use full legal name (not nicknames)
+- Proper capitalization: "John Kamau" not "john kamau"
+- Include middle name if needed: "John Michael Kamau"
+- Be consistent across all drivers
+
+**Handling duplicate names:**
+
+If you have multiple drivers with the same name:
+
+<Tabs>
+  <Tab title="Add Identifier">
+    **Examples:** - "John Kamau (Senior)" and "John Kamau (Junior)" - "John
+    Kamau - Morning" and "John Kamau - Evening" - "John K. 001" and "John K.
+    002"
+  </Tab>
+
+  <Tab title="Add Vehicle Assignment">
+    **If drivers have dedicated vehicles:** - "John Kamau (KBE 127H)" - "John
+    Kamau (KDA 631Q)" **Benefit:** Immediate identification during trip entry
+  </Tab>
+
+  <Tab title="Add Role/Type">
+    **If different roles:** - "John Kamau (Long Haul)" - "John Kamau (Local)" -
+    "John Kamau (Supervisor)"
+  </Tab>
+</Tabs>
+
+<Warning>
+  **Phone numbers help distinguish:** Even with same names, different phone
+  numbers identify unique drivers
+</Warning>
+
+## Phone Number Guidelines
+
+**Format options:**
+
+- Local format: 0712345678
+- International: +254712345678
+- With spaces: 0712 345 678
+
+**All formats accepted** - system stores as entered
+
+**Best practices:**
+
+- Use format your team is familiar with
+- Be consistent across all drivers
+- Verify number before saving
+
+<Info>
+  Phone numbers are for contact reference only - no verification SMS is sent.
+</Info>
+
+### Common Phone Number Scenarios
+
+<AccordionGroup>
+  <Accordion title="Driver has no phone" icon="phone-slash">
+    **Options:** 1. Enter company phone number 2. Enter supervisor's number 3.
+    Enter placeholder: 0000000000 (not recommended) **Best:** Use company or
+    supervisor number for contact
+  </Accordion>
+
+  <Accordion title="Driver changed number" icon="phone-arrow-up-right">
+    **Solution:** Edit the driver after adding See [Editing
+    Drivers](/features/drivers/editing-driver)
+  </Accordion>
+
+  <Accordion title="Multiple drivers share phone" icon="phone">
+    **Scenario:** Family members or partners share one phone **Solution:** - Use
+    same number for both - Differentiate by name - Add note in name field: "John
+    (0712...)" "Jane (0712...)"
+  </Accordion>
+</AccordionGroup>
+
+## After Adding a Driver
+
+Once you click **Add driver**:
+
+<Steps>
+  <Step title="Success Confirmation">
+    You'll see a success message The form closes automatically
+  </Step>
+
+  <Step title="Driver Appears in List">
+    New driver shows in the drivers table Sorted alphabetically by name
+  </Step>
+
+  <Step title="Available for Trips">
+    Driver immediately appears in trip recording dropdowns Staff can now assign
+    trips to this driver
+  </Step>
+
+  <Step title="Activity Tracking Begins">
+    System starts tracking: - Trip count - Last trip date - Vehicle assignments
+  </Step>
+</Steps>
+
+## Adding Multiple Drivers
+
+For bulk driver entry:
+
+<Tabs>
+  <Tab title="One-by-One (Best for 1-10)">
+    **Process:** 1. Click **Add Driver** 2. Fill form 3. Click **Add driver** 4.
+    Form resets automatically 5. Repeat for next driver **Tips:** - Keep driver
+    list/roster ready - Use Tab key to navigate fields - Verify each entry
+    before submitting
+  </Tab>
+
+  <Tab title="Prepared List (Best for 10+)">
+    **Preparation:** 1. Create spreadsheet with: - Driver names - Phone numbers
+    2. Keep spreadsheet open while entering **Execution:** 1. Click **Add
+    Driver** 2. Copy name and number from spreadsheet 3. Submit 4. Repeat
+    quickly **Advantage:** Faster, fewer errors
+  </Tab>
+</Tabs>
+
+### Sample Spreadsheet Template
+
+```
+Driver Name          | Phone Number
+---------------------|-------------
+John Kamau           | 0765843567
+Jane Wanjiru         | 0708492343
+Peter Omondi         | 0722334455
+Sarah Njeri          | 0733221144
+```
+
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="Add Driver button missing" icon="ban">
+    **Cause:** You're logged in as Staff, not Admin **Solution:** Contact your
+    administrator to: - Add the driver for you - Or grant you Admin permissions
+  </Accordion>
+
+  <Accordion title="Form won't submit" icon="circle-exclamation">
+    **Causes:** - Missing name or phone number - Invalid phone format (unlikely
+    - most formats accepted) - Network connection issue **Solutions:** 1. Check
+    both fields are filled 2. Try different phone format 3. Refresh page and try
+    again
+  </Accordion>
+
+  <Accordion title="New driver not in trip dropdown" icon="eye-slash">
+    **Cause:** Page hasn't refreshed **Solutions:** 1. Refresh browser (F5 or
+    Cmd+R) 2. Navigate away and back to Expenditure 3. Log out and log back in
+    Driver should now appear
+  </Accordion>
+
+  <Accordion title="Duplicate name warning?" icon="clone">
+    **Actually:** No warning is shown **System allows duplicate names** (common
+    in real operations) **Solution:** Differentiate in name field or rely on
+    phone numbers
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Add All Active Drivers Upfront" icon="layer-group">
+    Add your entire team at once to avoid interruptions
+  </Card>
+
+  <Card title="Use Full Legal Names" icon="id-card">
+    Helps with official documentation and clarity
+  </Card>
+
+  <Card title="Verify Phone Numbers" icon="phone-check">
+    Double-check for future contact needs
+  </Card>
+
+  <Card title="Differentiate Similar Names" icon="users">
+    Add identifiers for drivers with same names
+  </Card>
+</CardGroup>
+
+## Driver Information Tips
+
+<Tabs>
+  <Tab title="Name Consistency">
+    **Do:** - "John Kamau" (consistent capitalization) - "Jane Wanjiru Mwangi"
+    (full name) **Don't:** - "john kamau" (lowercase) - "JOHN KAMAU" (all caps)
+    - "JK" (initials only)
+  </Tab>
+
+  <Tab title="Contact Reliability">
+    **Ensure:** - Number is current - Driver or contact person has this number -
+    Number works for calls/SMS **Why?** Future communication or emergencies
+  </Tab>
+
+  <Tab title="Record Keeping">
+    **Good practice:** - Keep separate roster with additional info - License
+    numbers - Emergency contacts - Employment dates **Travada is for:** Trip
+    assignment only
+  </Tab>
+</Tabs>
+
+## Integration After Adding
+
+Once drivers are added, they're used in:
+
+- **Trip Recording** - Available in driver dropdowns
+- **Trip History** - Assignments tracked
+- **Reports** - Driver names included in trip documentation
+- **Performance Review** - Manual analysis of driver activity
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Record Your First Trip"
+    icon="route"
+    href="/getting-started/recording-first-trip"
+  >
+    Start assigning trips to your drivers
+  </Card>
+  <Card
+    title="Edit Driver Details"
+    icon="pen-to-square"
+    href="/features/drivers/editing-driver"
+  >
+    Update names or phone numbers if needed
+  </Card>
+  <Card
+    title="Disable Drivers"
+    icon="toggle-off"
+    href="/features/drivers/disabling-drivers"
+  >
+    Learn to manage inactive drivers
+  </Card>
+  <Card
+    title="Driver Management Overview"
+    icon="book"
+    href="/features/drivers/overview"
+  >
+    Understanding the driver management system
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble adding drivers:
+
+1. Check [User Roles](/getting-started/user-roles) to verify permissions
+2. Review [Common Issues](/faq/common-issues)
+3. See [Getting Started: Adding Drivers](/getting-started/adding-drivers) for detailed tutorial
+4. [Contact Support](/faq/contact-support) for assistance

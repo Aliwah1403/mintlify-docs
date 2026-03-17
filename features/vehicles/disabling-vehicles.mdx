@@ -4,122 +4,74 @@ description: Manage inactive vehicles without losing historical data
 icon: "ban"
 ---
 
-<Note>
-  🔒 **Admin Only** - Disabling and enabling vehicles requires Administrator permissions
-</Note>
-
 ## Overview
 
 Disabling vehicles is how you remove them from active use in Travada while preserving all historical data. This is the recommended approach when vehicles are sold, contracts end, or vehicles go out of service.
 
-<img src="/images/disabled-vehicles-page.png" alt="Disabled Vehicles Page" />
+<img src='/images/disabled-vehicles-page.png' alt='Disabled Vehicles Page' />
 
 ## Disable vs. Delete
 
 Understanding the critical difference:
 
 <Tabs>
-  <Tab title="✅ Disable (Recommended)">
-    **What happens:**
-    - Vehicle removed from trip dropdowns
-    - All historical data preserved
-    - Can be re-enabled later
-    - Still appears in historical reports
-    - Performance data intact
-    
-    **Use when:**
-    - Vehicle sold
-    - Contract ended (hired vehicles)
-    - Long-term repairs
-    - Seasonal inactive period
-    - Any time vehicle won't be used for trips
+  <Tab title='✅ Disable (Recommended)'>
+    **What happens:** - Vehicle removed from trip dropdowns - All historical
+    data preserved - Can be re-enabled later - Still appears in historical
+    reports - Performance data intact **Use when:** - Vehicle sold - Contract
+    ended (hired vehicles) - Long-term repairs - Seasonal inactive period - Any
+    time vehicle won't be used for trips
   </Tab>
-  
-  <Tab title="❌ Delete (Not Recommended)">
-    **What happens:**
-    - Vehicle completely removed
-    - All trip history lost
-    - Income/expense data orphaned
-    - Reports may break
-    - Cannot be undone
-    
-    **Use when:**
-    - Almost never!
-    - Only for test vehicles with no trip data
-    - Only for duplicate entries never used
+
+  <Tab title='❌ Delete (Not Recommended)'>
+    **What happens:** - Vehicle completely removed - All trip history lost -
+    Income/expense data orphaned - Reports may break - Cannot be undone **Use
+    when:** - Almost never! - Only for test vehicles with no trip data - Only
+    for duplicate entries never used
   </Tab>
 </Tabs>
 
 <Warning>
-  **Always Disable, Never Delete!** Deleting vehicles destroys historical data and can corrupt your financial records. Disable instead.
+  **Always Disable, Never Delete!** Deleting vehicles destroys historical data
+  and can corrupt your financial records. Disable instead.
 </Warning>
 
 ## When to Disable Vehicles
 
 <AccordionGroup>
-  <Accordion title="Vehicle Sold" icon="handshake">
-    **Scenario:** Sold one of your owned vehicles
-    
-    **Action:** Disable immediately after sale
-    
-    **Reason:** 
-    - No longer available for trips
-    - Historical data needed for accounting
-    - May need for tax purposes
-    
-    **Note:** Keep disabled until end of financial year, then review
+  <Accordion title='Vehicle Sold' icon='handshake'>
+    **Scenario:** Sold one of your owned vehicles **Action:** Disable
+    immediately after sale **Reason:** - No longer available for trips -
+    Historical data needed for accounting - May need for tax purposes **Note:**
+    Keep disabled until end of financial year, then review
   </Accordion>
-  
-  <Accordion title="Hire Contract Ended" icon="file-contract">
-    **Scenario:** Lease/rental period finished
-    
-    **Action:** Disable when contract expires
-    
-    **Reason:**
-    - Vehicle returned to owner
-    - Historical trip data needed for billing verification
-    - Contract performance review
-    
-    **Tip:** Set calendar reminder for contract end dates
-  </Accordion>
-  
-  <Accordion title="Major Repairs/Overhaul" icon="wrench">
-    **Scenario:** Vehicle in workshop for extended period
-    
-    **Action:** Disable while under repair
-    
-    **Reason:**
-    - Prevents accidental trip assignment
-    - Clearly shows vehicle unavailable
-    - Can re-enable when repairs complete
-    
-    **Timeline:** 2+ weeks out of service
-  </Accordion>
-  
-  <Accordion title="Seasonal Operations" icon="calendar">
-    **Scenario:** Vehicle only used certain times of year
-    
-    **Action:** Disable during off-season
-    
-    **Reason:**
-    - Cleaner active vehicle list
-    - Focuses team on operational fleet
-    - Easy to re-enable when needed
-    
-    **Example:** School vans disabled during holidays
-  </Accordion>
-  
-  <Accordion title="Permanent Retirement" icon="trash">
-    **Scenario:** Vehicle scrapped or permanently retired
-    
-    **Action:** Disable permanently
-    
-    **Reason:**
-    - Historical data preserved
-    - Financial records complete
-    - Fleet history maintained
-    
-    **Note:** Will never re-enable, but keep in system
+
+<Accordion title='Hire Contract Ended' icon='file-contract'>
+  **Scenario:** Lease/rental period finished **Action:** Disable when contract
+  expires **Reason:** - Vehicle returned to owner - Historical trip data needed
+  for billing verification - Contract performance review **Tip:** Set calendar
+  reminder for contract end dates
+</Accordion>
+
+<Accordion title='Major Repairs/Overhaul' icon='wrench'>
+  **Scenario:** Vehicle in workshop for extended period **Action:** Disable
+  while under repair **Reason:** - Prevents accidental trip assignment - Clearly
+  shows vehicle unavailable - Can re-enable when repairs complete **Timeline:**
+  2+ weeks out of service
+</Accordion>
+
+<Accordion title='Seasonal Operations' icon='calendar'>
+  **Scenario:** Vehicle only used certain times of year **Action:** Disable
+  during off-season **Reason:** - Cleaner active vehicle list - Focuses team on
+  operational fleet - Easy to re-enable when needed **Example:** School vans
+  disabled during holidays
+</Accordion>
+
+  <Accordion title='Permanent Retirement' icon='trash'>
+    **Scenario:** Vehicle scrapped or permanently retired **Action:** Disable
+    permanently **Reason:** - Historical data preserved - Financial records
+    complete - Fleet history maintained **Note:** Will never re-enable, but keep
+    in system
   </Accordion>
 </AccordionGroup>
 
@@ -128,36 +80,32 @@ Understanding the critical difference:
 ### Single Vehicle
 
 <Steps>
-  <Step title="Navigate to Disabled Vehicles">
+  <Step title='Navigate to Disabled Vehicles'>
     Click **Vehicles** → **Disabled Vehicles** in sidebar
-    
-    <img src="/images/disabled-vehicles-nav.png" alt="Disabled Vehicles Navigation" />
+    <img
+      src='/images/disabled-vehicles-nav.png'
+      alt='Disabled Vehicles Navigation'
+    />
   </Step>
-  
-  <Step title="Click Disable Vehicle Button">
-    Click **+ Disable Vehicle** button (top right)
-    
-    <img src="/images/disable-vehicle-button.png" alt="Disable Vehicle Button" />
-  </Step>
-  
-  <Step title="Select Vehicle">
-    A dialog opens with checkboxes for all active vehicles
-    
-    Check the box next to the vehicle(s) you want to disable
-    
-    <img src="/images/disable-vehicle-dialog.png" alt="Disable Vehicle Dialog" />
-  </Step>
-  
-  <Step title="Confirm Disable">
-    Click **Disable** or **Confirm**
-    
-    Success message appears
-  </Step>
-  
-  <Step title="Verify">
-    - Vehicle disappears from Add/Manage Vehicles list
-    - Vehicle appears in Disabled Vehicles list
-    - No longer in trip dropdown menus
+
+<Step title='Click Disable Vehicle Button'>
+  Click **+ Disable Vehicle** button (top right)
+  <img src='/images/disable-vehicle-button.png' alt='Disable Vehicle Button' />
+</Step>
+
+<Step title='Select Vehicle'>
+  A dialog opens with checkboxes for all active vehicles Check the box next to
+  the vehicle(s) you want to disable
+  <img src='/images/disable-vehicle-dialog.png' alt='Disable Vehicle Dialog' />
+</Step>
+
+<Step title='Confirm Disable'>
+  Click **Disable** or **Confirm** Success message appears
+</Step>
+
+  <Step title='Verify'>
+    - Vehicle disappears from Add/Manage Vehicles list - Vehicle appears in
+    Disabled Vehicles list - No longer in trip dropdown menus
   </Step>
 </Steps>
 
@@ -166,28 +114,24 @@ Understanding the critical difference:
 You can disable several vehicles at once:
 
 <Steps>
-  <Step title="Open Disable Dialog">
+  <Step title='Open Disable Dialog'>
     Navigate to Disabled Vehicles → Click **+ Disable Vehicle**
   </Step>
-  
-  <Step title="Select Multiple">
-    Check boxes for all vehicles you want to disable
-    
-    **Use cases:**
-    - All vehicles from ended contract
-    - Entire category (e.g., all school vans for summer)
-    - Multiple sold vehicles
-  </Step>
-  
-  <Step title="Confirm">
-    Click **Disable**
-    
-    All selected vehicles disabled at once
+
+<Step title='Select Multiple'>
+  Check boxes for all vehicles you want to disable **Use cases:** - All vehicles
+  from ended contract - Entire category (e.g., all school vans for summer) -
+  Multiple sold vehicles
+</Step>
+
+  <Step title='Confirm'>
+    Click **Disable** All selected vehicles disabled at once
   </Step>
 </Steps>
 
 <Tip>
-  **Batch Disabling:** If ending a contract with multiple hired vehicles, disable them all together for efficiency.
+  **Batch Disabling:** If ending a contract with multiple hired vehicles,
+  disable them all together for efficiency.
 </Tip>
 
 ## What Happens When You Disable
@@ -195,23 +139,27 @@ You can disable several vehicles at once:
 Immediate effects:
 
 ✅ **Removed from:**
+
 - Trip recording dropdowns
 - Active vehicle lists
 - Future trip assignments
 
 ✅ **Preserved in:**
+
 - Historical trip data
 - Dashboard analytics (historical)
 - Generated reports
 - Expense and income records
 
 ✅ **Visible in:**
+
 - Disabled Vehicles page
 - Historical performance data
 - Past period reports
 
 <Info>
-  Disabled vehicles are like "archived" - they exist in the system but are marked as inactive.
+  Disabled vehicles are like "archived" - they exist in the system but are
+  marked as inactive.
 </Info>
 
 ## Re-enabling Vehicles
@@ -219,67 +167,47 @@ Immediate effects:
 If you need to bring a vehicle back into service:
 
 <Steps>
-  <Step title="Go to Disabled Vehicles">
+  <Step title='Go to Disabled Vehicles'>
     Navigate to **Vehicles** → **Disabled Vehicles**
   </Step>
-  
-  <Step title="Find the Vehicle">
-    Locate the disabled vehicle in the list
-  </Step>
-  
-  <Step title="Click Enable">
-    Click the **Enable** button on the vehicle card
-    
-    <img src="/images/enable-vehicle-button.png" alt="Enable Vehicle Button" />
-    
-    Or click **⋮** → **Enable** from menu
-  </Step>
-  
-  <Step title="Confirm">
-    Confirm you want to re-enable
-  </Step>
-  
-  <Step title="Verify">
-    - Vehicle moves back to Add/Manage Vehicles list
-    - Disappears from Disabled Vehicles
-    - Available in trip dropdowns again
-    - All historical data intact
+
+<Step title='Find the Vehicle'>Locate the disabled vehicle in the list</Step>
+
+<Step title='Click Enable'>
+  Click the **Enable** button on the vehicle card
+  <img src='/images/enable-vehicle-button.png' alt='Enable Vehicle Button' />
+  Or click **⋮** → **Enable** from menu
+</Step>
+
+<Step title='Confirm'>Confirm you want to re-enable</Step>
+
+  <Step title='Verify'>
+    - Vehicle moves back to Add/Manage Vehicles list - Disappears from Disabled
+    Vehicles - Available in trip dropdowns again - All historical data intact
   </Step>
 </Steps>
 
 ### When to Re-enable
 
 <Tabs>
-  <Tab title="Repairs Complete">
-    **Scenario:** Vehicle returned from workshop
-    
-    **Action:** Re-enable to resume operations
-    
-    **Verify:** Test drive completed, roadworthy
+  <Tab title='Repairs Complete'>
+    **Scenario:** Vehicle returned from workshop **Action:** Re-enable to resume
+    operations **Verify:** Test drive completed, roadworthy
   </Tab>
-  
-  <Tab title="Season Starts">
-    **Scenario:** School year begins, tours resume
-    
-    **Action:** Re-enable seasonal vehicles
-    
-    **Verify:** Maintenance up-to-date, ready for service
-  </Tab>
-  
-  <Tab title="Contract Renewed">
-    **Scenario:** Hire contract extended
-    
-    **Action:** Re-enable previously disabled hired vehicle
-    
-    **Update:** Verify ownership status still correct
-  </Tab>
-  
-  <Tab title="Error Correction">
-    **Scenario:** Disabled wrong vehicle by mistake
-    
-    **Action:** Immediately re-enable
-    
-    **Note:** Check trips weren't assigned to wrong vehicle meanwhile
+
+<Tab title='Season Starts'>
+  **Scenario:** School year begins, tours resume **Action:** Re-enable seasonal
+  vehicles **Verify:** Maintenance up-to-date, ready for service
+</Tab>
+
+<Tab title='Contract Renewed'>
+  **Scenario:** Hire contract extended **Action:** Re-enable previously disabled
+  hired vehicle **Update:** Verify ownership status still correct
+</Tab>
+
+  <Tab title='Error Correction'>
+    **Scenario:** Disabled wrong vehicle by mistake **Action:** Immediately
+    re-enable **Note:** Check trips weren't assigned to wrong vehicle meanwhile
   </Tab>
 </Tabs>
 
@@ -287,9 +215,10 @@ If you need to bring a vehicle back into service:
 
 The Disabled Vehicles page shows:
 
-<img src="/images/disabled-vehicles-list.png" alt="Disabled Vehicles List" />
+<img src='/images/disabled-vehicles-list.png' alt='Disabled Vehicles List' />
 
 **Information displayed:**
+
 - Registration number
 - Vehicle type
 - Ownership status
@@ -300,6 +229,7 @@ The Disabled Vehicles page shows:
 ### Filter and Search
 
 If you have many disabled vehicles:
+
 - Search by registration
 - Filter by vehicle type
 - Filter by ownership
@@ -307,17 +237,16 @@ If you have many disabled vehicles:
 
 ## Deleting Disabled Vehicles
 
-<Warning>
-  **Danger Zone:** Deleting is permanent and destroys all data!
-</Warning>
+<Warning>**Danger Zone:** Deleting is permanent and destroys all data!</Warning>
 
-You *can* delete vehicles from the Disabled Vehicles page, but **only do this if:**
+You _can_ delete vehicles from the Disabled Vehicles page, but **only do this if:**
 
 ✅ Test vehicle with zero trips  
 ✅ Duplicate entry never used  
 ✅ Created by mistake with no data
 
 ❌ **Never delete if:**
+
 - Has any trip history
 - Has income or expense records
 - Appeared in any reports
@@ -326,49 +255,42 @@ You *can* delete vehicles from the Disabled Vehicles page, but **only do this if
 ### How to Delete (Use with Caution)
 
 <Steps>
-  <Step title="Go to Disabled Vehicles">
+  <Step title='Go to Disabled Vehicles'>
     Ensure vehicle is already disabled
   </Step>
-  
-  <Step title="Verify No Trip Data">
-    Check that trip count is zero
-    
-    Confirm no historical data exists
-  </Step>
-  
-  <Step title="Click Delete">
-    Click **⋮** → **Delete** on the vehicle
-  </Step>
-  
-  <Step title="Confirm Multiple Times">
-    Read warnings carefully
-    
-    Confirm you understand data will be lost
-  </Step>
-  
-  <Step title="Final Confirmation">
-    Type vehicle registration if prompted
-    
-    Click final delete button
+
+<Step title='Verify No Trip Data'>
+  Check that trip count is zero Confirm no historical data exists
+</Step>
+
+<Step title='Click Delete'>Click **⋮** → **Delete** on the vehicle</Step>
+
+<Step title='Confirm Multiple Times'>
+  Read warnings carefully Confirm you understand data will be lost
+</Step>
+
+  <Step title='Final Confirmation'>
+    Type vehicle registration if prompted Click final delete button
   </Step>
 </Steps>
 
 ## Best Practices
 
 <CardGroup cols={2}>
-  <Card title="Disable, Don't Delete" icon="ban">
+  <Card title="Disable, Don't Delete" icon='ban'>
     Always disable vehicles unless absolutely certain no data exists
   </Card>
-  
-  <Card title="Document Reasons" icon="note-sticky">
-    Keep external notes on why vehicles were disabled and when
-  </Card>
-  
-  <Card title="Review Periodically" icon="calendar-check">
-    Quarterly review of disabled vehicles - any to permanently delete or re-enable?
-  </Card>
-  
-  <Card title="Set Reminders" icon="bell">
+
+<Card title='Document Reasons' icon='note-sticky'>
+  Keep external notes on why vehicles were disabled and when
+</Card>
+
+<Card title='Review Periodically' icon='calendar-check'>
+  Quarterly review of disabled vehicles - any to permanently delete or
+  re-enable?
+</Card>
+
+  <Card title='Set Reminders' icon='bell'>
     For seasonal vehicles, set calendar reminders to re-enable
   </Card>
 </CardGroup>
@@ -376,30 +298,20 @@ You *can* delete vehicles from the Disabled Vehicles page, but **only do this if
 ## Impact on Reports
 
 <Tabs>
-  <Tab title="Historical Reports">
-    **Existing reports:**
-    - Remain unchanged
-    - Still show disabled vehicle data
-    - Static snapshots preserved
-    
-    **Why?** Reports are historical records
+  <Tab title='Historical Reports'>
+    **Existing reports:** - Remain unchanged - Still show disabled vehicle data
+    - Static snapshots preserved **Why?** Reports are historical records
   </Tab>
-  
-  <Tab title="New Reports">
-    **Future reports:**
-    - Can still include disabled vehicle's historical data
-    - If filtering by date, disabled vehicle trips appear
-    - Performance data available
-    
-    **Why?** Historical data is preserved
-  </Tab>
-  
-  <Tab title="Dashboard">
-    **Current metrics:**
-    - Active period may exclude disabled vehicle
-    - Historical periods include it
-    - Vehicle Performance shows it as "inactive"
-    
+
+<Tab title='New Reports'>
+  **Future reports:** - Can still include disabled vehicle's historical data -
+  If filtering by date, disabled vehicle trips appear - Performance data
+  available **Why?** Historical data is preserved
+</Tab>
+
+  <Tab title='Dashboard'>
+    **Current metrics:** - Active period may exclude disabled vehicle -
+    Historical periods include it - Vehicle Performance shows it as "inactive"
     **Depends on:** Date filters applied
   </Tab>
 </Tabs>
@@ -407,60 +319,55 @@ You *can* delete vehicles from the Disabled Vehicles page, but **only do this if
 ## Common Questions
 
 <AccordionGroup>
-  <Accordion title="Can I disable multiple vehicles at once?" icon="layer-group">
-    **Answer:** Yes!
-    
-    In the Disable Vehicle dialog, check multiple boxes and confirm once.
+  <Accordion
+    title='Can I disable multiple vehicles at once?'
+    icon='layer-group'
+  >
+    **Answer:** Yes! In the Disable Vehicle dialog, check multiple boxes and
+    confirm once.
   </Accordion>
-  
-  <Accordion title="What happens to trips already assigned to disabled vehicle?" icon="route">
-    **Answer:** Nothing - they remain intact
-    
-    Historical trips are preserved exactly as recorded
-  </Accordion>
-  
-  <Accordion title="Can Staff disable vehicles?" icon="user">
-    **Answer:** No, Admin only
-    
-    Staff can request Admin to disable vehicles as needed
-  </Accordion>
-  
-  <Accordion title="How long should I keep disabled vehicles?" icon="clock">
-    **Recommendation:** 
-    - Minimum: 1 full financial year
-    - Better: 3-5 years
-    - Best: Indefinitely (they take minimal space)
-    
-    **Why?** Tax audits, legal requirements, historical analysis
+
+<Accordion
+  title='What happens to trips already assigned to disabled vehicle?'
+  icon='route'
+>
+  **Answer:** Nothing - they remain intact Historical trips are preserved
+  exactly as recorded
+</Accordion>
+
+<Accordion title='Can Staff disable vehicles?' icon='user'>
+  **Answer:** No, Admin only Staff can request Admin to disable vehicles as
+  needed
+</Accordion>
+
+  <Accordion title='How long should I keep disabled vehicles?' icon='clock'>
+    **Recommendation:** - Minimum: 1 full financial year - Better: 3-5 years -
+    Best: Indefinitely (they take minimal space) **Why?** Tax audits, legal
+    requirements, historical analysis
   </Accordion>
 </AccordionGroup>
 
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="Can't find disabled vehicle" icon="magnifying-glass">
-    **Check:**
-    1. Are you in Disabled Vehicles page (not Add/Manage)?
-    2. Use search function
-    3. Clear any filters
-    
-    **If not found:** May not be disabled after all - check Add/Manage Vehicles
+  <Accordion title="Can't find disabled vehicle" icon='magnifying-glass'>
+    **Check:** 1. Are you in Disabled Vehicles page (not Add/Manage)? 2. Use
+    search function 3. Clear any filters **If not found:** May not be disabled
+    after all - check Add/Manage Vehicles
   </Accordion>
-  
-  <Accordion title="Disable button not appearing" icon="ban">
-    **Cause:** Logged in as Staff, not Admin
-    
-    **Solution:** Request Admin to disable the vehicle
-  </Accordion>
-  
-  <Accordion title="Accidentally disabled wrong vehicle" icon="triangle-exclamation">
-    **Solution:** Immediately re-enable it
-    
-    1. Click **Enable** on the vehicle
-    2. Confirm
-    3. Vehicle returns to active status
-    
-    **Impact:** Minimal if caught quickly
+
+<Accordion title='Disable button not appearing' icon='ban'>
+  **Cause:** Logged in as Staff, not Admin **Solution:** Request Admin to
+  disable the vehicle
+</Accordion>
+
+  <Accordion
+    title='Accidentally disabled wrong vehicle'
+    icon='triangle-exclamation'
+  >
+    **Solution:** Immediately re-enable it 1. Click **Enable** on the vehicle 2.
+    Confirm 3. Vehicle returns to active status **Impact:** Minimal if caught
+    quickly
   </Accordion>
 </AccordionGroup>
 
@@ -468,31 +375,27 @@ You *can* delete vehicles from the Disabled Vehicles page, but **only do this if
 
 <CardGroup cols={2}>
   <Card
-    title="Vehicle Types"
-    icon="truck"
-    href="/features/vehicles/vehicle-types"
+    title='Vehicle Types'
+    icon='truck'
+    href='/features/vehicles/vehicle-types'
   >
     Understand all vehicle categories
   </Card>
   <Card
-    title="Editing Vehicles"
-    icon="pen-to-square"
-    href="/features/vehicles/editing-vehicle"
+    title='Editing Vehicles'
+    icon='pen-to-square'
+    href='/features/vehicles/editing-vehicle'
   >
     Update vehicle type and ownership
   </Card>
   <Card
-    title="Vehicle Performance"
-    icon="chart-line"
-    href="/guides/vehicle-performance-analysis"
+    title='Vehicle Performance'
+    icon='chart-line'
+    href='/guides/vehicle-performance-analysis'
   >
     Analyze profitability by vehicle
   </Card>
-  <Card
-    title="User Roles"
-    icon="users-gear"
-    href="/getting-started/user-roles"
-  >
+  <Card title='User Roles' icon='users-gear' href='/getting-started/user-roles'>
     Understand Admin permissions
   </Card>
 </CardGroup>
