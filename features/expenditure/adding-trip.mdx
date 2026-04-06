@@ -1,4 +1,313 @@
 ---
-title: 'Adding Trip'
+title: Adding a Trip
+description: Step-by-step guide to recording trip expenditure
+icon: "plus"
 ---
 
+## Overview
+
+Adding a trip in Travada is how you record completed journeys along with their income and expenses. This page covers the mechanics of the trip entry form and advanced tips for efficient data entry.
+
+<Note>
+  **New to Travada?** Start with [Recording Your First
+  Trip](/getting-started/recording-first-trip) for a beginner-friendly
+  walkthrough. This page provides more advanced details.
+</Note>
+
+## Quick Access
+
+**To add a trip:**
+
+1. Click **Expenditure** in the sidebar
+2. Click **+ New Trip** button (top right)
+3. Fill in the two-page form
+4. Click **Submit**
+
+<img src="/images/new-trip-button-location.png" alt="New Trip Button" />
+
+## The Two-Page Form
+
+### Page 1: Trip Identification
+
+**Required fields:**
+
+<CardGroup cols={2}>
+  <Card title="Trip Date" icon="calendar">
+    When the trip occurred (defaults to today)
+  </Card>
+  <Card title="Vehicle Registration" icon="truck">
+    Which vehicle made the trip
+  </Card>
+  <Card title="Driver" icon="id-card">
+    Who drove the vehicle
+  </Card>
+  <Card title="Destination" icon="location-dot">
+    Where the trip ended
+  </Card>
+</CardGroup>
+
+**Important:** All four fields must be completed before you can proceed to Page 2.
+
+<Warning>
+  **Cannot be changed after submission:** - Vehicle Registration - Driver - Trip
+  Date (in current version) Double-check these before clicking Next!
+</Warning>
+
+### Page 2: Financial Details
+
+**Income section:**
+
+- **Rate** - Base trip charge
+- **Detention Fee** - Container delay charges (optional)
+
+**Expenses section:**
+
+- **Fuel Cost** - Diesel/petrol expenses
+- **Clerk Fee** - Depot clerk payments
+- **Milage Fee** - Driver allowances
+- **Parking Cost** - Parking charges
+- **Repair Cost** - Vehicle maintenance
+- **Extra Cost** - Miscellaneous expenses
+
+<Info>
+  **You don't need to fill every field!** Only enter the expenses that actually
+  occurred. Empty fields default to KES 0.
+</Info>
+
+## Field-by-Field Guide
+
+<AccordionGroup>
+  <Accordion title="Trip Date" icon="calendar">
+    **Purpose:** Record when the trip happened **How to use:** - Click the date
+    field - Calendar picker opens - Select the trip date - Or use arrow keys to
+    navigate **Tips:** - Can record past trips (backfilling data) - Cannot
+    record future trips - Default is today's date **Common issue:** Recording
+    wrong date **Solution:** Verify the date before clicking Next
+  </Accordion>
+
+  <Accordion title="Vehicle Registration" icon="truck">
+    **Purpose:** Identify which vehicle made the trip **How to use:** - Click
+    the dropdown - Scroll or type to search - Select the correct vehicle
+    **Tips:** - Vehicles are listed alphabetically - Type first few characters
+    to jump to vehicle - Only active (non-disabled) vehicles appear **Common
+    issue:** Selecting wrong vehicle **Solution:** Look carefully at
+    registration numbers - some are similar
+  </Accordion>
+
+  <Accordion title="Driver" icon="id-card">
+    **Purpose:** Record who operated the vehicle **How to use:** - Click the
+    dropdown - Select the driver's name - Phone numbers shown for verification
+    **Tips:** - If multiple drivers have similar names, check phone number -
+    Only active (non-disabled) drivers appear - If driver isn't listed, they
+    need to be added first **Common issue:** Driver not in list **Solution:**
+    Ask Admin to add the driver in Driver Management
+  </Accordion>
+
+  <Accordion title="Destination" icon="location-dot">
+    **Purpose:** Record the final delivery point **How to use:** - Type the
+    destination name - Use consistent naming **Best practices:** - Always use
+    UPPERCASE: "JAVA CBD" - Be consistent: "GM" not "General Motors" - Use
+    abbreviations your team understands - For similar destinations,
+    differentiate: "JAVA CBD" vs "JAVA DIASPORA" **Examples:** - ARTCAFFE KISUMU
+    - JAVA CBD - PORTS - GM - SITE LOC - CMC
+  </Accordion>
+
+  <Accordion title="Rate" icon="money-bill">
+    **Purpose:** Base charge for the trip (income) **How to use:** - Enter
+    amount in KES - Do not include commas - Example: 15000 (not 15,000)
+    **Tips:** - This is what you invoice the client - Most trips have a rate fee
+    - Verify against rate agreement or invoice **Common issue:** Decimal point
+    errors **Solution:** KES 15,000 should be entered as 15000, not 15.000
+  </Accordion>
+
+  <Accordion title="Detention Fee" icon="clock">
+    **Purpose:** Charges for container delays **How to use:** - Enter amount if
+    applicable - Leave blank if not applicable **When to use:** -
+    Trailer/container trucks only - When truck waited due to unpaid charges -
+    Client agreed to pay detention **When to skip:** - Non-container trips - No
+    delays occurred - Detention not billable
+  </Accordion>
+
+  <Accordion title="Fuel Cost" icon="gas-pump">
+    **Purpose:** Record fuel expenses **How to use:** - Enter actual amount paid
+    - Get amount from fuel receipt **Important:** - Enter FULL amount paid - If
+    you got a fuel discount, still enter full amount - Apply discount separately
+    using fuel discount feature **Why?** This ensures accurate cost tracking and
+    discount calculations.
+  </Accordion>
+
+  <Accordion title="Clerk Fee" icon="user-tie">
+    **Purpose:** Payments to depot clerks **When to use:** - Container
+    pickups/deliveries - Port operations - Depot clearances **Typical amounts:**
+    KES 500 - 5,000 **Leave blank if:** No clerk fees were required
+  </Accordion>
+
+  <Accordion title="Milage Fee" icon="route">
+    **Purpose:** Driver allowances for distance **When to use:** - Long-distance
+    trips - Per company policy - Usually for trips beyond certain km **Typical
+    amounts:** KES 1,000 - 5,000 **Leave blank if:** Trip doesn't qualify for
+    mileage allowance
+  </Accordion>
+
+  <Accordion title="Parking Cost" icon="square-parking">
+    **Purpose:** Parking charges **Includes:** - Public parking lots - Mall
+    parking - Loading bay fees - Overnight parking **Typical amounts:** KES 200
+    - 1,000 **Leave blank if:** No parking was paid
+  </Accordion>
+
+  <Accordion title="Repair Cost" icon="wrench">
+    **Purpose:** Emergency repairs or maintenance **Includes:** - Tire
+    replacement - Emergency mechanic - Breakdown assistance - Parts replacement
+    **Typical amounts:** KES 1,000 - 50,000+ **Important:** Save repair receipts
+    and link to this trip
+  </Accordion>
+
+  <Accordion title="Extra Cost" icon="receipt">
+    **Purpose:** Any other miscellaneous costs **Examples:** - Car wash (KES
+    300-500) - Traffic fines - Toll fees - Loading/offloading tips - Emergency
+    purchases **Tip:** Add notes about what the extra cost was for your records
+  </Accordion>
+</AccordionGroup>
+
+## Keyboard Shortcuts
+
+Speed up data entry with these shortcuts:
+
+| Action                 | Shortcut       |
+| ---------------------- | -------------- |
+| Open New Trip form     | Alt + N        |
+| Move to next field     | Tab            |
+| Move to previous field | Shift + Tab    |
+| Open dropdown          | Space or Enter |
+| Close form             | Esc            |
+| Submit form            | Ctrl + Enter   |
+
+<Tip>Power users can navigate the entire form without touching the mouse!</Tip>
+
+## Batch Entry Tips
+
+If entering multiple trips at once:
+
+<Steps>
+  <Step title="Organize Your Data">
+    Arrange trip sheets in chronological order
+  </Step>
+
+  <Step title="Group by Vehicle">
+    Enter all trips for one vehicle, then move to the next
+  </Step>
+
+  <Step title="Use Keyboard Navigation">
+    Tab through fields instead of clicking
+  </Step>
+
+  <Step title="Keep Receipts Handy">
+    Have all fuel receipts and documents within reach
+  </Step>
+
+  <Step title="Verify Periodically">
+    After every 5-10 trips, review the table to catch errors early
+  </Step>
+
+  <Step title="Take Breaks">
+    Data entry fatigue leads to errors - take short breaks
+  </Step>
+</Steps>
+
+## Common Scenarios
+
+<Tabs>
+  <Tab title="Standard Delivery Trip">
+    **Example: Canter delivery to JAVA CBD** Page 1: - Date: Jan 29, 2026 -
+    Vehicle: KDA 631Q - Driver: John Kamau - Destination: JAVA CBD Page 2: -
+    Rate: 15,000 - Detention: (leave blank) - Fuel: 3,500 - Clerk Fee: (leave
+    blank) - Milage: (leave blank) - Parking: 300 - Repair: (leave blank) -
+    Extra: (leave blank)
+  </Tab>
+
+  <Tab title="Container Trip with Detention">
+    **Example: Trailer truck to PORTS** Page 1: - Date: Jan 29, 2026 - Vehicle:
+    KCG 877T - Driver: Jason - Destination: PORTS Page 2: - Rate: 125,000 -
+    Detention: 15,000 - Fuel: 49,000 - Clerk Fee: 2,500 - Milage: 5,000 -
+    Parking: (leave blank) - Repair: (leave blank) - Extra: (leave blank)
+  </Tab>
+
+  <Tab title="Trip with Emergency Repair">
+    **Example: Breakdown during trip** Page 1: - Date: Jan 29, 2026 - Vehicle:
+    KDB 295H - Driver: Hano - Destination: ARTCAFFE KISUMU Page 2: - Rate:
+    98,400 - Detention: (leave blank) - Fuel: 23,000 - Clerk Fee: (leave blank)
+    - Milage: 3,000 - Parking: 500 - Repair: 35,000 (tire replacement) - Extra:
+    (leave blank)
+  </Tab>
+</Tabs>
+
+## After Submission
+
+Once you click Submit:
+
+1. **Success message appears**
+2. **Form closes automatically**
+3. **Trip appears in the table** at the top (most recent first)
+4. **Dashboard updates** with new financial data
+5. **All connected pages update** (Income, Expenses, Charts)
+
+<Check>
+  You can immediately record another trip by clicking + New Trip again.
+</Check>
+
+## Verification Checklist
+
+Before submitting any trip, verify:
+
+- [ ] Correct vehicle selected
+- [ ] Correct driver assigned
+- [ ] Date is accurate
+- [ ] Destination spelled correctly
+- [ ] Rate amount is correct (check invoice/agreement)
+- [ ] Fuel cost matches receipt
+- [ ] All applicable expenses included
+- [ ] No decimal point errors
+- [ ] Nothing entered in wrong field
+
+<Tip>
+  Spend 10 seconds verifying before Submit - it's easier than fixing errors
+  later!
+</Tip>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Filtering Trips"
+    icon="filter"
+    href="/features/expenditure/filtering-data"
+  >
+    Learn to find and analyze specific trips
+  </Card>
+  <Card
+    title="Editing Trips"
+    icon="pen-to-square"
+    href="/features/expenditure/editing-trip"
+  >
+    Fix errors in recorded trips
+  </Card>
+  <Card
+    title="Apply Fuel Discounts"
+    icon="tags"
+    href="/features/expenses/fuel-discounts"
+  >
+    Track savings from partner fuel stations
+  </Card>
+  <Card title="Data Entry Tips" icon="lightbulb" href="/faq/data-entry-tips">
+    Best practices for accurate entry
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble adding trips:
+
+1. Review [Common Issues](/faq/common-issues)
+2. Check [Data Entry Tips](/faq/data-entry-tips)
+3. Verify vehicles and drivers are added
+4. [Contact Support](/faq/contact-support) for assistance

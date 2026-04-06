@@ -1,0 +1,383 @@
+---
+title: "Fuel Cost Tracking"
+description: "Monitor fuel expenses and manage fuel discount programs"
+icon: "gas-pump"
+---
+
+The Fuel tab is dedicated to tracking your single largest expense category - fuel. For most logistics companies, fuel accounts for 40-60% of total operating costs, making it critical to monitor closely.
+
+This tab not only shows fuel expenses but also tracks fuel discounts from partner stations, helping you see actual savings.
+
+## What You See on the Fuel Tab
+
+**At the top right, two key totals:**
+
+1. **Total Fuel Cost** - All fuel expenses across all trips
+2. **Total Fuel Discount** - All savings from discounted fuel purchases
+
+**In the main table:**
+- Vehicle registration
+- Driver name
+- Destination
+- Trip date
+- Standard fuel cost (what you entered when recording the trip)
+- Fuel discount (if applied)
+- Net fuel cost (standard cost minus discount)
+
+Each row represents one trip's fuel expenses.
+
+## Understanding Fuel Costs
+
+### Standard Fuel Cost
+
+This is the amount you paid at the pump, recorded when you enter a trip in Expenditure.
+
+**Example:**
+- Driver fills up KCA 123A with 60 liters at KES 200/liter
+- Total paid: KES 12,000
+- You record KES 12,000 as fuel cost
+- This amount appears in the Fuel tab
+
+### Fuel Discounts
+
+If you have agreements with fuel stations for discounted rates, you can track the savings separately.
+
+**Example scenario:**
+- Standard price: KES 200/liter
+- Your discounted price: KES 190/liter
+- Filled 60 liters
+- You paid: KES 11,400 (60 × 190)
+- Standard would be: KES 12,000 (60 × 200)
+- Your discount: KES 600
+
+**How to record this:**
+1. Enter the actual amount paid (KES 11,400) when recording the trip
+2. Later, apply the discount (KES 600) in the Fuel tab
+3. System shows: Fuel cost KES 11,400, Discount KES 600
+
+This lets you track both what you actually spent AND how much you saved.
+
+## Why Track Fuel Separately?
+
+Fuel deserves special attention because:
+
+### 1. It's Your Biggest Expense
+
+For a typical fleet:
+- Fuel: 45% of operating costs
+- Repairs: 20%
+- Driver allowances: 15%
+- Other: 20%
+
+Reducing fuel costs by even 5% has massive impact on profitability.
+
+### 2. It's Variable and Controllable
+
+Unlike fixed costs, fuel expenses vary based on:
+- Route efficiency
+- Driver behavior
+- Vehicle maintenance
+- Fuel station choice
+
+You can actually influence fuel costs through better management.
+
+### 3. Discount Opportunities
+
+Many fuel stations offer:
+- Corporate discount programs
+- Volume-based pricing
+- Loyalty card savings
+- Partner station networks
+
+Tracking discounts proves the value of these programs.
+
+## Filtering Fuel Data
+
+Use the same filtering tools as the All tab:
+
+### By Date Range
+
+**Common filters:**
+
+**Last 7 days** - "How much fuel did we use this week?"
+- Quick operational check
+- Compare to typical weekly usage
+- Spot unusual consumption patterns
+
+**Last 30 days** - "What's our monthly fuel spend?"
+- Monthly budget comparison
+- Identify cost trends
+- Plan upcoming month
+
+**Custom range** - "Fuel costs for this billing cycle"
+- Match company accounting periods
+- Project-specific analysis
+- Quarterly reviews
+
+### By Vehicle
+
+**Use case: Fuel efficiency comparison**
+
+<Steps>
+  <Step title="Filter to Vehicle A">
+    Check total fuel cost for KCA 123A over 30 days
+  </Step>
+  
+  <Step title="Note the total">
+    Example: KES 85,000 for 20 trips = KES 4,250/trip average
+  </Step>
+  
+  <Step title="Switch to Vehicle B">
+    Check total fuel cost for KBZ 456C over same 30 days
+  </Step>
+  
+  <Step title="Compare">
+    Example: KES 95,000 for 18 trips = KES 5,278/trip average
+    
+    Conclusion: KBZ 456C is less fuel-efficient, investigate why
+  </Step>
+</Steps>
+
+### By Destination
+
+**Use case: Route fuel analysis**
+
+Filter to specific destinations to understand route costs:
+
+- Nairobi to Mombasa trips: Average KES 15,000 fuel
+- Nairobi to Kisumu trips: Average KES 12,000 fuel
+- City deliveries: Average KES 3,000 fuel
+
+This helps you:
+- Price routes accurately
+- Identify fuel-intensive routes
+- Plan efficient routing
+
+## Adding Fuel Discounts
+
+There are two ways to record fuel discounts in Travada:
+
+### Method 1: Individual Trip Discounts
+
+Apply a discount to a specific trip:
+
+<Note>
+**🔒 Admin Only** - Only Admin users can add fuel discounts. Staff users can view discount data but cannot apply discounts.
+</Note>
+
+<Steps>
+  <Step title="Find the trip">
+    Locate the trip in the Fuel tab that received a discount
+  </Step>
+  
+  <Step title="Click Add Discount">
+    Look for the discount icon or button next to that trip
+  </Step>
+  
+  <Step title="Enter discount amount">
+    Input the discount in KES (e.g., 600 for KES 600 saved)
+  </Step>
+  
+  <Step title="Save">
+    Click Save - the discount appears immediately
+  </Step>
+</Steps>
+
+The total fuel discount updates automatically.
+
+### Method 2: Bulk Fuel Discounts
+
+For multiple trips from the same station with the same discount rate, use bulk entry.
+
+This feature is covered in detail in [Fuel Discounts](/features/expenses/fuel-discounts), but here's the quick overview:
+
+**You enter:**
+- Standard fuel price per liter (KES)
+- Total liters purchased
+- Discounted price per liter (KES)
+
+**System calculates:**
+- Standard total cost
+- Discounted total cost
+- Total savings
+
+**Then you can:**
+- Apply this discount to multiple trips at once
+- See cumulative savings
+- Generate discount reports (coming in future versions)
+
+## Analyzing Fuel Efficiency
+
+Use the Fuel tab to spot efficiency issues:
+
+### Rising Fuel Costs Per Trip
+
+**What to look for:**
+Compare fuel costs for similar routes over time.
+
+**Example:**
+- Nairobi-Mombasa in January: Average KES 14,000
+- Nairobi-Mombasa in March: Average KES 16,500
+- Increase: 18% for the same route
+
+**Possible causes:**
+- Fuel price increases (check national rates)
+- Vehicle maintenance issues (engine efficiency declining)
+- Driver behavior changes (aggressive driving, idling)
+- Route changes (detours, traffic)
+
+### Vehicle Fuel Consumption Comparison
+
+**What to do:**
+
+1. Filter to one month
+2. Calculate fuel cost per trip for each vehicle
+3. Compare across similar vehicle types
+
+**Example findings:**
+
+| Vehicle | Trips | Total Fuel | Cost/Trip |
+|---------|-------|-----------|-----------|
+| KCA 123A (Truck) | 15 | KES 75,000 | KES 5,000 |
+| KBZ 456C (Truck) | 14 | KES 84,000 | KES 6,000 |
+| KDA 789D (Truck) | 16 | KES 80,000 | KES 5,000 |
+
+**Conclusion:** KBZ 456C consumes 20% more fuel than similar vehicles. Investigate mechanical issues or driver behavior.
+
+### Seasonal Patterns
+
+**What to track:**
+
+Compare fuel costs across different months:
+
+- Are costs higher in rainy season? (slower traffic, detours)
+- Do certain months have more fuel-intensive routes?
+- How do holiday periods affect consumption?
+
+This helps with:
+- Budget forecasting
+- Route planning
+- Seasonal staffing
+
+## Fuel Discount Tracking Benefits
+
+Why bother tracking discounts separately?
+
+### 1. Prove Program Value
+
+"We saved KES 45,000 in fuel discounts last quarter by using Partner Station X exclusively"
+
+This justifies:
+- Continuing discount agreements
+- Negotiating better rates
+- Directing drivers to specific stations
+
+### 2. Driver Compliance Monitoring
+
+If you have agreements with specific stations, tracking discounts shows whether drivers are actually using those stations.
+
+**Red flag:** Fuel costs without discounts when they should have discounts
+**Likely cause:** Driver filled up at non-partner station
+**Action:** Remind drivers of fuel station policy
+
+### 3. Financial Reporting Accuracy
+
+For accounting and tax purposes:
+- Gross fuel expense: What you would have paid
+- Net fuel expense: What you actually paid
+- Discount: The difference (may be tax-deductible)
+
+Proper tracking ensures accurate financial statements.
+
+## Common Fuel Tracking Workflows
+
+### Weekly Fuel Review
+
+**Who:** Operations manager  
+**When:** Monday mornings  
+**Process:**
+
+1. Filter Fuel tab to last 7 days
+2. Check total fuel cost vs. budget
+3. Review any unusually high trips
+4. Verify discounts were applied where expected
+5. Flag issues for follow-up with drivers
+
+### Monthly Fuel Analysis
+
+**Who:** Owner or fleet manager  
+**When:** Month-end  
+**Process:**
+
+1. Filter to previous month
+2. Calculate average fuel cost per trip
+3. Compare to previous month
+4. Identify vehicles with rising fuel costs
+5. Check total discounts received
+6. Generate fuel cost report
+7. Adjust next month's budget if needed
+
+### Quarterly Efficiency Assessment
+
+**Who:** CFO or senior management  
+**When:** End of each quarter  
+**Process:**
+
+1. Filter to 3-month period
+2. Calculate fuel cost as % of revenue
+3. Compare to industry benchmarks (typically 40-50%)
+4. Review discount program effectiveness
+5. Identify underperforming vehicles
+6. Make strategic decisions (vehicle replacement, route changes, driver training)
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Total fuel cost seems too high">
+    Verify you're looking at the right date range. If the total still seems wrong, check individual trip entries in Expenditure - someone may have entered fuel costs incorrectly (extra zeros, wrong amounts).
+  </Accordion>
+  
+  <Accordion title="Discount isn't showing after I added it">
+    Refresh the page. If it still doesn't appear, check that you saved the discount. Also verify you have Admin permissions - Staff users cannot add discounts.
+  </Accordion>
+  
+  <Accordion title="Can I see fuel costs per kilometer?">
+    Not directly in this tab, but you can calculate it: Total fuel cost ÷ total kilometers. Future versions may add this metric automatically.
+  </Accordion>
+  
+  <Accordion title="How do I track fuel purchased vs fuel used?">
+    Travada currently tracks fuel purchased (costs). If you want to track consumption vs purchases for theft prevention, you'll need external tracking (fuel cards or manual logs).
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<Tip>
+**Fuel tracking tips:**
+- Enter fuel costs immediately after trips (don't batch-enter days later)
+- Always include fuel receipts with trip documentation
+- Apply discounts within 24 hours of trip entry
+- Review fuel anomalies weekly, not monthly
+- Compare similar routes across drivers to spot efficiency issues
+- Track fuel costs per vehicle per month to identify maintenance needs
+</Tip>
+
+## Future Enhancements
+
+According to the handbook, upcoming fuel features include:
+
+- **Fuel discount reports by filling station** - See total savings per station
+- **Fuel consumption per kilometer** - Automatic efficiency calculation
+- **Station-specific discount tracking** - Know which stations save you the most
+- **Fuel card integration** - Automatic discount application
+
+For now, focus on the current capabilities to build good fuel tracking habits.
+
+## Next Steps
+
+After mastering fuel cost tracking:
+
+1. Learn [Bulk Fuel Discount Entry](/features/expenses/fuel-discounts) for efficient discount management
+2. Review [Other Expenses](/features/expenses/other-expenses) for non-fuel cost tracking
+3. Check [Viewing All Expenses](/features/expenses/viewing-expenses) for combined analysis
+4. Return to [Expenses Overview](/features/expenses/overview)

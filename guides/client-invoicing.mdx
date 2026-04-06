@@ -1,0 +1,658 @@
+---
+title: "Client Invoicing"
+description: "How to generate professional invoices and billing reports for your clients"
+icon: "file-invoice-dollar"
+---
+
+Professional invoicing builds trust with clients and ensures you get paid accurately and on time. This guide shows you how to use Travada to create clean, detailed invoices that clients can verify against delivery records, complete with container details, VAT calculations, and all necessary documentation.
+
+## Why Use Travada for Client Invoicing?
+
+### 1. Accuracy
+
+Manual invoicing leads to errors:
+- Forgotten trips (lost revenue)
+- Wrong amounts (client disputes)
+- Missing fees (detention not charged)
+- Math errors (damage credibility)
+
+**Travada eliminates these:** All trip data is already in the system with correct amounts.
+
+### 2. Speed
+
+Manual process:
+- Gather delivery notes (30 min)
+- Match to rates (20 min)
+- Calculate totals (15 min)
+- Type invoice (30 min)
+- Review and correct errors (20 min)
+- **Total: 2 hours per invoice**
+
+**Travada process:**
+- Filter to client's trips (1 min)
+- Generate rate report (2 min)
+- Review and send (2 min)
+- **Total: 5 minutes per invoice**
+
+### 3. Professionalism
+
+Travada rate reports include:
+- Company branding
+- Professional formatting
+- Detailed trip breakdown
+- Container information (for logistics)
+- VAT calculations
+- Clear payment terms
+
+Clients take professional invoices more seriously = faster payment.
+
+## Understanding Rate Reports
+
+Rate reports are Travada's invoicing tool. They pull trip data and format it as a client-ready invoice.
+
+### What's Included in a Rate Report
+
+**Header Information:**
+- Report name (e.g., "Artcaffe February 2026 Invoice")
+- Client/customer name
+- Report date
+- Invoice number (if assigned)
+
+**Trip Details:**
+- Date of each trip
+- Vehicle registration
+- Pickup location
+- Destination
+- Container details (number, weight, size) - if applicable
+- Rate charged per trip
+- Detention fees (if applicable)
+
+**Summary:**
+- Subtotal (sum of all rates and detention)
+- VAT (typically 16% in Kenya)
+- Total amount due
+
+**Footer:**
+- Payment terms
+- Company contact information
+- Due date
+
+### Types of Invoices
+
+**1. Rate-Only Invoice (Standard)**
+- Lists all trips with their rate fees
+- Used for: General freight, local deliveries, most contracts
+- Example: "12 Nairobi-Mombasa trips @ KES 45,000 each"
+
+**2. Rate + Detention Invoice (Container Transport)**
+- Includes base rates plus any detention charges
+- Used for: Port/container work, import/export logistics
+- Example: "5 container trips @ KES 120,000 + detention KES 15,000"
+
+**3. Monthly Retainer Invoice**
+- Consolidated billing for regular clients
+- All trips for the month in one invoice
+- Example: "January 2026 - All deliveries for Artcaffe"
+
+## Generating a Client Invoice (Rate Report)
+
+<Note>
+**🔒 Admin Only** - Only Admin users can generate rate reports. Staff users cannot create invoices.
+</Note>
+
+### Standard Invoice Process
+
+<Steps>
+  <Step title="Go to Incomes → Rate tab">
+    Navigate to the Income section and select the Rate tab
+  </Step>
+  
+  <Step title="Filter to the client">
+    Use filters to show only the client's trips:
+    - Date range (e.g., February 1-28, 2026)
+    - Destination (if client-specific)
+    - Vehicle (if client has dedicated vehicles)
+  </Step>
+  
+  <Step title="Verify trip list">
+    Review the filtered trips to ensure:
+    - All client trips are included
+    - No extra trips from other clients
+    - Amounts are correct
+    - Dates are accurate
+  </Step>
+  
+  <Step title="Click Generate Report">
+    Look for "Generate Report" or "Create Invoice" button
+  </Step>
+  
+  <Step title="Enter report details">
+    Fill in the report form:
+    - **Report name:** "Artcaffe February 2026 Invoice"
+    - **Client name:** "Artcaffe Limited"
+    - **VAT rate:** 16% (or applicable rate)
+  </Step>
+  
+  <Step title="Add container details (if applicable)">
+    For container/trailer trips, include:
+    - Container number(s)
+    - Weight
+    - Size (20ft, 40ft)
+    - Pickup location
+  </Step>
+  
+  <Step title="Review the preview">
+    Check the generated report shows:
+    - Correct client name
+    - All trips listed
+    - Accurate totals
+    - Proper VAT calculation
+  </Step>
+  
+  <Step title="Generate and save">
+    Click "Generate" or "Create Report"
+    
+    Report saves to Reports section with 30-day expiry
+  </Step>
+</Steps>
+
+### Container Transport Invoice (Detailed)
+
+For container/logistics work, additional details are critical:
+
+**Required information per trip:**
+- Container number (e.g., TCLU1234567)
+- Container size (20ft, 40ft, 40ft HC)
+- Container weight (actual or estimated tonnage)
+- Pickup location (port, depot, client warehouse)
+- Destination
+- Rate charged
+- Any detention fees
+
+**Example entry:**
+
+```
+Trip 1:
+Container: TCLU1234567
+Size: 40ft
+Weight: 18 tons
+Pickup: Mombasa Port
+Destination: Nairobi - Industrial Area
+Rate: KES 120,000
+Detention: KES 12,000 (2 days @ KES 6,000/day)
+Total: KES 132,000
+```
+
+**Why this detail matters:**
+- Client can verify against their records
+- Justifies detention charges
+- Required for their own accounting
+- Prevents disputes
+
+## Invoice Naming Best Practices
+
+Good invoice names are clear and include:
+
+<Tip>
+**Recommended format:**
+[Client Name] + [Period] + "Invoice"
+
+**Examples:**
+- ✅ "Artcaffe February 2026 Invoice"
+- ✅ "Brookside Dairy Q1 2026 Invoice"
+- ✅ "Kenya Breweries Week of Jan 20 Invoice"
+- ❌ "Invoice 1"
+- ❌ "Report Feb"
+- ❌ "Client Billing"
+</Tip>
+
+**Benefits of clear naming:**
+- Easy to find in Reports section
+- Client knows immediately what it's for
+- Prevents duplicate invoicing
+- Helps with record-keeping
+
+## Common Invoicing Scenarios
+
+### Scenario 1: Monthly Regular Client
+
+**Client:** Artcaffe (food distributor)  
+**Agreement:** 12-15 deliveries per month  
+**Rate:** KES 15,000 per delivery  
+**Billing:** Monthly in arrears
+
+**Process:**
+
+1. **Last day of month:** Filter Incomes → Rate tab to "Artcaffe" destination for the month
+2. **Verify count:** Should see 12-15 trips (matches expected volume)
+3. **Check amounts:** All should be KES 15,000 (standard rate)
+4. **Generate report:**
+   - Name: "Artcaffe February 2026 Invoice"
+   - Client: Artcaffe Limited
+   - VAT: 16%
+5. **Expected total:** 
+   - 14 trips × KES 15,000 = KES 210,000
+   - + VAT (16%): KES 33,600
+   - **Total due: KES 243,600**
+6. **Send invoice:** By 1st of following month
+
+### Scenario 2: Container Transport (Ad-Hoc)
+
+**Client:** Import company (occasional shipments)  
+**Service:** Port-to-warehouse container delivery  
+**Rate:** KES 120,000 per 40ft container  
+**Detention:** KES 6,000 per day for delays  
+**Billing:** Per shipment
+
+**Process:**
+
+1. **After delivery completion:** Note container cleared and delivered
+2. **Go to Incomes → Rate tab**
+3. **Filter to this client's recent trips**
+4. **Generate report with full details:**
+   - Container: MSCU9876543
+   - Size: 40ft
+   - Weight: 22 tons
+   - Pickup: Mombasa Port
+   - Delivery: Nairobi - Imara Daima
+   - Rate: KES 120,000
+   - Detention: KES 18,000 (3 days delay)
+5. **Total before VAT:** KES 138,000
+6. **Total with VAT:** KES 160,080
+7. **Send within 24 hours** of delivery
+
+### Scenario 3: Weekly Recurring Service
+
+**Client:** Logistics company (subcontracting work)  
+**Agreement:** 4-6 trips per week  
+**Rate:** Variable by route  
+**Billing:** Weekly on Fridays
+
+**Process:**
+
+1. **Every Friday afternoon:**
+2. **Filter to Monday-Friday trips for this client**
+3. **Verify all trips are captured:**
+   - Check driver logs
+   - Match delivery confirmations
+4. **Generate report:**
+   - Name: "LogisticsCo Week of Feb 10 Invoice"
+   - Include trip breakdown (routes vary)
+5. **Example week:**
+   - 2 × Nairobi-Mombasa @ KES 45,000 = KES 90,000
+   - 3 × Nairobi-Kisumu @ KES 28,000 = KES 84,000
+   - Subtotal: KES 174,000
+   - VAT: KES 27,840
+   - **Total: KES 201,840**
+6. **Send Friday evening** for payment following week
+
+### Scenario 4: Project-Based Billing
+
+**Client:** Construction company  
+**Project:** 3-month road construction project  
+**Service:** Daily material delivery  
+**Billing:** Monthly consolidated invoice
+
+**Process:**
+
+1. **End of each project month:**
+2. **Filter all trips related to this project:**
+   - By destination (construction site)
+   - By vehicle (if dedicated fleet)
+   - By date range (project month)
+3. **Generate comprehensive report:**
+   - Group by material type if relevant
+   - Show daily breakdown
+   - Include any special charges (weekend delivery premium, etc.)
+4. **Example month:**
+   - 45 trips total
+   - Various rates (depends on material)
+   - Total: KES 980,000
+   - VAT: KES 156,800
+   - **Invoice total: KES 1,136,800**
+5. **Attach delivery confirmation summaries**
+6. **Send by 5th of following month** (per contract terms)
+
+## Managing Generated Invoices
+
+### Accessing Your Invoices
+
+<Steps>
+  <Step title="Go to Reports section">
+    Click Reports in main navigation
+  </Step>
+  
+  <Step title="View all rate reports">
+    You'll see all generated reports including rate reports
+  </Step>
+  
+  <Step title="Use filters">
+    - Recent Reports: Last 7 days
+    - Expiring Soon: Reports near 30-day expiry
+    - Search: Find specific client invoice
+  </Step>
+</Steps>
+
+### Sharing Invoices with Clients
+
+**Option 1: Share Link (Fastest)**
+
+1. Find the report in Reports section
+2. Click "Copy Link" next to the report
+3. Paste link in email to client
+4. Client can view online (may require access)
+
+**Email template:**
+```
+Subject: Invoice - [Client Name] - [Period]
+
+Dear [Client Name],
+
+Please find your invoice for [period] at the link below:
+[Paste Travada report link]
+
+Invoice Summary:
+• Period: February 1-28, 2026
+• Total Trips: 14
+• Amount Due: KES 243,600 (including VAT)
+• Payment Terms: Net 30 days
+• Due Date: March 30, 2026
+
+Please confirm receipt and let me know if you have any questions.
+
+Best regards,
+[Your Name]
+[Company Name]
+[Contact Info]
+```
+
+**Option 2: Download and Email (More Common)**
+
+1. Open the report in Travada
+2. Download as PDF
+3. Attach PDF to email
+4. Send to client's billing contact
+
+**Benefits:**
+- Client doesn't need Travada access
+- Can print for their records
+- Permanent copy (doesn't expire)
+
+**Option 3: Print and Deliver**
+
+For clients who prefer hard copies:
+1. Download report as PDF
+2. Print on company letterhead
+3. Deliver with shipment or mail
+
+### Tracking Invoice Status
+
+Keep a simple tracking sheet outside Travada:
+
+| Invoice | Client | Date Sent | Amount | Due Date | Paid | Payment Date | Notes |
+|---------|--------|-----------|--------|----------|------|--------------|-------|
+| Artcaffe Feb 2026 | Artcaffe | Mar 1 | 243,600 | Mar 30 | ✓ | Mar 28 | On time |
+| LogisticsCo Week 7 | LogisticsCo | Feb 15 | 201,840 | Feb 22 | ✓ | Feb 21 | Early |
+| Import Co Shipment | Import Co | Feb 10 | 160,080 | Mar 10 | ❌ | - | Follow up |
+
+**Why track externally:**
+- Travada reports aren't payment tracking tools
+- You need to know who owes what
+- Follow-up on overdue invoices
+- Cash flow planning
+
+## Handling Invoice Discrepancies
+
+### Client Disputes a Charge
+
+**Common issues:**
+- "We didn't request this trip"
+- "The rate should be different"
+- "Detention fee is too high"
+- "Missing a trip we expected"
+
+**Resolution process:**
+
+<Steps>
+  <Step title="Stay calm and professional">
+    Disputes happen - approach constructively
+  </Step>
+  
+  <Step title="Gather evidence">
+    Go to Travada and collect:
+    - Trip details from Expenditure
+    - Delivery confirmation (if available)
+    - Rate agreement reference
+    - Container delay documentation (for detention)
+  </Step>
+  
+  <Step title="Verify the facts">
+    Check if the dispute is:
+    - Data entry error (you made mistake)
+    - Client misunderstanding
+    - Genuine disagreement on terms
+  </Step>
+  
+  <Step title="Respond with documentation">
+    Email client with:
+    - Screenshot of trip from Travada
+    - Delivery confirmation
+    - Rate agreement excerpt
+    - Polite explanation
+  </Step>
+  
+  <Step title="Resolve">
+    - If client is right: Issue credit note or revised invoice
+    - If you're right: Client accepts with documentation
+    - If unclear: Meet in middle or escalate to management
+  </Step>
+</Steps>
+
+**Example resolution email:**
+
+```
+Dear [Client],
+
+Thank you for raising this about the detention charge on container TCLU1234567.
+
+I've reviewed our records and can confirm:
+
+• Container arrived at port: Feb 5, 10:00 AM
+• Clearance completed: Feb 8, 2:00 PM (3 days, 4 hours)
+• Detention rate per agreement: KES 6,000/day
+• Calculation: 3 full days = KES 18,000
+
+I've attached:
+1. Port time stamps
+2. Clearance documentation
+3. Our service agreement (Section 4.2 - Detention Terms)
+
+The charge is accurate per our agreement. However, if there are extenuating circumstances we haven't discussed, I'm happy to review.
+
+Please let me know if you need any clarification.
+
+Best regards,
+[Your Name]
+```
+
+### Missing Trips
+
+**Client:** "You only invoiced 12 trips but we had 14 deliveries"
+
+**Investigation:**
+
+1. Go to Expenditure
+2. Filter to client's destination for the period
+3. Count trips - if showing 12, two are missing
+4. Check driver logs or delivery confirmations
+5. Find the missing trips
+6. Add them to Travada (with correct dates)
+7. Generate revised invoice
+
+**Prevention:** Weekly reconciliation with client's delivery confirmations
+
+## Invoice Best Practices
+
+### Timing
+
+**Send invoices promptly:**
+- **Weekly clients:** Friday evening
+- **Monthly clients:** 1st-3rd of following month
+- **Ad-hoc clients:** Within 24-48 hours of delivery
+
+**Why timing matters:**
+- Fresh in client's mind
+- Faster payment
+- Shows professionalism
+- Matches their accounting cycles
+
+### Clarity
+
+**Make invoices easy to understand:**
+- Clear header with client name
+- Line items show: Date, Route, Vehicle, Amount
+- Subtotals for different rate types
+- VAT clearly calculated
+- Total amount due prominently displayed
+- Payment terms stated
+- Due date shown
+
+**Bad invoice:** Just a total amount with no breakdown  
+**Good invoice:** Every trip listed with details
+
+### Documentation
+
+**Always keep:**
+- Copy of invoice sent
+- Client delivery confirmations
+- Any communication about disputes
+- Payment receipts
+- At least 7 years of records (tax requirement)
+
+**Travada helps:** Reports saved for 30 days, but download PDFs for permanent records
+
+### Payment Terms
+
+**Be clear about terms:**
+- Net 30 (payment due 30 days after invoice)
+- Net 15 (payment due 15 days after invoice)
+- Upon delivery (payment immediate)
+- Specify late fees if applicable
+
+**Include on every invoice:**
+```
+Payment Terms: Net 30 days
+Due Date: March 30, 2026
+Late Fee: 2% per month on overdue balance
+Payment Methods: Bank transfer, check
+```
+
+## Advanced Invoicing Strategies
+
+### Volume Discounts
+
+If offering volume discounts, document clearly:
+
+**Example:**
+```
+February 2026 Invoice - Artcaffe
+
+14 deliveries @ KES 15,000 = KES 210,000
+Volume discount (>12 trips): -KES 10,500 (5%)
+Subtotal: KES 199,500
+VAT (16%): KES 31,920
+Total Due: KES 231,420
+```
+
+**Track in Travada:**
+- Record full rate in Expenditure (KES 15,000)
+- Apply discount when generating invoice
+- Or create separate discount line in report
+
+### Retainer Billing
+
+For clients on monthly retainers:
+
+**Structure:**
+```
+Monthly Retainer: KES 200,000 (covers 12 trips)
+
+February Usage:
+• Trips included in retainer: 12
+• Additional trips: 2 @ KES 18,000 = KES 36,000
+
+Total Due:
+• Retainer: KES 200,000
+• Additional: KES 36,000
+• Subtotal: KES 236,000
+• VAT: KES 37,760
+• Total: KES 273,760
+```
+
+### Multi-Currency Invoicing
+
+If working with international clients:
+
+**Best practice:**
+- Invoice in their currency (USD, EUR)
+- Note exchange rate used
+- Show KES equivalent
+- Client pays in their currency
+
+**Example:**
+```
+Amount Due: $1,500 USD
+Exchange Rate: 1 USD = 140 KES (Feb 28, 2026)
+KES Equivalent: KES 210,000
+```
+
+**In Travada:** Record trips in KES, convert for invoicing
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't generate report - button is grayed out">
+    You need Admin privileges. Ask an Admin to generate the report or request role upgrade.
+  </Accordion>
+  
+  <Accordion title="Report missing some trips">
+    Check your filters - they might be excluding trips:
+    1. Verify date range includes all trips
+    2. Check destination filter isn't too restrictive
+    3. Ensure vehicle filter (if used) includes all relevant vehicles
+  </Accordion>
+  
+  <Accordion title="VAT calculation seems wrong">
+    Verify:
+    1. VAT rate entered correctly (16% not 0.16)
+    2. VAT applied to subtotal, not individual items
+    3. Any exempt items properly handled
+    
+    Calculation: Subtotal × (VAT% ÷ 100) = VAT amount
+  </Accordion>
+  
+  <Accordion title="Client says they already paid but report shows unpaid">
+    Travada generates invoices but doesn't track payments. You need separate payment tracking:
+    1. Use external spreadsheet or accounting software
+    2. Mark invoices as paid when payment received
+    3. Reconcile with bank statements
+  </Accordion>
+  
+  <Accordion title="Need to re-send expired report">
+    Reports expire after 30 days. Options:
+    1. Regenerate the report (if still same period)
+    2. Send the PDF you downloaded originally
+    3. Screenshot or recreate from Expenditure data
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+After mastering client invoicing:
+
+1. Integrate with [Month-End Reporting](/guides/month-end-reporting) for complete financial workflow
+2. Use insights from [Vehicle Performance Analysis](/guides/vehicle-performance-analysis) to justify rate increases
+3. Apply [Complete Trip Workflow](/guides/complete-trip-workflow) for accurate data
+4. Review [Bulk Fuel Discount](/guides/bulk-fuel-discount) to manage your own costs
+
+**Remember:** Professional, accurate, timely invoicing is how you get paid. Travada makes this process 95% faster while improving accuracy and client trust. Use it consistently for every client, every month.

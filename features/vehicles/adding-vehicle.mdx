@@ -1,0 +1,345 @@
+---
+title: Adding Vehicles
+description: Add new vehicles to your Travada fleet
+icon: "truck-front"
+---
+
+## Quick Start
+
+**To add a vehicle:**
+
+1. Navigate to **Vehicles** → **Add/Manage Vehicles**
+2. Click **Add Vehicle** button (top right)
+3. Fill in the form: Registration, Type, Ownership
+4. Click **Add vehicle**
+
+<Info>
+  **New to Travada?** See [Adding Vehicles (Getting
+  Started)](/getting-started/adding-vehicles) for a beginner-friendly tutorial
+  with screenshots.
+</Info>
+
+## The Add Vehicle Form
+
+<img src='/images/add-vehicle-form.png' alt='Add Vehicle Form' />
+
+### Required Information
+
+<CardGroup cols={3}>
+  <Card title='Registration' icon='input-text'>
+    License plate number (max 8 characters)
+  </Card>
+  <Card title='Vehicle Type' icon='truck'>
+    Select from 7 vehicle categories
+  </Card>
+  <Card title='Ownership' icon='handshake'>
+    Owned or Hired
+  </Card>
+</CardGroup>
+
+All three fields are required - the form won't submit without them.
+
+## Vehicle Registration Guidelines
+
+**Format requirements:**
+
+- Maximum 8 characters
+- Letters and numbers only
+- Automatically converts to uppercase
+- No special characters (except spaces)
+
+**Valid examples:**
+
+- ✅ KBE 127H
+- ✅ KDA 631Q
+- ✅ KCG877T (space optional)
+- ✅ ABC 1234
+
+**Invalid examples:**
+
+- ❌ KBE-127H (no hyphens)
+- ❌ KBE_127H (no underscores)
+- ❌ VERYLONGPLATE (too long)
+
+### Registration Best Practices
+
+<Tabs>
+  <Tab title='Standard Format'>
+    **Use the official format:** - ABC 123X (3 letters, space, 3 digits, letter)
+    - ABCD 123X (4 letters, space, 3 digits, letter) **Why?** Matches physical
+    plates and government records
+  </Tab>
+
+<Tab title='Consistency'>
+  **Be consistent across all vehicles:** - If using spaces, always use spaces
+  **Why?** Easier searching and sorting
+</Tab>
+
+  <Tab title='Verification'>
+    **Before clicking Add:** 1. Check against physical vehicle 2. Verify no
+    typos 3. Confirm not already in system
+  </Tab>
+</Tabs>
+
+## Selecting Vehicle Type
+
+Choose the type that best matches your vehicle's primary use:
+
+<AccordionGroup>
+  <Accordion title='Truck' icon='truck'>
+    **Standard transport trucks** **Use for:** - General cargo transport -
+    Medium to large loads - Multi-purpose hauling **Not for:** Specialized
+    vehicles (use specific types)
+  </Accordion>
+
+<Accordion title='Canter' icon='truck-pickup'>
+  **Small delivery trucks** **Use for:** - Urban/local deliveries - Light cargo
+  (up to 3 tons typically) - City route operations **Examples:** Mitsubishi
+  Canter, Isuzu NKR, Toyota Dyna
+</Accordion>
+
+<Accordion title='Dump Truck' icon='truck-ramp-box'>
+  **Construction material hauling** **Use for:** - Sand, gravel, stones -
+  Construction sites - Quarry to site transport **Also called:** Tipper trucks,
+  tippers
+</Accordion>
+
+<Accordion title='Reefer Truck' icon='temperature-low'>
+  **Refrigerated transport** **Use for:** - Flowers for export - Fresh produce -
+  Frozen goods - Temperature-sensitive cargo **Also called:** Cold chain trucks,
+  freezer trucks
+</Accordion>
+
+<Accordion title='Box Truck' icon='box-open'>
+  **Dry goods rigid trucks** **Use for:** - Boxed goods - Palletized cargo -
+  Retail deliveries - Non-perishable items
+</Accordion>
+
+<Accordion title='Trailer Truck' icon='trailer'>
+  **Container and long-haul** **Use for:** - 20ft/40ft containers - Port
+  operations - Long-distance hauls - Import/export logistics **Also called:**
+  Articulated trucks, semi-trucks
+</Accordion>
+
+  <Accordion title='Passenger Transport Vehicle' icon='van-shuttle'>
+    **People transport** **Use for:** - School vans - Tour vans - City shuttle
+    services - Employee transport **Examples:** Toyota Hiace, Nissan Caravan
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  **Not sure which type?** Choose the closest match. You can change it later in
+  [Edit Vehicle](/features/vehicles/editing-vehicle).
+</Tip>
+
+## Ownership Status
+
+Select whether the vehicle is owned by your company or hired/leased:
+
+<Tabs>
+  <Tab title='Owned'>
+    **Select "Owned" when:** - Your company purchased the vehicle - It's a
+    company asset - You have the title/ownership documents - Long-term part of
+    your fleet **Financial implication:** - Appears as capital asset - All
+    expenses are operational costs - Full control over usage
+  </Tab>
+
+  <Tab title='Hired'>
+    **Select "Hired" when:** - Leased from leasing company - Rented
+    short/long-term - Contract-based usage - Not owned by company **Financial
+    implication:** - Rental/lease payments tracked separately - May have
+    different cost structure - Contract may have end date
+  </Tab>
+</Tabs>
+
+<Info>
+  **Can change later:** You can update ownership status if your situation
+  changes (e.g., you purchase a hired vehicle).
+</Info>
+
+## After Adding a Vehicle
+
+Once you click **Add vehicle**:
+
+<Steps>
+  <Step title='Success Confirmation'>
+    You'll see a success message The form closes automatically
+  </Step>
+
+<Step title='Vehicle Appears in List'>
+  New vehicle shows in the vehicles table Sorted alphabetically by registration
+</Step>
+
+<Step title='Available for Trips'>
+  Vehicle immediately appears in trip recording dropdowns Staff can now assign
+  trips to this vehicle
+</Step>
+
+  <Step title='Performance Tracking Begins'>
+    System starts tracking: - Trip count - Income generated - Expenses incurred
+    - Net profit/loss
+  </Step>
+</Steps>
+
+## Adding Multiple Vehicles
+
+For bulk vehicle entry:
+
+<Tabs>
+  <Tab title='One-by-One (Best for 1-10)'>
+    **Process:** 1. Click **Add Vehicle** 2. Fill form 3. Click **Add vehicle**
+    4. Form resets automatically 5. Repeat for next vehicle **Tips:** - Keep
+    vehicle documents ready - Use Tab key to navigate fields - Verify each entry
+    before submitting
+  </Tab>
+
+  <Tab title='Prepared List (Best for 10+)'>
+    **Preparation:** 1. Create spreadsheet with: - Registration numbers -
+    Vehicle types - Ownership status 2. Keep spreadsheet open while entering
+    **Execution:** 1. Click **Add Vehicle** 2. Copy data from spreadsheet 3.
+    Submit 4. Repeat quickly **Advantage:** Faster, fewer errors
+  </Tab>
+</Tabs>
+
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="Registration already exists error" icon="copy">
+    **Message:** "This registration number already exists"
+    
+    **Causes:**
+    - Vehicle already in system
+    - Typo that matches existing vehicle
+    - Vehicle in disabled vehicles
+    
+    **Solutions:**
+    1. Check Add/Manage Vehicles list
+    2. Check Disabled Vehicles
+    3. Verify you typed correctly
+    4. If genuinely duplicate, choose different registration format
+  </Accordion>
+
+  <Accordion title="Form won't submit" icon="circle-exclamation">
+    **Causes:**
+    - Missing required field
+    - Registration too long (>8 characters)
+    - Invalid characters in registration
+    
+    **Solutions:**
+    1. Check all three fields are filled
+    2. Verify registration length
+    3. Remove special characters
+    4. Try clicking dropdown options again
+  </Accordion>
+  
+  <Accordion title="New vehicle not in trip dropdown" icon="eye-slash">
+    **Cause:** Page hasn't refreshed
+    
+    **Solutions:**
+    1. Refresh browser (F5 or Cmd+R)
+    2. Navigate away and back to Expenditure
+    3. Log out and log back in
+    
+    Vehicle should now appear
+  </Accordion>
+</AccordionGroup>
+
+## Vehicle Type Decision Tree
+
+Not sure which type to select? Follow this decision tree:
+
+```
+Does it carry people?
+├─ Yes → Passenger Transport Vehicle
+└─ No → Continue
+
+Does it carry containers?
+├─ Yes → Trailer Truck
+└─ No → Continue
+
+Is it refrigerated?
+├─ Yes → Reefer Truck
+└─ No → Continue
+
+Does it dump/tip loads?
+├─ Yes → Dump Truck
+└─ No → Continue
+
+Is it a small delivery truck (<3 tons)?
+├─ Yes → Canter
+└─ No → Continue
+
+Does it have an enclosed box body?
+├─ Yes → Box Truck
+└─ No → Truck (general)
+```
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title='Add All Active Vehicles Upfront' icon='layer-group'>
+    Add your entire fleet at once to avoid interruptions during trip recording
+  </Card>
+
+<Card title='Verify Before Submit' icon='clipboard-check'>
+  Registration cannot be edited - take 5 seconds to verify
+</Card>
+
+  <Card title='Use Correct Types' icon='tags'>
+    Accurate types enable better reporting and analytics
+  </Card>
+  <Card title='Document Hired Vehicles' icon='file-contract'>
+    Note contract end dates separately for hired vehicles
+  </Card>
+</CardGroup>
+
+## Integration with Fleet Management
+
+After adding vehicles, they become part of:
+
+- **Trip Recording** - Available in vehicle dropdowns
+- **Performance Tracking** - Dashboard metrics
+- **Reports** - Can filter/group by vehicle
+- **Expense Allocation** - Costs tracked per vehicle
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title='Record Your First Trip'
+    icon='route'
+    href='/getting-started/recording-first-trip'
+  >
+    Start using your newly added vehicles
+  </Card>
+  <Card
+    title='Edit Vehicle Details'
+    icon='pen-to-square'
+    href='/features/vehicles/editing-vehicle'
+  >
+    Update type or ownership if needed
+  </Card>
+  <Card
+    title='Vehicle Types Guide'
+    icon='book'
+    href='/features/vehicles/vehicle-types'
+  >
+    Detailed descriptions of each vehicle type
+  </Card>
+  <Card
+    title='Disable Vehicles'
+    icon='toggle-off'
+    href='/features/vehicles/disabling-vehicles'
+  >
+    Learn to manage inactive vehicles
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble adding vehicles:
+
+1. Check [User Roles](/getting-started/user-roles) to verify permissions
+2. Review [Common Issues](/faq/common-issues)
+3. See [Getting Started: Adding Vehicles](/getting-started/adding-vehicles) for detailed tutorial
+4. [Contact Support](/faq/contact-support) for assistance

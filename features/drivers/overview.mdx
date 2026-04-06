@@ -1,0 +1,353 @@
+---
+title: Driver Management Overview
+description: Managing your drivers in Travada
+icon: "id-card"
+---
+
+## Overview
+
+The Drivers section in Travada is where you manage all driver information and control which drivers are active in the system. Proper driver management ensures accurate trip tracking and enables performance analysis.
+
+<img src="/images/drivers-page.png" alt="Drivers Management Page" />
+
+## Why Driver Management Matters
+
+Drivers are the human element of your logistics operations. Effective driver management enables:
+
+- ✅ **Accurate trip assignment** - Know who drove each trip
+- ✅ **Performance tracking** - Monitor trips per driver
+- ✅ **Workload visibility** - See driver activity levels
+- ✅ **Accountability** - Clear records of who was responsible
+- ✅ **Payroll support** - Data for bonus/commission calculations
+
+<Info>
+  Every trip in Travada must be assigned to a driver. Without drivers in your
+  system, you cannot record trips.
+</Info>
+
+## Drivers Page Layout
+
+### Navigation
+
+Access driver management from the sidebar:
+
+**Drivers** → Two sub-sections:
+
+1. **Add/Manage Drivers** - Main driver management page
+2. **Inactive Drivers** - View and manage disabled drivers
+
+<img src="/images/drivers-sidebar.png" alt="Drivers Sidebar Navigation" />
+
+### Main Page Sections
+
+<Tabs>
+  <Tab title="Driver List">
+    **Primary view showing:** - All active drivers - Driver names - Phone
+    numbers - Action buttons (Edit, Disable)
+    <img src="/images/drivers-list.png" alt="Drivers List" />
+  </Tab>
+
+  <Tab title="Search">
+    **Tools to find drivers:** - Search by name - Search by phone number - Sort
+    alphabetically
+  </Tab>
+
+  <Tab title="Add Driver Button">
+    **Located in top right:** - Opens driver creation form - Side
+    panel interface
+  </Tab>
+</Tabs>
+
+## Driver Information Tracked
+
+Each driver in Travada contains:
+
+| Field              | Description            | Editable |
+| ------------------ | ---------------------- | -------- |
+| **Driver's Name**  | Full name              | ✅ Yes   |
+| **Phone Number**   | Contact number         | ✅ Yes   |
+| **Status**         | Active or Disabled     | ✅ Yes   |
+| **Trip Count**     | Total trips driven     | Auto     |
+| **Last Trip Date** | Most recent assignment | Auto     |
+
+<Note>
+  Unlike vehicles, both driver name and phone number can be edited after
+  creation if information changes.
+</Note>
+
+## Driver Lifecycle in Travada
+
+<Steps>
+  <Step title="Add Driver">
+    Admin creates driver record with name and phone number See: [Adding
+    Drivers](/features/drivers/adding-driver)
+  </Step>
+
+  <Step title="Assign to Trips">
+    Driver appears in trip recording dropdowns Staff and Admins can assign trips
+    to this driver
+  </Step>
+
+  <Step title="Track Activity">
+    System automatically tracks: - Total trips driven - Last trip date - Vehicle
+    assignments
+  </Step>
+
+  <Step title="Edit as Needed">
+    Admin can update name or phone number See: [Editing
+    Drivers](/features/drivers/editing-driver)
+  </Step>
+
+  <Step title="Disable When Inactive">
+    When driver leaves or contract ends See: [Disabling
+    Drivers](/features/drivers/disabling-drivers)
+  </Step>
+
+  <Step title="Re-enable if Needed">
+    Disabled drivers can be reactivated All historical data remains intact
+  </Step>
+</Steps>
+
+## Key Features
+
+<AccordionGroup>
+  <Accordion title="Simple Profile Management" icon="user">
+    **Minimal information required:** - Name and phone number only - No complex
+    setup - Quick to add multiple drivers **Why simple?** - Focus on trip
+    tracking, not HR - Easy for operations staff - Less data entry overhead
+  </Accordion>
+
+  <Accordion title="Trip Assignment Tracking" icon="route">
+    **Automatic tracking:** - Total trips per driver - Last activity date -
+    Vehicle associations - Trip history **Use for:** - Performance reviews -
+    Bonus calculations - Workload balancing - Contract verification
+  </Accordion>
+
+  <Accordion title="Active/Inactive Management" icon="toggle-on">
+    **Disable drivers without deleting:** - Preserves all trip history - Removes
+    from trip dropdowns - Can be re-enabled later - Maintains data integrity
+    **Use cases:** - Driver resigned - Contract ended - Temporarily suspended -
+    Seasonal workers
+  </Accordion>
+
+  <Accordion title="Quick Search" icon="magnifying-glass">
+    **Find drivers easily:** - Search by name - Search by phone number - Sort
+    alphabetically **Useful for:** - Large teams (20+ drivers) - Finding
+    specific driver quickly - Verifying contact information
+  </Accordion>
+</AccordionGroup>
+
+## Common Workflows
+
+### Daily Operations
+
+**Normal day-to-day:**
+
+- Drivers remain in system
+- Used for trip assignments
+- Activity tracked automatically
+- No driver management needed
+
+<Info>
+  Most days you won't need to access driver management - drivers just work in
+  the background!
+</Info>
+
+### Monthly Review
+
+**End of month:**
+
+1. Review trip counts per driver
+2. Identify top performers
+3. Check for inactive drivers
+4. Verify all drivers have activity
+5. Calculate bonuses/commissions if applicable
+
+### Driver Changes
+
+**When hiring new drivers:**
+
+1. Navigate to Drivers → Add/Manage Drivers
+2. Click **Add Driver**
+3. Enter name and phone number
+4. Driver immediately available for trips
+
+**When drivers leave:**
+
+1. Navigate to Drivers → Inactive Drivers
+2. Click **+ Disable Driver**
+3. Select driver(s) to disable
+4. Confirm - removes from active use
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Use Full Names" icon="signature">
+    Enter complete names, not nicknames, for official records
+  </Card>
+
+  <Card title="Verify Phone Numbers" icon="phone">
+    Double-check numbers for future contact needs
+  </Card>
+
+  <Card title="Update Changes" icon="pen-to-square">
+    Keep information current when drivers get new numbers
+  </Card>
+
+  <Card title="Disable, Don't Delete" icon="ban">
+    Always disable inactive drivers to preserve trip history
+  </Card>
+</CardGroup>
+
+## Driver vs. Vehicle Management
+
+Understanding the differences:
+
+| Aspect               | Drivers               | Vehicles                       |
+| -------------------- | --------------------- | ------------------------------ |
+| **What**             | Human resources       | Physical assets                |
+| **Typical Count**    | 5-50                  | 5-50                           |
+| **Info Required**    | Name, phone           | Registration, type, ownership  |
+| **Change Frequency** | Medium (months/years) | Low (years)                    |
+| **Key Metric**       | Trip count            | Profitability                  |
+| **Editing**          | Name & phone editable | Only type & ownership editable |
+| **When Inactive**    | Disable               | Disable                        |
+
+<Tip>
+  Both drivers and vehicles should be disabled (not deleted) when no longer
+  active to preserve historical data integrity.
+</Tip>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="How many drivers can I add?" icon="users">
+    **Answer:** Unlimited Travada supports teams of any size, from 1 driver to
+    100+ **Note:** There's no separate per-driver charge (pricing is per
+    vehicle)
+  </Accordion>
+
+  <Accordion title="Can I delete a driver?" icon="trash">
+    **Not Recommended:** Deleting removes all trip history links **Better
+    Option:** Disable the driver instead **Why?** Preserves trip assignments,
+    maintains data integrity
+  </Accordion>
+
+  <Accordion title="What if two drivers have the same name?" icon="clone">
+    **Solution:** Differentiate in the name field **Examples:** - "John Kamau
+    (Senior)" and "John Kamau (Junior)" - "John K. - KBE 127H" (include vehicle
+    if dedicated) - "John Kamau 001" and "John Kamau 002" **Also:** Phone
+    numbers help distinguish them
+  </Accordion>
+
+  <Accordion title="Can Staff add drivers?" icon="user">
+    **Answer:** No, Admin only **Reason:** Personnel management is an
+    administrative function **Workaround:** Staff can request Admin to add
+    drivers as needed
+  </Accordion>
+
+  <Accordion title="Do drivers appear in reports?" icon="file-chart-column">
+    **Answer:** Yes, trip reports include driver names **Used for:** - Verifying
+    who drove specific trips - Client documentation - Internal performance
+    tracking
+  </Accordion>
+</AccordionGroup>
+
+## Integration with Other Features
+
+Drivers connect to:
+
+<Tabs>
+  <Tab title="Expenditure">
+    **Trip Recording:** - Every trip requires driver selection - Only active
+    drivers appear in dropdown - Trip history tracks per driver
+  </Tab>
+
+  <Tab title="Reports">
+    **Documentation:** - Driver name included in trip reports - Filter reports
+    by driver (future feature) - Performance summaries
+  </Tab>
+
+  <Tab title="Dashboard">
+    **Visibility:** - Trip completion data includes driver assignments - Can
+    analyze trips by driver (manual review)
+  </Tab>
+</Tabs>
+
+## Difference from HR Systems
+
+**Travada is NOT an HR system**
+
+Travada tracks driver trip assignments, not:
+
+- ❌ Employment contracts
+- ❌ Salary details
+- ❌ Leave management
+- ❌ Performance reviews
+- ❌ Disciplinary records
+
+**Use Travada for:** Trip assignment and activity tracking
+
+**Use separate HR system for:** Employment and personnel management
+
+## Driver Performance Insights
+
+While Travada doesn't have a dedicated driver performance dashboard (yet), you can:
+
+### Manual Analysis
+
+1. **Filter trips by driver** (Expenditure page)
+2. **Count trips** over a period
+3. **Review destinations** served
+4. **Check expense patterns** (fuel usage, extra costs)
+
+### Future Features
+
+Coming enhancements:
+
+- Driver performance dashboard
+- Trips per driver statistics
+- Driver efficiency metrics
+- Automatic driver rankings
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Adding Drivers"
+    icon="plus"
+    href="/features/drivers/adding-driver"
+  >
+    Step-by-step guide to add drivers to your team
+  </Card>
+  <Card
+    title="Editing Drivers"
+    icon="pen-to-square"
+    href="/features/drivers/editing-driver"
+  >
+    Update driver names and phone numbers
+  </Card>
+  <Card
+    title="Disabling Drivers"
+    icon="ban"
+    href="/features/drivers/disabling-drivers"
+  >
+    Manage inactive drivers properly
+  </Card>
+  <Card
+    title="Record Trips"
+    icon="route"
+    href="/getting-started/recording-first-trip"
+  >
+    Start assigning trips to drivers
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble managing drivers:
+
+1. Review [Adding Drivers](/getting-started/adding-drivers) for basics
+2. Check [Common Issues](/faq/common-issues)
+3. Verify user role (Admin required for management)
+4. [Contact Support](/faq/contact-support) for assistance

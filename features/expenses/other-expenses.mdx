@@ -1,0 +1,432 @@
+---
+title: "Other Expenses"
+description: "Track non-fuel operational costs across your fleet"
+icon: "receipt"
+---
+
+The "Others" tab groups all non-fuel expenses together, giving you visibility into costs like clerk fees, driver allowances, parking, repairs, and miscellaneous expenses. While individually smaller than fuel, these costs add up quickly and deserve careful monitoring.
+
+## What's Included in Other Expenses
+
+The Others tab displays five expense categories:
+
+### 1. Clerk Fee
+
+Payments to depot or port clerks who assist with:
+- Container clearance at ports
+- Depot paperwork processing
+- Loading/unloading coordination
+- Documentation handling
+
+**Typical amounts:** KES 1,000 - 5,000 per trip (depending on container size and complexity)
+
+**Common for:** Trailer trucks, container transport, import/export operations
+
+### 2. Milage Fee
+
+Allowances paid to drivers for long-distance trips, covering:
+- Per-kilometer compensation
+- Long-haul trip incentives
+- Distance-based driver allowances
+- Overnight trip compensation
+
+**Typical amounts:** KES 2,000 - 15,000 per trip (based on distance and company policy)
+
+**Common for:** Inter-city routes, overnight deliveries, long-distance freight
+
+<Info>
+Note the spelling: "Milage Fee" (single 'l') is how it appears in the Travada system. This is the UI terminology used throughout.
+</Info>
+
+### 3. Parking Fee
+
+All parking-related costs:
+- Overnight parking charges
+- Loading zone fees
+- Depot parking
+- City center parking permits
+- Truck stop fees
+
+**Typical amounts:** KES 200 - 3,000 per trip (varies by location and duration)
+
+**Common for:** All vehicle types, especially urban deliveries and overnight trips
+
+### 4. Repair Cost
+
+Vehicle maintenance and repair expenses:
+- Garage services
+- Parts replacement
+- Emergency roadside repairs
+- Scheduled maintenance
+- Tire changes
+- Oil changes and servicing
+
+**Typical amounts:** KES 1,000 - 100,000+ per trip (varies widely based on issue severity)
+
+**Common for:** All vehicles, but frequency varies by vehicle age and condition
+
+### 5. Extra Cost
+
+Miscellaneous expenses not covered by other categories:
+- Car wash
+- Traffic fines
+- Toll charges
+- Loading assistance fees
+- Security fees
+- Documentation costs
+- Any other operational costs
+
+**Typical amounts:** KES 500 - 5,000 per trip
+
+**Common for:** All trips, catch-all category for unexpected costs
+
+## What You See on the Others Tab
+
+**At the top right:**
+- **Total Other Expenses** - Combined total of all five categories
+
+**In the main table:**
+- Vehicle registration
+- Driver name
+- Destination
+- Trip date
+- Clerk fee amount
+- Milage fee amount
+- Parking fee amount
+- Repair cost amount
+- Extra cost amount
+- Total per trip (sum of these five)
+
+Each row shows one trip's non-fuel expenses.
+
+## Why Track These Separately?
+
+### Cost Pattern Recognition
+
+Different expense types reveal different insights:
+
+**Rising clerk fees** → More complex shipments or port delays  
+**Increasing repair costs** → Vehicle aging, time to replace?  
+**Growing parking fees** → Route changes or longer wait times  
+**Extra costs climbing** → Lack of cost discipline or new operational challenges
+
+### Budget Allocation
+
+Knowing the breakdown helps you budget accurately:
+
+**Example monthly budget:**
+- Clerk fees: KES 50,000 (10 container trips × KES 5,000)
+- Milage fees: KES 120,000 (15 long-haul trips × KES 8,000)
+- Parking: KES 25,000 (average KES 1,000/trip × 25 trips)
+- Repairs: KES 80,000 (maintenance reserve)
+- Extra: KES 30,000 (buffer for unexpected)
+
+Total non-fuel: KES 305,000/month
+
+### Operational Decisions
+
+Individual category trends drive specific actions:
+
+| Rising Cost | Likely Cause | Action |
+|-------------|--------------|--------|
+| Clerk fees | More complex loads | Renegotiate rates or change routes |
+| Milage fees | More long-distance work | Adjust pricing to clients |
+| Parking | Longer delivery times | Investigate driver efficiency |
+| Repairs | Aging vehicle | Budget for replacement |
+| Extra costs | Poor cost control | Review approval processes |
+
+## Filtering Other Expenses
+
+Use filters to analyze specific cost types:
+
+### By Date Range
+
+**Use cases:**
+
+**Last 30 days:**
+"What did we spend on repairs this month?"
+- Filter to last 30 days
+- Look at repair cost column
+- Compare to budgeted repair amount
+
+**Quarter-end:**
+"What were Q1 clerk fees?"
+- Set date range: Jan 1 - Mar 31
+- Check clerk fee total
+- Compare to Q1 revenue to calculate as %
+
+### By Vehicle
+
+**Use case: Vehicle cost comparison**
+
+<Steps>
+  <Step title="Filter to one vehicle">
+    Select KCA 123A from vehicle dropdown
+  </Step>
+  
+  <Step title="Check repair costs">
+    Look at total repair cost for this vehicle
+    Example: KES 45,000 over 3 months
+  </Step>
+  
+  <Step title="Switch vehicles">
+    Select KBZ 456C and repeat
+    Example: KES 85,000 over 3 months
+  </Step>
+  
+  <Step title="Make decision">
+    KBZ 456C has nearly 2× repair costs
+    Action: Consider replacing this vehicle soon
+  </Step>
+</Steps>
+
+### By Expense Category
+
+Focus on one type of cost:
+
+**Example: Repair cost analysis**
+1. Filter to show only trips with repair costs
+2. Sort by repair cost amount (highest to lowest)
+3. Identify which vehicles have frequent/high repairs
+4. Plan maintenance schedule or replacement
+
+**Example: Clerk fee validation**
+1. Filter to show only trips with clerk fees
+2. Verify they're all container/port trips
+3. Check if amounts are consistent
+4. Flag any unusually high clerk fees for investigation
+
+## Understanding Cost Patterns
+
+### Normal vs Abnormal Costs
+
+**Normal monthly patterns for a 10-vehicle fleet:**
+
+| Category | Expected Range | Red Flag |
+|----------|----------------|----------|
+| Clerk fees | KES 30,000 - 80,000 | > KES 100,000 |
+| Milage fees | KES 80,000 - 200,000 | > KES 250,000 |
+| Parking | KES 15,000 - 40,000 | > KES 60,000 |
+| Repairs | KES 50,000 - 150,000 | > KES 200,000 |
+| Extra | KES 20,000 - 60,000 | > KES 80,000 |
+
+**If you see red flags:**
+- Review individual trip entries for errors
+- Investigate operational changes
+- Check if there was an unusual event (breakdown, emergency repair)
+- Verify entries weren't duplicated
+
+### Seasonal Variations
+
+Certain costs fluctuate seasonally:
+
+**Repair costs:**
+- Higher during rainy season (road damage, breakdowns)
+- Lower during dry season
+- Spike at year-end (scheduled maintenance before holidays)
+
+**Parking fees:**
+- Higher during peak business periods (more trips)
+- Lower during slow seasons
+- Affected by special events (trade shows, holidays)
+
+**Extra costs:**
+- Higher when fuel prices rise (more toll routes to save fuel)
+- Variable based on client demands
+- Affected by regulations (new permit fees, inspection costs)
+
+## Common Analysis Workflows
+
+### Monthly Repair Review
+
+**Who:** Fleet manager  
+**When:** First week of each month  
+**Process:**
+
+1. Filter Others tab to previous month
+2. Sort by repair cost (highest first)
+3. List top 3 vehicles by repair spend
+4. Check if repairs are routine or emergency
+5. Flag vehicles with repair costs > KES 30,000
+6. Schedule inspection for high-cost vehicles
+
+**Example output:**
+- KBZ 456C: KES 45,000 (engine issues - monitor closely)
+- KCA 123A: KES 32,000 (transmission service - normal)
+- KDA 789D: KES 28,000 (tire replacement - expected)
+
+### Quarterly Cost Comparison
+
+**Who:** CFO or owner  
+**When:** End of each quarter  
+**Process:**
+
+1. Filter to Q1 (Jan-Mar)
+2. Note total for each category
+3. Switch filter to Q2 (Apr-Jun)
+4. Compare totals
+
+**Example findings:**
+
+| Category | Q1 Total | Q2 Total | Change |
+|----------|----------|----------|--------|
+| Clerk fees | KES 65,000 | KES 82,000 | +26% |
+| Milage fees | KES 180,000 | KES 195,000 | +8% |
+| Parking | KES 32,000 | KES 29,000 | -9% |
+| Repairs | KES 120,000 | KES 165,000 | +38% |
+| Extra | KES 48,000 | KES 51,000 | +6% |
+
+**Actions:**
+- Clerk fees up 26% - More container work? Good if revenue also up
+- Repairs up 38% - Investigate! Are vehicles aging? Preventive maintenance needed?
+
+### Weekly Extra Cost Audit
+
+**Who:** Operations manager  
+**When:** Every Friday  
+**Process:**
+
+1. Filter to last 7 days
+2. Show only trips with extra costs
+3. Review each entry:
+   - What was the extra cost?
+   - Was it necessary?
+   - Could it have been avoided?
+   - Is it recurring?
+4. Address recurring extra costs proactively
+
+**Example discoveries:**
+- Multiple car wash entries - Set up weekly wash instead of per-trip
+- Frequent toll charges - Plan routes better to minimize tolls
+- Repeated loading assistance - Train regular crew, stop hiring casual labor
+
+## Red Flags to Watch For
+
+### Repair Cost Warning Signs
+
+🚨 **Immediate attention needed:**
+- Same vehicle has repair costs 3+ trips in a row
+- Single repair cost exceeds KES 50,000
+- Vehicle repair costs exceed 30% of its revenue
+
+**Action:** Full vehicle inspection, consider replacement
+
+### Milage Fee Irregularities
+
+🚨 **Investigate when:**
+- Milage fees on short trips (< 100km)
+- Milage fees vary wildly for same route
+- Total milage fees exceed 15% of total expenses
+
+**Action:** Review milage fee policy, ensure consistent application
+
+### Extra Cost Patterns
+
+🚨 **Check if:**
+- Extra costs appear on every single trip
+- Extra cost amounts are suspiciously round (KES 5,000, KES 10,000)
+- Extra costs growing faster than trip volume
+
+**Action:** Require receipts for extra costs, audit recent entries
+
+## Best Practices
+
+<Tip>
+**Cost control tips:**
+- Review other expenses weekly, not just monthly
+- Require receipts for all extra costs above KES 2,000
+- Set approval thresholds (repairs > KES 20,000 need manager approval)
+- Track repair costs per vehicle to identify problems early
+- Compare parking fees across drivers - are some less efficient?
+- Investigate any cost category that grows faster than revenue
+</Tip>
+
+### Documentation Standards
+
+For each expense type:
+
+**Clerk fees:**
+- Keep receipt from clerk
+- Note container number
+- Document what service was provided
+
+**Milage fees:**
+- Record actual distance traveled
+- Verify against company milage policy
+- Track which drivers receive milage most often
+
+**Parking:**
+- Keep parking tickets/receipts
+- Note location and duration
+- Question overnight parking if trip shouldn't require it
+
+**Repairs:**
+- Always get itemized invoice from garage
+- Photograph major repairs
+- Keep service records per vehicle
+
+**Extra costs:**
+- Require receipts for amounts > KES 1,000
+- Note the reason in trip comments
+- Review monthly to identify recurring extras that should be budgeted
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Category total doesn't match individual entries">
+    Refresh the page - sometimes filters don't clear properly. If the issue persists, check if you have overlapping date filters that are excluding some entries.
+  </Accordion>
+  
+  <Accordion title="Can I move an expense from Extra to another category?">
+    No. To fix miscategorization, you must edit the original trip in Expenditure. Find the trip, delete it, and re-record with costs in correct categories.
+  </Accordion>
+  
+  <Accordion title="Why are parking fees so high?">
+    Filter to show only parking costs and sort by amount. Check if there are unusually large entries (data entry errors like KES 30,000 instead of KES 3,000). Also verify drivers aren't including meals or other costs as "parking."
+  </Accordion>
+  
+  <Accordion title="How do I budget for repairs?">
+    Review last 12 months of repair costs, calculate monthly average, add 20% buffer for unexpected repairs. Example: Average KES 80,000/month × 1.2 = Budget KES 96,000/month.
+  </Accordion>
+</AccordionGroup>
+
+## Reporting on Other Expenses
+
+While you generate full expense reports from the All tab, you can use Others tab data to:
+
+### Create Category-Specific Reports
+
+**Example: Repair Cost Report**
+1. Filter to your desired period
+2. Export repair cost data
+3. Create a summary showing:
+   - Total repair spend
+   - Repair cost by vehicle
+   - Breakdown of repair types (if noted in comments)
+   - Comparison to previous period
+
+**Use case:** Present to owner to justify vehicle replacement budget
+
+### Build Operational Metrics
+
+**Examples:**
+- Repair cost per kilometer
+- Parking fees as % of revenue
+- Average clerk fee per container
+- Milage fee per 100km
+- Extra costs per trip
+
+These metrics help you:
+- Benchmark against industry standards
+- Set realistic budgets
+- Identify efficiency opportunities
+- Track improvement over time
+
+## Next Steps
+
+After mastering other expense tracking:
+
+1. Review [Viewing All Expenses](/features/expenses/viewing-expenses) for complete expense analysis
+2. Check [Fuel Cost Tracking](/features/expenses/fuel-costs) for your largest expense category
+3. Learn [Bulk Fuel Discounts](/features/expenses/fuel-discounts) to maximize savings
+4. Return to [Expenses Overview](/features/expenses/overview)

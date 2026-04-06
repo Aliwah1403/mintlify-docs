@@ -1,0 +1,675 @@
+---
+title: "Month-End Reporting"
+description: "Complete guide to closing out the month and generating financial reports"
+icon: "calendar-check"
+---
+
+Month-end is when you pull together all the trip data from the past 30 days into clear financial reports for stakeholders. This guide walks you through the complete month-end process in Travada, from data verification to report generation and distribution.
+
+## Month-End Overview
+
+**Goal:** Produce accurate financial summaries showing what you earned, spent, and profited for the month.
+
+**Who does this:** Typically Admin or Finance team members
+
+**How long it takes:** 1-2 hours depending on fleet size and complexity
+
+**Frequency:** First 1-3 days of each new month (e.g., run January reports on Feb 1-3)
+
+## The Month-End Process (6 Steps)
+
+1. **Data verification** - Ensure all trips are recorded
+2. **Income review** - Confirm all revenue is captured
+3. **Expense review** - Verify all costs are entered
+4. **Dashboard analysis** - Review performance metrics
+5. **Report generation** - Create formal reports
+6. **Report distribution** - Share with stakeholders
+
+Let's go through each step in detail.
+
+## Step 1: Data Verification
+
+Before generating reports, confirm all trips for the month are in Travada.
+
+### Check Trip Completeness
+
+<Steps>
+  <Step title="Go to Expenditure">
+    Navigate to the Expenditure section
+  </Step>
+  
+  <Step title="Set date filter">
+    Filter to the previous month (e.g., January 1-31, 2026)
+  </Step>
+  
+  <Step title="Count trips">
+    Note the total number of trips recorded
+  </Step>
+  
+  <Step title="Cross-reference">
+    Compare against:
+    - Driver trip logs (if kept separately)
+    - Client delivery confirmations
+    - Fuel receipt count
+    - Your expected trip volume
+  </Step>
+  
+  <Step title="Identify missing trips">
+    If the count is lower than expected, investigate which trips are missing
+  </Step>
+</Steps>
+
+**Common gaps:**
+- Last few days of the month (trips completed but not yet recorded)
+- Weekend trips (often forgotten)
+- Emergency or unplanned trips
+- Trips by part-time drivers
+
+<Tip>
+**Best practice:** Maintain a simple trip log (even a notebook or spreadsheet) where drivers note every trip. This gives you a quick reference count to verify against Travada.
+</Tip>
+
+### Verify Trip Details
+
+Spot-check 10-20% of trips for accuracy:
+
+1. Pick random trips throughout the month
+2. Check each against original documentation (receipts, invoices)
+3. Verify:
+   - Amounts match receipts
+   - Destination is correct
+   - Vehicle and driver are accurate
+   - Date is right
+
+**Red flags:**
+- Round numbers everywhere (KES 10,000, 5,000, 15,000) - might be estimates
+- Suspiciously high or low amounts
+- Same amount repeated multiple times
+- Dates all clustered (suggests batch entry with date errors)
+
+### Add Missing Trips
+
+If you find missing trips:
+
+<Note>
+**Important:** You can record trips with past dates. Just ensure you set the correct date when entering the trip so it appears in the right month's data.
+</Note>
+
+1. Gather trip information from driver or client
+2. Go to Expenditure → Add Trip
+3. **Critical:** Set the trip date to when it actually occurred (not today)
+4. Enter all details normally
+5. Verify it appears in the month you're reporting on
+
+## Step 2: Income Review
+
+Confirm all revenue is captured and accurate.
+
+### Total Income Check
+
+<Steps>
+  <Step title="Go to Incomes">
+    Navigate to Incomes section
+  </Step>
+  
+  <Step title="Open All tab">
+    This shows complete income picture
+  </Step>
+  
+  <Step title="Filter to the month">
+    Set date range to the month you're reporting (e.g., Jan 1-31)
+  </Step>
+  
+  <Step title="Note the total income">
+    Look at the total in the top right corner
+  </Step>
+</Steps>
+
+**Example:**
+- Total Income for January 2026: KES 2,450,000
+
+### Break Down by Income Type
+
+Check the two income components:
+
+**1. Rate Income (All tab)**
+- Filter to Rate tab
+- Note total rate fees
+- This should be your primary revenue source
+
+**Example:** KES 2,320,000 in rate fees
+
+**2. Detention Income (Detention tab)**
+- Switch to Detention tab
+- Note total detention fees
+- Should be smaller portion of income
+
+**Example:** KES 130,000 in detention fees
+
+**Verify:** Rate + Detention = Total Income
+- KES 2,320,000 + KES 130,000 = KES 2,450,000 ✓
+
+### Client Reconciliation
+
+For each major client, verify income matches what they should owe:
+
+1. Filter income by destination or client name
+2. Sum their trips
+3. Compare to:
+   - Your invoices to them
+   - Their payment records
+   - Agreed rates × number of trips
+
+**If there's a mismatch:**
+- Missing trips for this client?
+- Rate entered incorrectly?
+- Detention fees not captured?
+- They had trips you forgot to record?
+
+<AccordionGroup>
+  <Accordion title="Example: Client Reconciliation">
+    **Client:** Artcaffe (food deliveries)
+    
+    **Expected:**
+    - 12 trips in January
+    - KES 15,000 per trip
+    - Total should be: KES 180,000
+    
+    **Travada shows:**
+    - Filter to "Artcaffe" destination
+    - 11 trips found
+    - Total: KES 165,000
+    
+    **Issue:** Missing 1 trip
+    
+    **Action:** Check with driver, find missing trip details, add to Travada before finalizing reports
+  </Accordion>
+</AccordionGroup>
+
+## Step 3: Expense Review
+
+Verify all costs are captured and categorized correctly.
+
+### Total Expenses Check
+
+<Steps>
+  <Step title="Go to Expenses">
+    Navigate to Expenses section
+  </Step>
+  
+  <Step title="Open All tab">
+    Shows all expense categories combined
+  </Step>
+  
+  <Step title="Filter to the month">
+    Set date range to your reporting month
+  </Step>
+  
+  <Step title="Note total expenses">
+    Check the total in the top right
+  </Step>
+</Steps>
+
+**Example:**
+- Total Expenses for January 2026: KES 1,380,000
+
+### Review by Category
+
+Check each expense category for reasonableness:
+
+**Fuel (largest category):**
+- Go to Fuel tab
+- Note total fuel cost
+- Should be 40-60% of total expenses
+- Check if any fuel discounts were applied
+
+**Example:** KES 720,000 (52% of total expenses) ✓
+
+**Other Expenses:**
+- Go to Others tab
+- Review each category:
+  - Clerk fees: KES 85,000
+  - Milage fees: KES 320,000
+  - Parking: KES 45,000
+  - Repair costs: KES 175,000
+  - Extra costs: KES 35,000
+- Total others: KES 660,000
+
+**Verify:** Fuel + Others = Total Expenses
+- KES 720,000 + KES 660,000 = KES 1,380,000 ✓
+
+### Spot Unusual Expenses
+
+Look for anomalies:
+
+**Red flags:**
+- Repair costs > 15% of total expenses (vehicles deteriorating?)
+- Extra costs > 5% of total expenses (poor cost control?)
+- Single trips with very high expenses (data entry errors?)
+- Expense categories with suspicious patterns
+
+**Example investigation:**
+
+Filter to show only trips with repair costs > KES 20,000:
+- KBZ 456C: KES 45,000 (engine repair)
+- KBZ 456C: KES 38,000 (transmission issue)
+- KBZ 456C: KES 32,000 (electrical repair)
+
+**Finding:** Same vehicle has had KES 115,000 in repairs this month alone. Recommend replacement evaluation.
+
+## Step 4: Dashboard Analysis
+
+Use the Dashboard to get the big picture and identify trends.
+
+### Key Financial Metrics
+
+<Steps>
+  <Step title="Go to Dashboard">
+    Navigate to the main Dashboard
+  </Step>
+  
+  <Step title="Set date filter">
+    Filter to your reporting month
+  </Step>
+  
+  <Step title="Review the three summary cards">
+    - Total Income: KES 2,450,000 (vs previous period)
+    - Total Expenses: KES 1,380,000 (vs previous period)
+    - Total Profit: KES 1,070,000 (vs previous period)
+  </Step>
+</Steps>
+
+**Calculate key ratios:**
+
+**Profit Margin:**
+```
+(Total Profit ÷ Total Income) × 100
+(1,070,000 ÷ 2,450,000) × 100 = 43.7%
+```
+
+**Expense Ratio:**
+```
+(Total Expenses ÷ Total Income) × 100
+(1,380,000 ÷ 2,450,000) × 100 = 56.3%
+```
+
+**Benchmarks:**
+- **Excellent:** > 40% profit margin
+- **Good:** 30-40% profit margin
+- **Concerning:** < 25% profit margin
+
+### Review Dashboard Charts
+
+**Financial Overview (Bar Chart):**
+- Shows income vs expenses trend
+- Are you consistently profitable each day?
+- Any days with losses?
+
+**Top Destinations (Bar Chart):**
+- Which routes generated most revenue?
+- Focus on these profitable routes
+- Consider raising prices on lower-revenue routes
+
+**Expense Breakdown (Donut Chart):**
+- Where is money going?
+- Fuel should be largest (40-60%)
+- Are other categories growing?
+
+**Trip Completion Trend (Line Chart):**
+- How many trips per day?
+- Any unusual dips (slow days, breakdowns)?
+- Consistent volume or volatile?
+
+**Vehicle Performance (Bars):**
+- Which vehicles are most profitable?
+- Any unprofitable vehicles?
+- Vehicles with no trips (why not)?
+
+### Month-over-Month Comparison
+
+Compare this month to last month:
+
+| Metric | January 2026 | December 2025 | Change |
+|--------|--------------|---------------|--------|
+| Income | KES 2,450,000 | KES 2,280,000 | +7.5% |
+| Expenses | KES 1,380,000 | KES 1,290,000 | +7.0% |
+| Profit | KES 1,070,000 | KES 990,000 | +8.1% |
+| Trips | 85 trips | 78 trips | +9.0% |
+
+**Insights:**
+- ✅ Income growing faster than expenses (good)
+- ✅ Profit increasing (excellent)
+- ✅ More trips completed (operational efficiency)
+- Action: Maintain current performance, investigate what's working
+
+## Step 5: Report Generation
+
+Now create formal reports to share with stakeholders.
+
+<Note>
+**🔒 Admin Only** - Only Admin users can generate reports. Staff users can view data but cannot create reports.
+</Note>
+
+### Generate Expense Report
+
+<Steps>
+  <Step title="Go to Expenses → All tab">
+    This shows complete expense picture
+  </Step>
+  
+  <Step title="Set your date filter">
+    Filter to the reporting month (Jan 1-31, 2026)
+  </Step>
+  
+  <Step title="Click Generate Report">
+    Look for the "Generate Report" button
+  </Step>
+  
+  <Step title="Enter report name">
+    Use clear naming: "January 2026 Fleet Expenses"
+  </Step>
+  
+  <Step title="Click Create">
+    Report is generated and saved to Reports section
+  </Step>
+</Steps>
+
+**What's included:**
+- All expense categories
+- Trip-by-trip breakdown
+- Category totals
+- Overall total expenses
+- Date range covered
+
+### Generate Income Reports (if needed)
+
+For client invoicing, you may need rate reports:
+
+**Process varies by client type:**
+
+**1. Single large client (e.g., monthly contract):**
+- Go to Incomes → Rate tab
+- Filter to client's destination
+- Filter to the month
+- Generate Rate Report
+- Include client name, container details if applicable, VAT
+
+See [Generating Rate Report](/features/reports/generating-rate-report) for details.
+
+**2. Multiple small clients:**
+- Generate separate rate report for each major client
+- May combine minor clients into "Miscellaneous" category
+
+### Custom Analysis Reports
+
+You might also want to create:
+
+**Vehicle Performance Report:**
+- Use Dashboard → Vehicle Performance data
+- Screenshot or export
+- Shows profitability per vehicle
+
+**Route Profitability Report:**
+- Use Dashboard → Top Destinations
+- Identify most profitable routes
+- Share with sales/operations team
+
+**Fuel Efficiency Report:**
+- Go to Expenses → Fuel tab
+- Calculate fuel cost per trip
+- Compare across vehicles
+- Identify inefficient vehicles
+
+## Step 6: Report Distribution
+
+Share reports with the right stakeholders.
+
+### Who Gets What
+
+**Company Owner/CEO:**
+- ✅ Dashboard summary (screenshot or PDF)
+- ✅ Month-over-month comparison
+- ✅ Key insights and recommendations
+- ❌ Detailed expense breakdowns (too much detail)
+
+**CFO/Finance Manager:**
+- ✅ Complete expense report
+- ✅ Income breakdown
+- ✅ Profit analysis
+- ✅ Budget vs actual comparison
+- ✅ Any anomalies or issues found
+
+**Operations Manager:**
+- ✅ Vehicle performance data
+- ✅ Trip volume trends
+- ✅ Fuel efficiency metrics
+- ✅ Maintenance/repair costs per vehicle
+- ❌ Profit details (unless they need it)
+
+**Clients:**
+- ✅ Their specific rate reports
+- ✅ Trip summaries for their deliveries
+- ✅ Detention fee breakdowns if applicable
+- ❌ Your overall company financials
+
+### Report Sharing Methods
+
+**Option 1: Travada Reports Section**
+
+<Steps>
+  <Step title="Go to Reports">
+    Navigate to Reports section
+  </Step>
+  
+  <Step title="Find your reports">
+    All reports you generated are listed here
+  </Step>
+  
+  <Step title="Copy link">
+    Click "Copy Link" next to each report
+  </Step>
+  
+  <Step title="Share via email">
+    Paste link in email to stakeholder
+  </Step>
+</Steps>
+
+**Benefits:**
+- Recipients always see current version
+- No file size limits
+- Can track views
+
+**Limitations:**
+- Recipients need Travada access (or public link if enabled)
+- Reports expire after 30 days by default
+
+**Option 2: Download and Email**
+
+1. Open the report in Travada
+2. Download as PDF or Excel
+3. Attach to email
+4. Send to stakeholders
+
+**Benefits:**
+- Works for anyone (no Travada access needed)
+- Permanent record (doesn't expire)
+- Can be printed or archived
+
+**Limitations:**
+- File attachments can be large
+- If data changes, report is outdated
+
+### Month-End Report Email Template
+
+```
+Subject: January 2026 Financial Summary - [Company Name]
+
+Hi [Stakeholder Name],
+
+Please find attached our financial summary for January 2026:
+
+KEY HIGHLIGHTS:
+• Total Income: KES 2,450,000 (+7.5% vs December)
+• Total Expenses: KES 1,380,000 (+7.0% vs December)
+• Net Profit: KES 1,070,000 (+8.1% vs December)
+• Profit Margin: 43.7%
+• Trips Completed: 85 trips
+
+NOTABLE INSIGHTS:
+• Most profitable route: Nairobi-Mombasa (KES 680,000 revenue)
+• Top performing vehicle: KCA 123A (KES 145,000 profit)
+• Fuel costs remain stable at 52% of total expenses
+• Repair costs elevated due to KBZ 456C issues - replacement recommended
+
+ATTACHED REPORTS:
+• Complete Expense Report (January 2026)
+• Vehicle Performance Summary
+• Month-over-Month Comparison
+
+Let me know if you need any clarification or additional analysis.
+
+Best regards,
+[Your Name]
+```
+
+## Month-End Checklist
+
+Use this checklist to ensure you complete all steps:
+
+**Data Verification:**
+- [ ] All trips for the month are recorded in Expenditure
+- [ ] Trip count matches expected volume
+- [ ] Spot-checked 10-20% of trips for accuracy
+- [ ] Added any missing trips with correct dates
+
+**Income Review:**
+- [ ] Total income verified in Incomes → All tab
+- [ ] Rate income subtotal confirmed
+- [ ] Detention income subtotal confirmed
+- [ ] Major clients reconciled (amounts match expectations)
+
+**Expense Review:**
+- [ ] Total expenses verified in Expenses → All tab
+- [ ] Fuel expenses checked (40-60% of total?)
+- [ ] Other expenses reviewed by category
+- [ ] Unusual expenses investigated and documented
+
+**Dashboard Analysis:**
+- [ ] Three summary cards reviewed (Income, Expenses, Profit)
+- [ ] Profit margin calculated and benchmarked
+- [ ] Dashboard charts reviewed for insights
+- [ ] Month-over-month comparison completed
+- [ ] Key trends and patterns identified
+
+**Report Generation:**
+- [ ] Expense report generated and named clearly
+- [ ] Client-specific rate reports created (if needed)
+- [ ] Any custom reports prepared (vehicle performance, etc.)
+- [ ] All reports saved in Reports section
+
+**Report Distribution:**
+- [ ] Owner/CEO report prepared and sent
+- [ ] Finance team reports shared
+- [ ] Operations reports distributed
+- [ ] Client invoices generated and sent
+- [ ] Reports archived for future reference
+
+## Troubleshooting Month-End Issues
+
+<AccordionGroup>
+  <Accordion title="Numbers don't add up between sections">
+    Check your date filters - they must be identical across all sections:
+    - Expenditure: Jan 1-31
+    - Incomes: Jan 1-31
+    - Expenses: Jan 1-31
+    - Dashboard: Jan 1-31
+    
+    Even one day's difference will cause mismatches.
+  </Accordion>
+  
+  <Accordion title="Trip count seems too low">
+    Common causes:
+    1. Late month trips not yet recorded (check with drivers)
+    2. Weekend trips forgotten
+    3. Part-time drivers not submitting trip info
+    4. Emergency trips not documented
+    
+    Cross-reference fuel receipts - you should have one receipt per trip minimum.
+  </Accordion>
+  
+  <Accordion title="Profit margin suddenly dropped">
+    Investigate:
+    1. Did fuel prices increase? (Check recent fuel costs per liter)
+    2. Unusual repair costs this month? (Filter Expenses → Others → Repair)
+    3. Are you charging clients enough? (Compare rates to expenses)
+    4. Data entry errors? (Spot-check high-expense trips)
+  </Accordion>
+  
+  <Accordion title="Can't generate reports (button missing)">
+    You need Admin privileges. If you're Staff, ask an Admin to:
+    1. Generate the reports for you, or
+    2. Upgrade your role to Admin
+  </Accordion>
+  
+  <Accordion title="Report expired before I could share it">
+    Reports expire after 30 days by default. Options:
+    1. Regenerate the report (if still in same month period)
+    2. Download reports immediately after generating
+    3. Request admin to adjust expiry settings (if available)
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Month-End Analysis
+
+Once you master the basics, add these analyses:
+
+### Year-over-Year Comparison
+
+Compare this January to last January:
+
+- Income growth rate
+- Expense control (are costs growing slower than revenue?)
+- Profit improvement
+- Trip volume changes
+
+### Budget Variance Analysis
+
+If you set monthly budgets:
+
+| Category | Budget | Actual | Variance | % |
+|----------|--------|--------|----------|---|
+| Income | KES 2,500,000 | KES 2,450,000 | -50,000 | -2% |
+| Fuel | KES 700,000 | KES 720,000 | +20,000 | +3% |
+| Repairs | KES 120,000 | KES 175,000 | +55,000 | +46% |
+
+**Action:** Repair costs significantly over budget - investigate why.
+
+### Per-Vehicle ROI
+
+Calculate return on investment for each vehicle:
+
+```
+Monthly Vehicle ROI = (Vehicle Profit ÷ Vehicle Book Value) × 12
+```
+
+Helps decide which vehicles to keep, replace, or add more of.
+
+### Client Profitability Ranking
+
+Rank clients by profit margin:
+
+1. Calculate profit per client (income - costs for their trips)
+2. Rank highest to lowest
+3. Focus on retaining high-profit clients
+4. Renegotiate or drop low-profit clients
+
+## Next Steps
+
+After mastering month-end reporting:
+
+1. Explore [Vehicle Performance Analysis](/guides/vehicle-performance-analysis) for deeper fleet insights
+2. Learn [Client Invoicing](/guides/client-invoicing) for professional billing
+3. Review [Bulk Fuel Discount](/guides/bulk-fuel-discount) to track savings
+4. Return to [Complete Trip Workflow](/guides/complete-trip-workflow) for daily operations
+
+**Remember:** Month-end reporting gets faster each month as you develop a routine. First month might take 2-3 hours; by month 3, you'll be done in under an hour.

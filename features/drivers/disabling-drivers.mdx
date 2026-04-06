@@ -1,0 +1,407 @@
+---
+title: Disabling Drivers
+description: Manage inactive drivers without losing historical data
+icon: "user-slash"
+---
+
+<Note>
+  🔒 **Admin Only** - Disabling and enabling drivers requires Administrator
+  permissions
+</Note>
+
+## Overview
+
+Disabling drivers is how you remove them from active use in Travada while preserving all historical trip data. This is the recommended approach when drivers leave, contracts end, or drivers go inactive.
+
+<img src="/images/inactive-drivers-page.png" alt="Inactive Drivers Page" />
+
+## Disable vs. Delete
+
+Understanding the critical difference:
+
+<Tabs>
+  <Tab title="✅ Disable (Recommended)">
+    **What happens:** - Driver removed from trip dropdowns - All trip history
+    preserved - Can be re-enabled later - Still appears in historical reports -
+    Assignment data intact **Use when:** - Driver resigned - Contract ended -
+    Temporarily suspended - Seasonal worker off-season - Any time driver won't
+    be assigned trips
+  </Tab>
+
+  <Tab title="❌ Delete (Not Recommended)">
+    **What happens:** - Driver completely removed - All trip assignments
+    orphaned - Reports may show missing data - Cannot be undone **Use when:** -
+    Almost never! - Only for test drivers with no trip data - Only for
+    duplicates never used
+  </Tab>
+</Tabs>
+
+<Warning>
+  **Always Disable, Never Delete!** Deleting drivers destroys trip assignment
+  records and can corrupt your historical data.
+</Warning>
+
+## When to Disable Drivers
+
+<AccordionGroup>
+  <Accordion title="Driver Resigned" icon="door-open">
+    **Scenario:** Driver quit or terminated **Action:** Disable immediately
+    after last day **Reason:** - No longer available for assignments -
+    Historical trip data needed for accounting - May need for disputes or
+    verification **Note:** Keep disabled for at least one full year
+  </Accordion>
+
+<Accordion title="Contract Ended" icon="file-contract">
+  **Scenario:** Temporary or contract driver's term finished **Action:** Disable
+  when contract expires **Reason:** - Driver no longer employed - Historical
+  data needed for contract verification - Performance review for potential
+  rehire **Tip:** Set calendar reminder for contract end dates
+</Accordion>
+
+<Accordion title="Long-Term Leave" icon="umbrella-beach">
+  **Scenario:** Driver on extended medical leave, suspension, or sabbatical
+  **Action:** Disable while away (2+ weeks) **Reason:** - Prevents accidental
+  assignment - Clearly shows unavailability - Can re-enable upon return
+  **Duration:** Any absence over 2 weeks
+</Accordion>
+
+<Accordion title="Seasonal Workers" icon="calendar">
+  **Scenario:** Driver only works certain times of year **Action:** Disable
+  during off-season **Reason:** - Cleaner active driver list - Focuses team on
+  available drivers - Easy to re-enable when needed **Example:** School van
+  drivers disabled during holidays
+</Accordion>
+
+  <Accordion title="Permanent Departure" icon="person-walking-arrow-right">
+    **Scenario:** Driver retired or permanently left logistics industry
+    **Action:** Disable permanently **Reason:** - Historical data preserved -
+    Complete employment records - Audit trail maintained **Note:** Will never
+    re-enable, but keep in system
+  </Accordion>
+</AccordionGroup>
+
+## How to Disable a Driver
+
+### Single Driver
+
+<Steps>
+  <Step title="Navigate to Inactive Drivers">
+    Click **Drivers** → **Inactive Drivers** in sidebar
+    <img
+      src="/images/inactive-drivers-nav.png"
+      alt="Inactive Drivers Navigation"
+    />
+  </Step>
+
+<Step title="Click Disable Driver Button">
+  Click **+ Disable Driver** button (top right)
+  <img src="/images/disable-driver-button.png" alt="Disable Driver Button" />
+</Step>
+
+<Step title="Select Driver">
+  A dialog opens with checkboxes for all active drivers Check the box next to
+  the driver(s) you want to disable
+  <img src="/images/disable-driver-dialog.png" alt="Disable Driver Dialog" />
+</Step>
+
+<Step title="Confirm Disable">
+  Click **Disable** or **Confirm** Success message appears
+</Step>
+
+  <Step title="Verify">
+    - Driver disappears from Add/Manage Drivers list - Driver appears in
+    Inactive Drivers list - No longer in trip dropdown menus
+  </Step>
+</Steps>
+
+### Multiple Drivers
+
+You can disable several drivers at once:
+
+<Steps>
+  <Step title="Open Disable Dialog">
+    Navigate to Inactive Drivers → Click **+ Disable Driver**
+  </Step>
+
+<Step title="Select Multiple">
+  Check boxes for all drivers you want to disable **Use cases:** - All drivers
+  from ended contracts - Entire seasonal team (e.g., all school van drivers) -
+  Multiple resignations
+</Step>
+
+  <Step title="Confirm">
+    Click **Disable** All selected drivers disabled at once
+  </Step>
+</Steps>
+
+<Tip>
+  **Batch Disabling:** If multiple contract drivers leaving at once, disable
+  them all together for efficiency.
+</Tip>
+
+## What Happens When You Disable
+
+Immediate effects:
+
+✅ **Removed from:**
+
+- Trip recording dropdowns
+- Active driver lists
+- Future trip assignments
+
+✅ **Preserved in:**
+
+- Historical trip data
+- Assignment records
+- Generated reports
+- Trip completion data
+
+✅ **Visible in:**
+
+- Inactive Drivers page
+- Historical trip records
+- Past reports
+
+<Info>
+  Disabled drivers are like "archived" - they exist in the system but marked as
+  inactive.
+</Info>
+
+## Re-enabling Drivers
+
+If you need to bring a driver back:
+
+<Steps>
+  <Step title="Go to Inactive Drivers">
+    Navigate to **Drivers** → **Inactive Drivers**
+  </Step>
+
+<Step title="Find the Driver">Locate the disabled driver in the list</Step>
+
+<Step title="Click Enable">
+  Click the **Enable** button on the driver card
+  <img src="/images/enable-driver-button.png" alt="Enable Driver Button" />
+  Or click **⋮** → **Enable** from menu
+</Step>
+
+<Step title="Confirm">Confirm you want to re-enable</Step>
+
+  <Step title="Verify">
+    - Driver moves back to Add/Manage Drivers list - Disappears from Inactive
+    Drivers - Available in trip dropdowns again - All historical data intact
+  </Step>
+</Steps>
+
+### When to Re-enable
+
+<Tabs>
+  <Tab title="Return from Leave">
+    **Scenario:** Driver back from medical leave or suspension **Action:**
+    Re-enable to resume operations **Verify:** Driver cleared to work, documents
+    current
+  </Tab>
+
+<Tab title="Season Starts">
+  **Scenario:** School year begins, peak season starts **Action:** Re-enable
+  seasonal drivers **Verify:** Licenses renewed, ready for work
+</Tab>
+
+<Tab title="Rehire">
+  **Scenario:** Previously employed driver returns **Action:** Re-enable old
+  profile OR create new one **Consider:** If long gap (1+ year), create new
+  profile
+</Tab>
+
+  <Tab title="Error Correction">
+    **Scenario:** Disabled wrong driver by mistake **Action:** Immediately
+    re-enable **Note:** Check no trips were incorrectly assigned meanwhile
+  </Tab>
+</Tabs>
+
+## Managing Inactive Drivers
+
+The Inactive Drivers page shows:
+
+<img src="/images/inactive-drivers-list.png" alt="Inactive Drivers List" />
+
+**Information displayed:**
+
+- Driver name
+- Phone number
+- When disabled
+- Who disabled them
+- Actions (Enable, Delete)
+
+### Search and Filter
+
+If you have many inactive drivers:
+
+- Search by name
+- Search by phone number
+- Sort by disable date
+- Filter by time period (future feature)
+
+## Deleting Disabled Drivers
+
+<Warning>**Danger Zone:** Deleting is permanent and destroys all data!</Warning>
+
+You _can_ delete drivers from the Inactive Drivers page, but **only do this if:**
+
+✅ Test driver with zero trips  
+✅ Duplicate entry never used  
+✅ Created by mistake with no data
+
+❌ **Never delete if:**
+
+- Has any trip assignments
+- Has historical data
+- Appeared in any reports
+- Unsure if they have data
+
+### How to Delete (Use with Extreme Caution)
+
+<Steps>
+  <Step title="Go to Inactive Drivers">Ensure driver is already disabled</Step>
+
+<Step title="Verify No Trip Data">
+  Check that trip count is zero Confirm no historical assignments exist
+</Step>
+
+<Step title="Click Delete">Click **⋮** → **Delete** on the driver</Step>
+
+<Step title="Confirm Multiple Times">
+  Read warnings carefully Confirm you understand data will be lost
+</Step>
+
+  <Step title="Final Confirmation">
+    Type driver name if prompted Click final delete button
+  </Step>
+</Steps>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Disable, Don't Delete" icon="ban">
+    Always disable drivers unless absolutely certain no data exists
+  </Card>
+
+<Card title="Document Reasons" icon="note-sticky">
+  Keep external notes on why drivers were disabled and when
+</Card>
+
+<Card title="Review Periodically" icon="calendar-check">
+  Quarterly review of inactive drivers - any to permanently delete or re-enable?
+</Card>
+
+  <Card title="Set Reminders" icon="bell">
+    For seasonal drivers, set calendar reminders to re-enable
+  </Card>
+</CardGroup>
+
+## Impact on Reports
+
+<Tabs>
+  <Tab title="Historical Reports">
+    **Existing reports:** - Remain unchanged - Still show disabled driver data -
+    Static snapshots preserved **Why?** Reports are historical records
+  </Tab>
+
+<Tab title="New Reports">
+  **Future reports:** - Can still include disabled driver's trips - If filtering
+  by date, disabled driver assignments appear - Historical accuracy maintained
+  **Why?** Trip assignment data is preserved
+</Tab>
+
+  <Tab title="Trip Lists">
+    **Expenditure page:** - Historical trips still show driver name - No
+    indication driver is now disabled - This is intentional for accuracy
+  </Tab>
+</Tabs>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="Can I disable multiple drivers at once?" icon="layer-group">
+    **Answer:** Yes! In the Disable Driver dialog, check multiple boxes and
+    confirm once.
+  </Accordion>
+
+<Accordion title="What happens to trips already assigned?" icon="route">
+  **Answer:** Nothing - they remain intact Historical trip assignments are
+  preserved exactly as recorded
+</Accordion>
+
+<Accordion title="Can Staff disable drivers?" icon="user">
+  **Answer:** No, Admin only Staff can request Admin to disable drivers as
+  needed
+</Accordion>
+
+<Accordion title="How long should I keep disabled drivers?" icon="clock">
+  **Recommendation:** - Minimum: 1 full year - Better: 3-5 years - Best:
+  Indefinitely (minimal storage impact) **Why?** Disputes, audits, legal
+  requirements, historical analysis
+</Accordion>
+
+  <Accordion title="Can I see which trips a disabled driver did?" icon="list">
+    **Answer:** Yes - Go to Expenditure page - Filter by date range when driver
+    was active - Driver name still appears in trip list - All data accessible
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't find disabled driver" icon="magnifying-glass">
+    **Check:** 1. Are you in Inactive Drivers page (not Add/Manage)? 2. Use
+    search function 3. Clear any filters **If not found:** May not be disabled -
+    check Add/Manage Drivers
+  </Accordion>
+
+<Accordion title="Disable button not appearing" icon="ban">
+  **Cause:** Logged in as Staff, not Admin **Solution:** Request Admin to
+  disable the driver
+</Accordion>
+
+  <Accordion
+    title="Accidentally disabled wrong driver"
+    icon="triangle-exclamation"
+  >
+    **Solution:** Immediately re-enable them 1. Click **Enable** on the driver
+    2. Confirm 3. Driver returns to active status **Impact:** Minimal if caught
+    quickly
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card title="Driver Overview" icon="book" href="/features/drivers/overview">
+    Understanding driver management
+  </Card>
+  <Card
+    title="Editing Drivers"
+    icon="pen-to-square"
+    href="/features/drivers/editing-driver"
+  >
+    Update driver names and phone numbers
+  </Card>
+  <Card
+    title="Adding Drivers"
+    icon="user-plus"
+    href="/features/drivers/adding-driver"
+  >
+    How to add new drivers
+  </Card>
+  <Card title="User Roles" icon="users-gear" href="/getting-started/user-roles">
+    Understand Admin permissions
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you're having trouble with disabling drivers:
+
+1. Verify your user role (Admin required)
+2. Check [Common Issues](/faq/common-issues)
+3. Review [User Roles](/getting-started/user-roles)
+4. [Contact Support](/faq/contact-support) for assistance

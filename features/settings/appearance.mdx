@@ -1,0 +1,264 @@
+---
+title: "Appearance Settings"
+description: "Customize your visual experience and manage disabled assets"
+icon: "palette"
+---
+
+The Appearance section controls how Travada looks and helps you manage vehicles and drivers that are no longer active. This is where workspace administrators customize the interface and clean up inactive assets.
+
+## Theme Settings
+
+### Light vs Dark Mode
+
+Travada offers two visual themes:
+
+**Light Mode (Default):**
+- Clean white background
+- Dark text for readability
+- Best for daytime use and bright environments
+- Lower eye strain in well-lit offices
+
+**Dark Mode:**
+- Dark background with light text
+- Reduces screen glare
+- Ideal for evening work or low-light conditions
+- Popular with users who work late shifts
+
+### How to Switch Themes
+
+<Steps>
+  <Step title="Open Settings">
+    Click the gear icon in the main menu and select **Workspace → General**
+  </Step>
+  
+  <Step title="Find Appearance section">
+    Scroll to the **Appearance** section at the top
+  </Step>
+  
+  <Step title="Toggle theme">
+    Click the theme toggle to switch between Light and Dark mode
+  </Step>
+</Steps>
+
+The change takes effect immediately - no need to refresh the page.
+
+<Tip>
+Try dark mode if you frequently work on trip entry in the evening or early morning. Many logistics teams prefer it for late-night reconciliation work.
+</Tip>
+
+## Vehicle Management
+
+This section shows all vehicles that have been disabled in your system. Disabled vehicles don't appear in trip entry dropdowns but retain all historical data.
+
+### What You Can See
+
+For each disabled vehicle, you'll see:
+
+- **Registration number** - The vehicle's number plate
+- **Vehicle type** - Truck, Canter, Trailer, etc.
+- **Ownership status** - Owned or Hired
+- **Date disabled** - When it was deactivated
+- **Reason** - Why it was disabled (if recorded)
+
+### Managing Disabled Vehicles
+
+You have three options for each disabled vehicle:
+
+**1. Enable Vehicle**
+
+Brings the vehicle back into active use:
+
+- Appears in trip entry dropdowns again
+- Can be assigned to new trips
+- All historical trips remain intact
+- Useful when contracts are renewed or repairs are complete
+
+**2. Keep Disabled**
+
+Leave the vehicle inactive:
+
+- Stays out of trip entry dropdowns
+- Historical data remains accessible
+- Can be re-enabled anytime
+- Good for vehicles on temporary hold
+
+**3. Delete Permanently**
+
+Removes the vehicle completely:
+
+<Warning>
+**Permanent Action** - Deleting a vehicle removes it from the system entirely. Historical trip data may be affected. Only delete vehicles you're certain will never return.
+</Warning>
+
+Only delete when:
+- Vehicle was added by mistake
+- Company permanently sold the vehicle
+- You're absolutely sure it won't be used again
+
+### How to Re-Enable a Vehicle
+
+<Steps>
+  <Step title="Go to Vehicle Management">
+    In Settings → Workspace → General, scroll to **Vehicle Management**
+  </Step>
+  
+  <Step title="Find the vehicle">
+    Locate the vehicle you want to re-enable in the disabled list
+  </Step>
+  
+  <Step title="Click Enable">
+    Click the **Enable** button next to the vehicle
+  </Step>
+  
+  <Step title="Confirm">
+    Confirm you want to activate this vehicle
+  </Step>
+</Steps>
+
+The vehicle immediately appears in the Vehicles page and trip entry dropdowns.
+
+### Common Scenarios
+
+**Seasonal Operations:**
+"We disable trucks during the rainy season and re-enable them when construction resumes"
+→ Keep vehicles disabled during off-season, enable when busy season starts
+
+**Contract Renewals:**
+"A hired truck's contract ended, but we just renewed it"
+→ The vehicle was disabled when contract ended, now re-enable it for continued use
+
+**After Major Repairs:**
+"KBZ 789C was in the garage for 3 months"
+→ Vehicle was disabled during repairs, re-enable now that it's road-worthy
+
+## Driver Management
+
+Similar to vehicle management, this section shows all drivers who have been deactivated in your system.
+
+### What You Can See
+
+For each disabled driver:
+
+- **Driver name** - Full name
+- **Phone number** - Contact number
+- **Date disabled** - When deactivated
+- **Last trip date** - When they last drove
+
+### Managing Disabled Drivers
+
+You have the same three options:
+
+**1. Enable Driver**
+
+Brings the driver back to active status:
+
+- Appears in trip entry dropdowns
+- Can be assigned to new trips
+- Historical trips remain linked
+
+**2. Keep Disabled**
+
+Leave the driver inactive:
+
+- Hidden from trip entry
+- Can view historical trips
+- Re-enable anytime if needed
+
+**3. Delete Permanently**
+
+<Warning>
+**Permanent Action** - Only delete drivers who were added by mistake or will absolutely never return. Historical trips remain but lose the driver link.
+</Warning>
+
+### How to Re-Enable a Driver
+
+<Steps>
+  <Step title="Go to Driver Management">
+    In Settings → Workspace → General, scroll to **Driver Management**
+  </Step>
+  
+  <Step title="Find the driver">
+    Locate the driver in the disabled list
+  </Step>
+  
+  <Step title="Click Enable">
+    Click the **Enable** button
+  </Step>
+  
+  <Step title="Confirm">
+    Confirm activation
+  </Step>
+</Steps>
+
+The driver is now available for trip assignment.
+
+### Common Scenarios
+
+**Rehiring:**
+"John left last year but we just hired him back"
+→ Re-enable his profile instead of creating a duplicate
+
+**Seasonal Workers:**
+"We have part-time drivers who only work during harvest season"
+→ Disable during off-season, re-enable when needed
+
+**Leave of Absence:**
+"Peter is on 2-month medical leave"
+→ Disable temporarily, re-enable when he returns
+
+## Best Practices
+
+<Tip>
+**Monthly Cleanup Routine:**
+- Review disabled vehicles and drivers
+- Re-enable any that should be active
+- Permanently delete obvious mistakes
+- Keep everything else disabled for historical reference
+</Tip>
+
+### When to Use Which Action
+
+| Situation | Action | Reason |
+|-----------|--------|--------|
+| Contract ended, might renew | Disable | Easy to re-enable if renewed |
+| Vehicle sold permanently | Disable first, delete after 6 months | Keep history initially |
+| Added wrong registration | Delete immediately | Mistake, no historical value |
+| Seasonal worker | Disable/Enable as needed | Preserves driver profile |
+| Driver retired | Disable permanently | Keep for historical records |
+
+## Theme Preferences Don't Sync
+
+If you have multiple users:
+
+- Each user sets their own theme preference
+- Admin choosing dark mode doesn't force it on Staff
+- Everyone controls their own visual experience
+- Appearance is personal, not workspace-wide
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="I re-enabled a vehicle but it's not showing in trip entry">
+    Clear your browser cache or refresh the page. If it still doesn't appear, log out and log back in.
+  </Accordion>
+  
+  <Accordion title="Can I bulk re-enable multiple vehicles?">
+    Currently, vehicles must be enabled one at a time. If you need to enable many vehicles, plan for about 30 seconds per vehicle.
+  </Accordion>
+  
+  <Accordion title="What happens to trips if I delete a vehicle?">
+    Historical trips remain in the system but may show the vehicle as "Unknown" or blank. This is why we recommend disabling instead of deleting.
+  </Accordion>
+  
+  <Accordion title="Dark mode isn't saving my preference">
+    This is likely a browser cookie issue. Ensure cookies are enabled for travadasys.com. Try clearing cache and setting the preference again.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+After configuring your appearance:
+
+1. Set up [Notification Preferences](/features/settings/notifications)
+2. Review [Account Settings](/features/settings/account)
+3. Return to [Settings Overview](/features/settings/overview)

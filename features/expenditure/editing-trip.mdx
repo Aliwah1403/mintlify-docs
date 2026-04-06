@@ -1,0 +1,384 @@
+---
+title: Editing Trips
+description: How to modify or delete recorded trip data
+icon: "pen-to-square"
+---
+
+<Note>
+  🔒 **Admin Only** - Editing and deleting trips requires Administrator permissions
+</Note>
+
+## Overview
+
+Currently, Travada's trip editing functionality is **limited**. This page explains what you can and cannot edit, current workarounds, and what's coming in future updates.
+
+## Current Limitations
+
+### What You CANNOT Edit
+
+❌ **Vehicle Registration** - Cannot be changed after submission  
+❌ **Driver Assignment** - Cannot be changed after submission  
+❌ **Trip Date** - Cannot be changed after submission  
+❌ **Financial Fields** - Cannot directly edit Rate, Detention, or expense amounts
+
+<Warning>
+  **Important:** Trip editing is a planned feature but not yet available in the current version of Travada. If you need to correct trip data, you'll need to use the workaround below.
+</Warning>
+
+## Current Workaround for Corrections
+
+If you need to fix incorrect trip data:
+
+<Steps>
+  <Step title="Document the Correct Information">
+    Write down all the correct trip details:
+    - Correct vehicle
+    - Correct driver
+    - Correct destination
+    - All correct amounts
+  </Step>
+  
+  <Step title="Delete the Incorrect Trip (Admin Only)">
+    1. Find the trip in the Expenditure table
+    2. Click the **⋮** (three dots) menu
+    3. Select **Delete**
+    4. Confirm deletion
+    
+    <Warning>
+      Deletion is permanent and cannot be undone!
+    </Warning>
+  </Step>
+  
+  <Step title="Re-record with Correct Information">
+    1. Click **+ New Trip**
+    2. Enter all details correctly
+    3. Verify everything before submitting
+    4. Click **Submit**
+  </Step>
+  
+  <Step title="Verify in Dashboard">
+    Check that your Dashboard and reports now show correct data
+  </Step>
+</Steps>
+
+## Deleting Trips
+
+### Who Can Delete
+
+Only **Admin** users can delete trips. Staff users will not see the delete option.
+
+### How to Delete a Trip
+
+<Steps>
+  <Step title="Locate the Trip">
+    Find the trip in the Expenditure table
+    
+    Use filters if needed to narrow down the list
+  </Step>
+  
+  <Step title="Open Actions Menu">
+    Click the **⋮** (three dots) icon on the right side of the trip row
+    
+    <img src="/images/trip-actions-menu.png" alt="Trip Actions Menu" />
+  </Step>
+  
+  <Step title="Select Delete">
+    Click **Delete** from the dropdown menu
+  </Step>
+  
+  <Step title="Confirm Deletion">
+    A confirmation dialog will appear
+    
+    **Review carefully** - this cannot be undone!
+    
+    Click **Confirm** to proceed or **Cancel** to abort
+  </Step>
+  
+  <Step title="Verify Deletion">
+    - Trip disappears from table
+    - Dashboard updates automatically
+    - Income and expense totals recalculate
+  </Step>
+</Steps>
+
+### What Happens When You Delete
+
+When you delete a trip, Travada automatically:
+- ✅ Removes the trip from the Expenditure table
+- ✅ Recalculates Total Income (decreases)
+- ✅ Recalculates Total Expense (decreases)
+- ✅ Recalculates Total Revenue
+- ✅ Updates all charts and visualizations
+- ✅ Removes from Income and Expense pages
+- ✅ Excludes from future reports
+
+<Info>
+  **Historical Data:** If the deleted trip was already included in a generated report, the report remains unchanged. Reports are static once created.
+</Info>
+
+## When to Delete vs. Keep
+
+<Tabs>
+  <Tab title="Delete When">
+    ✅ **Completely duplicate entry**
+    - Same trip recorded twice
+    - Clear data entry error
+    
+    ✅ **Wrong vehicle/driver assigned**
+    - No way to edit, must delete and re-record
+    
+    ✅ **Significant amount errors**
+    - Off by 10x or more
+    - Wrong currency or decimal place
+    
+    ✅ **Test entries**
+    - Practice trips during system setup
+    - Dummy data from training
+  </Tab>
+  
+  <Tab title="Keep When">
+    ✅ **Minor amount discrepancies**
+    - Small rounding differences
+    - Can be explained/documented
+    
+    ✅ **Historical corrections**
+    - Trip happened as recorded
+    - Later discovered better information
+    - Add a note rather than deleting
+    
+    ✅ **Part of audit trail**
+    - Financial period already closed
+    - Reports already generated
+    - Accounting already processed
+    
+    ✅ **Questionable but possible**
+    - Unusual but might be legitimate
+    - Verify with driver/client first
+  </Tab>
+</Tabs>
+
+## Common Correction Scenarios
+
+<AccordionGroup>
+  <Accordion title="Wrong Vehicle Selected" icon="truck-monster">
+    **Problem:** Recorded KDA 631Q but should be KDB 295H
+    
+    **Solution:**
+    1. Note all trip details
+    2. Delete the trip
+    3. Re-record with correct vehicle (KDB 295H)
+    4. Verify vehicle performance metrics updated correctly
+  </Accordion>
+  
+  <Accordion title="Wrong Driver Assigned" icon="user-xmark">
+    **Problem:** Assigned to John but Jason drove
+    
+    **Solution:**
+    1. Capture all trip information
+    2. Delete the incorrect entry
+    3. Re-record with correct driver
+    4. Inform driver of the correction
+  </Accordion>
+  
+  <Accordion title="Decimal Point Error" icon="calculator">
+    **Problem:** Entered 1,500 as 15,000
+    
+    **Solution:**
+    1. Note the trip details
+    2. Delete the trip
+    3. Re-record with correct amount (1500)
+    4. Check Dashboard to verify totals are now correct
+  </Accordion>
+  
+  <Accordion title="Missing Expense Category" icon="receipt">
+    **Problem:** Forgot to enter KES 5,000 repair cost
+    
+    **Solution:**
+    1. Document all original trip details
+    2. Delete the trip
+    3. Re-record with ALL expenses including the repair
+    4. Save repair receipt with trip documentation
+  </Accordion>
+  
+  <Accordion title="Duplicate Entry" icon="copy">
+    **Problem:** Same trip recorded twice
+    
+    **Solution:**
+    1. Verify which entry has correct amounts
+    2. Delete the duplicate
+    3. Keep the accurate entry
+    4. Check Dashboard totals are correct
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices to Avoid Errors
+
+<CardGroup cols={2}>
+  <Card title="Verify Before Submit" icon="clipboard-check">
+    Spend 10 seconds reviewing all fields before clicking Submit
+  </Card>
+  
+  <Card title="Use Trip Sheets" icon="file-lines">
+    Have drivers fill out physical forms with all details
+  </Card>
+  
+  <Card title="Double-Check Amounts" icon="calculator">
+    Verify against receipts and invoices
+  </Card>
+  
+  <Card title="Consistent Naming" icon="signature">
+    Use standardized destination names
+  </Card>
+</CardGroup>
+
+## Future Editing Features
+
+Travada development roadmap includes:
+
+### Coming Soon
+- ✅ Edit financial amounts without deleting
+- ✅ Edit destination after submission
+- ✅ Add notes/comments to trips
+- ✅ Audit log showing who edited what
+
+### Under Consideration
+- ✅ Bulk edit multiple trips
+- ✅ Approval workflow for edits
+- ✅ Edit history and version control
+
+<Info>
+  Check the **What's New** section or contact support for updates on when editing features will be released.
+</Info>
+
+## Impact on Reports
+
+<Warning>
+  **Important:** If you delete a trip after generating reports that included it, those reports remain unchanged. Generated reports are static snapshots.
+</Warning>
+
+**What this means:**
+- Reports show data as it was at generation time
+- Deleting trips doesn't update existing reports
+- You may need to regenerate reports after corrections
+
+**Best practice:**
+- Make corrections before month-end
+- Regenerate reports after significant changes
+- Keep notes of corrections made
+
+## Permission Requirements
+
+| Action | Admin | Staff |
+|--------|-------|-------|
+| View Trips | ✅ | ✅ |
+| Add Trips | ✅ | ✅ |
+| Delete Trips | ✅ | ❌ |
+| Edit Trips | ✅ | ❌ |
+
+<Note>
+  Staff users will not see delete or edit options in the Actions menu.
+</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Delete option not appearing" icon="eye-slash">
+    **Cause:** You're logged in as Staff, not Admin
+    
+    **Solution:** Contact your Admin to delete the trip or request Admin permissions
+  </Accordion>
+  
+  <Accordion title="Can't find trip to delete" icon="magnifying-glass">
+    **Issue:** Trip not visible in table
+    
+    **Solutions:**
+    - Adjust date filter to include trip date
+    - Clear all filters
+    - Search by vehicle or destination
+    - Verify trip was actually recorded
+  </Accordion>
+  
+  <Accordion title="Dashboard not updating after deletion" icon="arrows-rotate">
+    **Issue:** Totals seem incorrect
+    
+    **Solutions:**
+    - Hard refresh browser (Ctrl+Shift+R or Cmd+Shift+R)
+    - Clear browser cache
+    - Log out and log back in
+    - If persists, contact support
+  </Accordion>
+  
+  <Accordion title="Accidentally deleted wrong trip" icon="triangle-exclamation">
+    **Problem:** Deleted the wrong trip by mistake
+    
+    **Unfortunately:** No undo feature currently
+    
+    **Solution:**
+    - Re-record the trip immediately
+    - Use trip sheets or receipts to ensure accuracy
+    - Document the incident
+    - Request backup restore from support if critical
+  </Accordion>
+</AccordionGroup>
+
+## Safety Tips
+
+<CardGroup cols={2}>
+  <Card title="Read Confirmation Carefully" icon="eye">
+    Always verify you're deleting the right trip
+  </Card>
+  
+  <Card title="Keep Backups" icon="cloud-arrow-down">
+    Export data regularly as backup
+  </Card>
+  
+  <Card title="Document Changes" icon="note-sticky">
+    Keep log of deleted/re-recorded trips
+  </Card>
+  
+  <Card title="Limit Admin Access" icon="user-shield">
+    Only trusted users should have delete permissions
+  </Card>
+</CardGroup>
+
+## What's Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Filtering Data"
+    icon="filter"
+    href="/features/expenditure/filtering-data"
+  >
+    Learn to find specific trips quickly
+  </Card>
+  <Card
+    title="Data Entry Tips"
+    icon="keyboard"
+    href="/faq/data-entry-tips"
+  >
+    Best practices to avoid errors
+  </Card>
+  <Card
+    title="User Roles"
+    icon="users-gear"
+    href="/getting-started/user-roles"
+  >
+    Understand Admin vs Staff permissions
+  </Card>
+  <Card
+    title="Common Issues"
+    icon="circle-question"
+    href="/faq/common-issues"
+  >
+    Solutions to frequent problems
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you need to correct trip data:
+
+1. Verify your user role (Admin required)
+2. Review [Common Issues](/faq/common-issues)
+3. Export data before making changes
+4. [Contact Support](/faq/contact-support) for assistance
