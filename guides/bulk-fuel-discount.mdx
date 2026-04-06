@@ -1,0 +1,551 @@
+---
+title: "Bulk Fuel Discount Entry"
+description: "How to apply fuel discounts efficiently across multiple trips"
+icon: "tag"
+---
+
+If your company has agreements with fuel stations for discounted rates, you can track these savings in Travada. The bulk fuel discount feature lets you apply discounts to multiple trips at once, saving time and providing visibility into how much money your fuel partnership programs are actually saving.
+
+## Why Track Fuel Discounts?
+
+### 1. Prove Program Value
+
+Fuel discount programs require commitment (exclusivity, minimum volume, upfront deposits). Tracking savings proves the ROI:
+
+**Example:**
+- Monthly fuel spend: KES 500,000
+- Discount rate: 5% (KES 10 per liter)
+- Monthly savings: KES 25,000
+- Annual savings: KES 300,000
+
+**Business case:** "Our fuel partnership saved KES 300,000 this year, justifying the exclusivity requirement."
+
+### 2. Monitor Compliance
+
+If you require drivers to use specific stations, discount tracking shows whether they're complying:
+
+**Red flag:** Low discount totals when all trips should have discounts
+**Likely cause:** Drivers filling up elsewhere
+**Action:** Reinforce fuel station policy
+
+### 3. Accurate Financial Reporting
+
+For accounting purposes:
+- **Gross fuel expense:** What you would have paid at standard rates
+- **Net fuel expense:** What you actually paid with discounts
+- **Fuel discount:** The savings (may be a separate line item)
+
+## Understanding Bulk Discount Entry
+
+The bulk feature lets you enter discount information once and apply it to multiple trips.
+
+### What You Need to Know
+
+**Before using bulk entry:**
+- Standard fuel price per liter (what you would have paid)
+- Discounted price per liter (what you actually paid)
+- Total liters purchased (across the trips you're applying discount to)
+
+**The system calculates:**
+- Standard total cost
+- Discounted total cost
+- Total savings
+- Applies proportional discount to each trip
+
+### Example Scenario
+
+Your company has an agreement with Shell stations:
+- Standard price: KES 200/liter
+- Your discounted price: KES 190/liter
+- Savings: KES 10/liter (5% discount)
+
+Last week, 5 trips fueled at Shell:
+- Trip 1: 45 liters
+- Trip 2: 52 liters
+- Trip 3: 48 liters
+- Trip 4: 60 liters
+- Trip 5: 55 liters
+- **Total: 260 liters**
+
+Instead of applying discount to each trip individually, use bulk entry.
+
+## How to Use Bulk Fuel Discount Entry
+
+<Note>
+**🔒 Admin Only** - Only Admin users can apply fuel discounts. Staff users can view discount data but cannot add discounts.
+</Note>
+
+### Step-by-Step Process
+
+<Steps>
+  <Step title="Go to Expenses → Fuel tab">
+    Navigate to the Fuel section in Expenses
+  </Step>
+  
+  <Step title="Look for Bulk Discount feature">
+    Find the "Add Fuel Discount in Bulk" section or button
+  </Step>
+  
+  <Step title="Enter standard fuel price">
+    Input the normal price per liter (e.g., KES 200)
+  </Step>
+  
+  <Step title="Enter total liters">
+    Input total liters for all trips you're applying discount to (e.g., 260)
+    
+    **Note:** This auto-calculates the standard total cost
+  </Step>
+  
+  <Step title="Enter discounted fuel price">
+    Input the price you actually paid per liter (e.g., KES 190)
+  </Step>
+  
+  <Step title="Review calculated values">
+    System automatically calculates:
+    - Total cost at standard price: KES 52,000 (260 × 200)
+    - Total cost at discounted price: KES 49,400 (260 × 190)
+    - Total discount: KES 2,600
+  </Step>
+  
+  <Step title="Select trips to apply discount to">
+    Choose which trips should receive this discount (the 5 Shell trips)
+  </Step>
+  
+  <Step title="Apply and save">
+    Click Apply or Save - the discount is distributed proportionally across selected trips
+  </Step>
+</Steps>
+
+### How Discounts Are Distributed
+
+Travada distributes the total discount proportionally based on fuel consumption:
+
+**Continuing our example:**
+
+| Trip | Liters | % of Total | Discount Applied |
+|------|--------|-----------|------------------|
+| Trip 1 | 45 | 17.3% | KES 450 |
+| Trip 2 | 52 | 20.0% | KES 520 |
+| Trip 3 | 48 | 18.5% | KES 480 |
+| Trip 4 | 60 | 23.1% | KES 600 |
+| Trip 5 | 55 | 21.2% | KES 550 |
+| **Total** | **260** | **100%** | **KES 2,600** |
+
+Each trip's discount = (Trip liters ÷ Total liters) × Total discount
+
+## When to Use Bulk Entry
+
+### Ideal Scenarios
+
+**Weekly fuel discount application:**
+- All drivers fueled at partner station this week
+- You have one fuel card statement showing total liters and savings
+- You want to apply discount to the week's trips all at once
+
+**Monthly station-specific discounts:**
+- End of month, partner station sends discount summary
+- Shows total liters and discounted rate
+- You apply to all trips that used that station
+
+**Bulk receipt processing:**
+- Collected fuel receipts from multiple trips
+- All from same station with same discount rate
+- Process them together for efficiency
+
+### When NOT to Use Bulk Entry
+
+**Different discount rates:**
+- If some trips got 5% discount and others got 3%, process separately
+- Each discount rate needs its own bulk entry
+
+**Spanning long periods:**
+- Don't try to apply months of discounts at once
+- Break into manageable chunks (weekly or biweekly)
+
+**Mixed fuel sources:**
+- Only apply bulk discount to trips from the same fuel station
+- Different stations likely have different rates
+
+## Alternative: Individual Trip Discounts
+
+For single trips or small numbers, you can apply discounts individually:
+
+<Steps>
+  <Step title="Find the trip in Fuel tab">
+    Locate the specific trip that received a discount
+  </Step>
+  
+  <Step title="Click Add Discount">
+    Look for discount icon or "Add Discount" button next to the trip
+  </Step>
+  
+  <Step title="Enter discount amount">
+    Input the discount in KES (e.g., KES 450)
+  </Step>
+  
+  <Step title="Save">
+    Discount applies to that trip only
+  </Step>
+</Steps>
+
+**When to use individual entry:**
+- One-off discounts
+- Different discount amounts per trip
+- Testing the feature
+- Correcting a single trip's discount
+
+## Tracking Fuel Discount Performance
+
+### Weekly Discount Review
+
+**Every Monday, check last week's savings:**
+
+<Steps>
+  <Step title="Go to Expenses → Fuel tab">
+    Open the Fuel section
+  </Step>
+  
+  <Step title="Filter to last week">
+    Set date range to previous 7 days
+  </Step>
+  
+  <Step title="Check the two totals">
+    - Total Fuel Cost (what you paid)
+    - Total Fuel Discount (what you saved)
+  </Step>
+  
+  <Step title="Calculate savings rate">
+    (Total Discount ÷ Total Fuel Cost) × 100
+    
+    Example: (KES 12,000 ÷ KES 240,000) × 100 = 5% savings rate
+  </Step>
+</Steps>
+
+**Red flag:** If savings rate is much lower than expected (e.g., 2% when agreement is 5%), investigate:
+- Are drivers using non-partner stations?
+- Did fuel prices change?
+- Are discounts being applied correctly?
+
+### Monthly Discount Summary
+
+**At month-end:**
+
+1. Filter Fuel tab to the full month
+2. Note total fuel discount
+3. Compare to previous months
+4. Share in monthly reports
+
+**Example monthly summary:**
+
+```
+January 2026 Fuel Discount Summary
+Total fuel spend: KES 720,000
+Total discounts: KES 36,000
+Effective savings: 5.0%
+Partner station: Shell
+Compliance: 95% of trips (excellent)
+```
+
+### Quarterly Discount ROI
+
+**Every 3 months, calculate ROI of your fuel partnership:**
+
+**Benefits:**
+- Total fuel discounts (e.g., KES 108,000 per quarter)
+- Simplified accounting (one fuel card)
+- No need to advance cash to drivers
+
+**Costs:**
+- Any upfront deposits or fees
+- Exclusivity requirement (can't shop for better prices)
+- Administrative time
+
+**ROI Calculation:**
+```
+Net Benefit = Total Discounts - Program Costs
+ROI % = (Net Benefit ÷ Program Costs) × 100
+```
+
+**Example:**
+- Quarterly discounts: KES 108,000
+- Program costs: KES 10,000 (deposit amortized)
+- Net benefit: KES 98,000
+- ROI: (98,000 ÷ 10,000) × 100 = 980% ROI
+
+## Best Practices for Fuel Discount Management
+
+### 1. Record Fuel Costs First, Apply Discounts Later
+
+**Correct workflow:**
+
+<Steps>
+  <Step title="Record trip with actual amount paid">
+    When entering trip in Expenditure, use the discounted amount you actually paid
+    
+    Example: Paid KES 9,500 for fuel → Enter KES 9,500
+  </Step>
+  
+  <Step title="Calculate the discount separately">
+    Standard price would have been KES 10,000
+    Discount = KES 500
+  </Step>
+  
+  <Step title="Apply discount in Fuel tab">
+    Use bulk entry or individual entry to add the KES 500 discount
+  </Step>
+</Steps>
+
+**Why this order?**
+- Expenditure always shows what you actually paid (matches receipts)
+- Fuel tab then shows both actual cost AND savings
+- Easier to verify against bank statements
+
+### 2. Keep Fuel Station Records
+
+Maintain a simple log:
+
+| Week | Station | Liters | Standard Price | Paid | Discount |
+|------|---------|--------|---------------|------|----------|
+| Jan 1-7 | Shell | 260 | KES 52,000 | KES 49,400 | KES 2,600 |
+| Jan 8-14 | Shell | 285 | KES 57,000 | KES 54,150 | KES 2,850 |
+
+**Benefits:**
+- Quick reference when applying bulk discounts
+- Verification against fuel card statements
+- Evidence for tax deductions
+- Negotiation tool for better rates
+
+### 3. Set a Regular Discount Application Schedule
+
+**Don't let discounts pile up unrecorded.**
+
+**Recommended schedule:**
+
+**Weekly (best):**
+- Every Friday afternoon
+- Apply discounts for Monday-Friday trips
+- Fresh memory, easy to verify
+
+**Bi-weekly (acceptable):**
+- 1st and 15th of each month
+- Apply discounts for previous 2 weeks
+- Still manageable
+
+**Monthly (not recommended):**
+- End of month only
+- Risk forgetting details
+- Large bulk entries more error-prone
+
+### 4. Verify Discounts Against Fuel Card Statements
+
+When you receive fuel card statements:
+
+<Steps>
+  <Step title="Compare total liters">
+    Statement shows total liters purchased
+    Travada should match (sum of all trips)
+  </Step>
+  
+  <Step title="Verify discount amount">
+    Statement shows total discount or savings
+    Travada should match (sum of all applied discounts)
+  </Step>
+  
+  <Step title="Investigate discrepancies">
+    If numbers don't match:
+    - Missing trips in Travada?
+    - Incorrect liters entered?
+    - Discounts not applied to all trips?
+  </Step>
+</Steps>
+
+### 5. Separate Discounts by Fuel Station (If Using Multiple)
+
+If you have agreements with multiple stations:
+
+**Don't mix them in bulk entry:**
+- Shell trips: 5% discount → One bulk entry
+- Total trips: 3% discount → Separate bulk entry
+- Engen trips: 4% discount → Another bulk entry
+
+**Why?**
+- Different discount rates
+- Clearer reporting (savings per station)
+- Easier to evaluate which partnership is better
+
+## Common Bulk Discount Scenarios
+
+### Scenario 1: Weekly Corporate Fuel Card
+
+**Situation:**
+- Company has Shell corporate fuel card
+- All drivers use Shell exclusively
+- 5% discount on all purchases
+- Weekly statement shows total liters and discount
+
+**Process:**
+1. Receive weekly statement (e.g., Friday)
+2. Note total liters (e.g., 480 liters)
+3. Note standard vs discounted price (KES 200 vs KES 190)
+4. Go to Fuel tab → Bulk Discount
+5. Enter: 480 liters, KES 200 standard, KES 190 discounted
+6. Select all trips from that week at Shell
+7. Apply → KES 4,800 discount distributed
+
+**Time saved:** 2 minutes vs 10+ minutes applying individually to 15 trips
+
+### Scenario 2: Multiple Stations, Different Rates
+
+**Situation:**
+- Shell: 5% discount (main partner)
+- Total: 3% discount (backup stations)
+- Mixed usage throughout the week
+
+**Process:**
+
+**For Shell trips:**
+1. Filter Fuel tab to show only Shell trips (if destinations include station)
+2. Count total Shell liters
+3. Apply Shell bulk discount (5%)
+
+**For Total trips:**
+1. Separately, filter to Total trips
+2. Count Total liters
+3. Apply Total bulk discount (3%)
+
+**Don't:** Try to apply both in one bulk entry - different rates require separate entries
+
+### Scenario 3: Month-End Reconciliation
+
+**Situation:**
+- Forgot to apply discounts during the month
+- Now it's month-end and you have 50+ trips
+- Partner station sends monthly summary: 2,500 liters, 5% discount
+
+**Process:**
+1. Verify all 50+ trips are recorded in Travada
+2. Sum the liters from all trips - should equal ~2,500
+3. If discrepancy, find missing trips
+4. Once verified, use bulk entry:
+   - 2,500 liters
+   - Standard price KES 200
+   - Discounted price KES 190
+5. Select all applicable trips (may need to do in batches if interface limits)
+6. Apply KES 25,000 total discount
+
+**Caution:** Large bulk entries increase error risk. Better to apply weekly.
+
+## Troubleshooting Bulk Discounts
+
+<AccordionGroup>
+  <Accordion title="Calculated discount doesn't match my fuel card statement">
+    Common causes:
+    1. Liter counts don't match (missing trips in Travada)
+    2. Wrong standard price entered (verify current fuel prices)
+    3. Price changed mid-period (split into two bulk entries: before/after price change)
+    4. Fuel card includes non-trip purchases (personal use, equipment fueling)
+  </Accordion>
+  
+  <Accordion title="I can't select all the trips I want">
+    Possible interface limitation on number of trips per bulk entry. Solutions:
+    1. Break into smaller batches (week 1, week 2, etc.)
+    2. Apply by vehicle (all KCA 123A trips, then all KBZ 456C trips)
+    3. Contact support if this is a recurring issue
+  </Accordion>
+  
+  <Accordion title="I applied the wrong discount amount">
+    Currently, you may not be able to edit applied discounts. Options:
+    1. Check if there's a "Remove Discount" or "Edit" option per trip
+    2. Contact support to reset the discounts
+    3. Document the error and note in month-end reports
+    
+    Prevention: Always verify calculated amounts before clicking Apply
+  </Accordion>
+  
+  <Accordion title="Discount amount seems too small">
+    Verify your math:
+    - Liters × (Standard price - Discounted price) = Total discount
+    - Example: 100 liters × (KES 200 - KES 190) = KES 1,000
+    
+    If math is correct but seems low:
+    - Is the discount rate what you expected? (5% of KES 200 = KES 10/liter)
+    - Did you enter discounted price instead of standard price?
+  </Accordion>
+  
+  <Accordion title="Some trips shouldn't have discounts">
+    Only select trips that actually received the discount. Common exclusions:
+    - Trips that fueled elsewhere (non-partner stations)
+    - Personal vehicle fuel purchases
+    - Emergency fuel from roadside vendors
+    - Trips where discount wasn't applied (driver error, card issue)
+  </Accordion>
+</AccordionGroup>
+
+## Reporting Fuel Discounts
+
+### Internal Reporting (Monthly)
+
+Include in your monthly expense report:
+
+**Fuel Discount Summary - January 2026**
+```
+Total fuel expense: KES 720,000
+Fuel discounts applied: KES 36,000
+Net fuel cost: KES 684,000
+Effective discount rate: 5.0%
+Partner station: Shell
+Trips with discount: 82/85 (96% compliance)
+```
+
+**Insights:**
+- Discount program saved KES 36,000 this month
+- 96% compliance (excellent - drivers mostly using Shell)
+- 3 trips without discount (investigate why)
+
+### External Reporting (to Fuel Partner)
+
+Some fuel partnerships require reporting your usage:
+
+**Quarterly Usage Report to Shell**
+```
+Quarter: Q1 2026 (January - March)
+Total liters purchased: 8,500 liters
+Total value: KES 1,700,000
+Discounts received: KES 85,000
+Average discount rate: 5.0%
+Number of transactions: 245 trips
+Compliance: 97%
+```
+
+**Helps negotiate:**
+- Better discount rates (based on volume)
+- Extended payment terms
+- Priority service
+- Additional benefits
+
+## Future Enhancements
+
+According to the handbook, future versions may include:
+
+**Fuel discount reports by filling station:**
+- Compare savings across different partners
+- Identify best-value stations
+- Track compliance per station
+
+**Automatic discount application:**
+- If using fuel cards with API integration
+- Discounts auto-apply when trip is recorded
+- No manual bulk entry needed
+
+**For now:** Use the current bulk entry feature and maintain good documentation habits.
+
+## Next Steps
+
+After mastering bulk fuel discount entry:
+
+1. Review [Fuel Cost Tracking](/features/expenses/fuel-costs) for comprehensive fuel management
+2. Learn [Vehicle Performance Analysis](/guides/vehicle-performance-analysis) to see how discounts impact profitability
+3. Check [Month-End Reporting](/guides/month-end-reporting) to include discount data in monthly summaries
+4. Explore [Client Invoicing](/guides/client-invoicing) for complete financial workflows
+
+**Remember:** Fuel discounts are real money saved. Tracking them properly proves the value of your fuel partnerships and helps negotiate even better rates in the future.

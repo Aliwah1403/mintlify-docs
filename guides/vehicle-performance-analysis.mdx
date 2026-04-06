@@ -1,0 +1,599 @@
+---
+title: "Vehicle Performance Analysis"
+description: "How to evaluate which vehicles are profitable and make data-driven fleet decisions"
+icon: "chart-line-up"
+---
+
+Not all vehicles are created equal. Some consistently generate profit while others drain resources. This guide teaches you how to use Travada's data to analyze vehicle performance, identify problems, and make smart decisions about which vehicles to keep, repair, or replace.
+
+## Why Vehicle Performance Analysis Matters
+
+### The Hidden Cost of Underperforming Vehicles
+
+A vehicle that seems "fine" might actually be losing you money:
+
+**Example:**
+- Vehicle appears operational (completing trips)
+- But: High fuel consumption + frequent repairs
+- Result: Every trip loses KES 5,000
+- Over a month (15 trips): KES 75,000 in hidden losses
+
+**Without analysis:** You keep running the vehicle, losing money  
+**With analysis:** You identify the issue, fix or replace it, save KES 75,000/month
+
+### Make Strategic Decisions
+
+Vehicle performance data helps you decide:
+
+**Repair vs Replace:**
+"This vehicle needs KES 200,000 in repairs. Should we fix it or buy another?"
+→ Analysis shows it's still profitable after repairs → Fix it
+
+**Fleet Expansion:**
+"We have budget for one more vehicle. Which type should we buy?"
+→ Analysis shows Canters have best ROI → Buy a Canter
+
+**Route Assignment:**
+"Which vehicle should handle the Mombasa route?"
+→ Analysis shows KCA 123A has best fuel efficiency for long distance → Assign it
+
+**Driver Assignment:**
+"Should we assign expensive vehicles to new drivers?"
+→ Analysis shows experienced drivers have better vehicle economics → Match accordingly
+
+## Key Performance Metrics
+
+Track these metrics for each vehicle:
+
+### 1. Total Profit per Vehicle
+
+**What it tells you:** Overall contribution to company profit
+
+**How to find it:**
+- Dashboard → Vehicle Performance section
+- Shows: Number of trips, income, expenses, profit per vehicle
+
+**Example:**
+
+| Vehicle | Trips | Income | Expenses | Profit |
+|---------|-------|--------|----------|--------|
+| KCA 123A | 18 | KES 450,000 | KES 210,000 | KES 240,000 |
+| KBZ 456C | 15 | KES 380,000 | KES 285,000 | KES 95,000 |
+| KDA 789D | 20 | KES 520,000 | KES 280,000 | KES 240,000 |
+
+**Insight:** KBZ 456C has lowest profit despite decent revenue - investigate costs
+
+### 2. Profit per Trip
+
+**What it tells you:** Efficiency regardless of utilization
+
+**How to calculate:**
+```
+Profit per Trip = Total Profit ÷ Number of Trips
+```
+
+**Example:**
+- KCA 123A: KES 240,000 ÷ 18 = KES 13,333 per trip
+- KBZ 456C: KES 95,000 ÷ 15 = KES 6,333 per trip
+- KDA 789D: KES 240,000 ÷ 20 = KES 12,000 per trip
+
+**Insight:** KBZ 456C earns half as much per trip - major efficiency problem
+
+### 3. Expense Ratio
+
+**What it tells you:** What percentage of revenue goes to costs
+
+**How to calculate:**
+```
+Expense Ratio = (Total Expenses ÷ Total Income) × 100
+```
+
+**Example:**
+- KCA 123A: (210,000 ÷ 450,000) × 100 = 46.7%
+- KBZ 456C: (285,000 ÷ 380,000) × 100 = 75.0%
+- KDA 789D: (280,000 ÷ 520,000) × 100 = 53.8%
+
+**Insight:** KBZ 456C costs eat 75% of revenue - unsustainable
+
+**Benchmarks:**
+- **Excellent:** < 50% expense ratio
+- **Good:** 50-60%
+- **Concerning:** 60-70%
+- **Critical:** > 70%
+
+### 4. Cost per Kilometer (if tracking distance)
+
+**What it tells you:** True efficiency metric
+
+**How to calculate:**
+```
+Cost per KM = Total Expenses ÷ Total Kilometers
+```
+
+**Example (if you track km):**
+- KCA 123A: KES 210,000 ÷ 7,200 km = KES 29/km
+- KBZ 456C: KES 285,000 ÷ 6,000 km = KES 47.50/km
+- KDA 789D: KES 280,000 ÷ 9,000 km = KES 31/km
+
+**Insight:** KBZ 456C costs 63% more per kilometer - fuel or mechanical issue?
+
+## Step-by-Step Vehicle Performance Analysis
+
+### Monthly Vehicle Review Process
+
+<Steps>
+  <Step title="Go to Dashboard">
+    Navigate to the main Dashboard
+  </Step>
+  
+  <Step title="Set date filter to last month">
+    Filter to the previous complete month (e.g., January 2026)
+  </Step>
+  
+  <Step title="Scroll to Vehicle Performance">
+    Find the Vehicle Performance section (horizontal bars showing profitability)
+  </Step>
+  
+  <Step title="Identify categories">
+    Travada groups vehicles into:
+    - Top profitable vehicles (green bars)
+    - Unprofitable vehicles (red bars)
+    - Vehicles with no trips (gray/inactive)
+  </Step>
+  
+  <Step title="Document the data">
+    Create a simple spreadsheet with:
+    - Vehicle registration
+    - Trips completed
+    - Total income
+    - Total expenses
+    - Total profit
+    - Profit per trip (calculated)
+    - Expense ratio (calculated)
+  </Step>
+</Steps>
+
+### Deep Dive on Underperforming Vehicles
+
+For any vehicle in the "unprofitable" category or with concerning metrics:
+
+<Steps>
+  <Step title="Click the vehicle in Dashboard">
+    If interactive, clicking may show recent trip details
+  </Step>
+  
+  <Step title="Go to Expenditure">
+    Navigate to Expenditure section
+  </Step>
+  
+  <Step title="Filter to this vehicle">
+    Use vehicle filter to show only trips for the problem vehicle
+  </Step>
+  
+  <Step title="Analyze trip costs">
+    Look at each trip to identify patterns:
+    - Unusually high fuel costs?
+    - Frequent repair costs?
+    - Low income (poor route assignment)?
+    - Consistent issues or one-time events?
+  </Step>
+  
+  <Step title="Check expense breakdown">
+    Go to Expenses section, filter to this vehicle:
+    - Fuel tab: Is fuel consumption excessive?
+    - Others tab: Are repairs piling up?
+    - What's the biggest cost driver?
+  </Step>
+</Steps>
+
+## Common Performance Issues and Solutions
+
+### Issue 1: High Fuel Consumption
+
+**Symptoms:**
+- Fuel costs 60%+ of revenue
+- Fuel per trip much higher than similar vehicles
+- Expense ratio > 65%
+
+**Possible causes:**
+- Poor engine efficiency (needs maintenance)
+- Aggressive driving habits
+- Inefficient routes
+- Vehicle carrying too much weight
+- Tire pressure issues
+
+**Analysis steps:**
+
+1. **Compare to similar vehicles:**
+   - Filter Expenses → Fuel to this vehicle
+   - Calculate average fuel per trip
+   - Compare to other vehicles of same type
+
+2. **Check maintenance history:**
+   - Filter Expenses → Others → Repair costs
+   - Has vehicle had recent engine work?
+   - When was last service?
+
+3. **Evaluate routes:**
+   - What routes does this vehicle typically run?
+   - Are they fuel-intensive (hills, traffic)?
+   - Could routes be optimized?
+
+**Solutions:**
+- Schedule full engine diagnostic
+- Driver training on fuel-efficient driving
+- Route optimization
+- Check if carrying unnecessary weight
+- Tire pressure check
+- Consider replacing if mechanically beyond repair
+
+### Issue 2: Excessive Repair Costs
+
+**Symptoms:**
+- Repair costs > 15% of vehicle revenue
+- Frequent repair entries (3+ times per month)
+- Repair costs increasing month-over-month
+
+**Possible causes:**
+- Vehicle aging and deteriorating
+- Poor driving habits causing damage
+- Lack of preventive maintenance
+- Wrong vehicle for the routes
+
+**Analysis steps:**
+
+1. **Review repair history:**
+   ```
+   Go to Expenses → Others
+   Filter to vehicle
+   Sort by repair cost
+   List all repairs for past 6 months
+   ```
+
+2. **Categorize repairs:**
+   - **Routine maintenance:** Oil changes, tire rotation (expected)
+   - **Wear items:** Brakes, clutch (normal aging)
+   - **Major repairs:** Engine, transmission (concerning)
+
+3. **Calculate total repair spend:**
+   - Last month: KES 45,000
+   - Last 3 months: KES 115,000
+   - Last 6 months: KES 180,000
+
+4. **Compare to vehicle value:**
+   - If 6-month repairs exceed 30% of vehicle value, consider replacement
+
+**Decision framework:**
+
+| Repair Cost | Vehicle Value | Action |
+|-------------|---------------|--------|
+| < 10% | Any | Normal - continue |
+| 10-20% | High | Acceptable - monitor |
+| 20-30% | High | Consider replacement |
+| > 30% | Any | Replace vehicle |
+
+**Solutions:**
+- Implement preventive maintenance schedule
+- Replace vehicle if repairs exceed thresholds
+- Reassign vehicle to easier routes
+- Budget for replacement in next quarter
+
+### Issue 3: Underutilization
+
+**Symptoms:**
+- Vehicle shows in "no trips" category
+- Much fewer trips than other vehicles
+- High fixed costs, low income
+
+**Possible causes:**
+- Vehicle breakdown/repairs
+- Lack of client demand
+- Wrong vehicle for available routes
+- Driver unavailability
+- Seasonal business variation
+
+**Analysis steps:**
+
+1. **Check trip trend:**
+   - Dashboard → Trip Completion Trend
+   - Is this vehicle consistently idle?
+   - Or a recent issue?
+
+2. **Identify reason:**
+   - Repairs: Check Expenses → Repair costs
+   - Demand: Compare to overall trip volume
+   - Mismatch: Check vehicle type vs available routes
+
+**Solutions:**
+- If in repairs: Fix or replace
+- If demand issue: Consider selling or leasing out
+- If route mismatch: Reassign to suitable routes or sell
+- If seasonal: Document pattern, budget accordingly
+
+### Issue 4: Low Revenue per Trip
+
+**Symptoms:**
+- Vehicle profit looks good but income per trip is low
+- Other vehicles earn more for similar work
+- Expense ratio acceptable but total profit low
+
+**Possible causes:**
+- Underpricing (client paying too little)
+- Wrong routes (local instead of long-distance)
+- Vehicle capacity underutilized
+- Missing detention fees or surcharges
+
+**Analysis steps:**
+
+1. **Calculate income per trip:**
+   ```
+   Total Income ÷ Number of Trips
+   ```
+
+2. **Compare across fleet:**
+   - KCA 123A (Truck): KES 25,000/trip
+   - KBZ 456C (Truck): KES 18,000/trip ← Problem
+   - KDA 789D (Truck): KES 26,000/trip
+
+3. **Check destinations:**
+   - Filter Expenditure to KBZ 456C
+   - What routes is it running?
+   - Are these shorter or lower-paying routes?
+
+**Solutions:**
+- Renegotiate rates with clients
+- Reassign to higher-value routes
+- Ensure capacity is fully utilized
+- Verify all fees (detention, fuel surcharges) are charged
+
+## Comparative Analysis Techniques
+
+### Fleet-Wide Comparison
+
+Create a comparison table for all vehicles:
+
+| Vehicle | Type | Trips | Income | Expenses | Profit | Profit/Trip | Expense Ratio |
+|---------|------|-------|--------|----------|--------|------------|--------------|
+| KCA 123A | Truck | 18 | 450,000 | 210,000 | 240,000 | 13,333 | 46.7% |
+| KBZ 456C | Truck | 15 | 380,000 | 285,000 | 95,000 | 6,333 | 75.0% |
+| KDA 789D | Truck | 20 | 520,000 | 280,000 | 240,000 | 12,000 | 53.8% |
+| KFA 012G | Canter | 22 | 330,000 | 165,000 | 165,000 | 7,500 | 50.0% |
+
+**Insights from table:**
+- KBZ 456C clearly underperforming (lowest profit/trip, highest expense ratio)
+- KCA 123A and KDA 789D performing well (similar profit despite different utilization)
+- KFA 012G (Canter) has good expense ratio but lower absolute profit (smaller vehicle)
+
+### Same Type Comparison
+
+Compare vehicles of the same type only (apples to apples):
+
+**Trucks only:**
+
+| Vehicle | Profit/Trip | Expense Ratio | Verdict |
+|---------|------------|--------------|---------|
+| KCA 123A | KES 13,333 | 46.7% | Excellent |
+| KBZ 456C | KES 6,333 | 75.0% | Poor |
+| KDA 789D | KES 12,000 | 53.8% | Good |
+
+**Action:** KBZ 456C needs immediate attention - investigate and fix or replace
+
+**Canters only:**
+
+| Vehicle | Profit/Trip | Expense Ratio | Verdict |
+|---------|------------|--------------|---------|
+| KFA 012G | KES 7,500 | 50.0% | Good |
+| KFB 345H | KES 8,200 | 48.5% | Excellent |
+| KFC 678J | KES 6,800 | 55.2% | Acceptable |
+
+**Action:** KFB 345H is the star Canter - use it as the benchmark for others
+
+### Time-Based Comparison
+
+Track each vehicle's performance over time:
+
+**KCA 123A Performance Trend:**
+
+| Month | Trips | Profit | Profit/Trip | Expense Ratio |
+|-------|-------|--------|------------|--------------|
+| Oct 2025 | 16 | 220,000 | 13,750 | 45.0% |
+| Nov 2025 | 17 | 235,000 | 13,824 | 46.2% |
+| Dec 2025 | 15 | 210,000 | 14,000 | 44.8% |
+| Jan 2026 | 18 | 240,000 | 13,333 | 46.7% |
+
+**Insight:** KCA 123A consistently profitable and stable - reliable vehicle
+
+**KBZ 456C Performance Trend:**
+
+| Month | Trips | Profit | Profit/Trip | Expense Ratio |
+|-------|-------|--------|------------|--------------|
+| Oct 2025 | 18 | 180,000 | 10,000 | 62.0% |
+| Nov 2025 | 16 | 125,000 | 7,813 | 68.5% |
+| Dec 2025 | 14 | 98,000 | 7,000 | 72.3% |
+| Jan 2026 | 15 | 95,000 | 6,333 | 75.0% |
+
+**Insight:** KBZ 456C deteriorating rapidly - expense ratio climbing monthly. Replace immediately.
+
+## Making Data-Driven Decisions
+
+### Decision 1: Repair or Replace?
+
+**Scenario:** KBZ 456C needs KES 150,000 in engine repairs
+
+**Analysis:**
+
+**Current performance:**
+- Monthly profit: KES 95,000
+- Expense ratio: 75% (deteriorating)
+- Repair cost: KES 150,000
+
+**Post-repair projection:**
+- If repairs fix issues: Expense ratio drops to 60%
+- New monthly profit: ~KES 150,000
+- Payback period: 150,000 ÷ (150,000 - 95,000) = 2.7 months
+
+**Alternative (replace):**
+- Sell KBZ 456C as-is: KES 800,000
+- Buy replacement: KES 2,500,000
+- Net cost: KES 1,700,000
+- Replacement profit: KES 240,000/month (based on KCA 123A performance)
+- Payback: 1,700,000 ÷ 240,000 = 7.1 months
+
+**Decision:**
+If confident repairs will restore performance → **Repair** (faster payback)  
+If uncertain about repair effectiveness → **Replace** (more reliable long-term)
+
+### Decision 2: Fleet Expansion - Which Vehicle Type?
+
+**Scenario:** Budget for one new vehicle. Which type?
+
+**Analysis of current fleet by type:**
+
+**Trucks:**
+- Average profit/trip: KES 11,222
+- Average expense ratio: 58.5%
+- Utilization: High (demand exceeds capacity)
+
+**Canters:**
+- Average profit/trip: KES 7,500
+- Average expense ratio: 51.2%
+- Utilization: Medium
+
+**Trailer Trucks:**
+- Average profit/trip: KES 15,000
+- Average expense ratio: 55.0%
+- Utilization: High (demand exceeds capacity)
+
+**Decision factors:**
+
+| Vehicle Type | Profit/Trip | Cost | ROI Timeline | Demand |
+|--------------|------------|------|-------------|---------|
+| Truck | KES 11,222 | KES 2.5M | 18 months | High |
+| Canter | KES 7,500 | KES 1.8M | 20 months | Medium |
+| Trailer | KES 15,000 | KES 4.5M | 25 months | High |
+
+**Decision:** Buy a Truck (best balance of profit, cost, and ROI)
+
+### Decision 3: Route Assignment Optimization
+
+**Scenario:** New Mombasa contract. Which vehicle to assign?
+
+**Route requirements:**
+- Distance: 480 km round trip
+- Frequency: 3 times per week
+- High fuel costs expected
+
+**Candidate vehicles (all Trucks):**
+
+**KCA 123A:**
+- Historical Mombasa trips: Excellent fuel efficiency
+- Average profit on this route: KES 28,000
+- Currently: 60% utilized (can add more trips)
+
+**KDA 789D:**
+- Historical Mombasa trips: Good performance
+- Average profit on this route: KES 24,000
+- Currently: 85% utilized (near capacity)
+
+**Decision:** Assign to KCA 123A (better route efficiency, more capacity)
+
+## Quarterly Performance Review
+
+Every 3 months, conduct a comprehensive fleet review:
+
+### Quarterly Review Checklist
+
+**Profitability Analysis:**
+- [ ] Rank all vehicles by total profit
+- [ ] Calculate profit per trip for each vehicle
+- [ ] Identify top 3 and bottom 3 performers
+- [ ] Document profit trends (improving or declining)
+
+**Cost Analysis:**
+- [ ] Calculate expense ratio for each vehicle
+- [ ] Identify vehicles with expense ratio > 65%
+- [ ] Sum repair costs per vehicle for the quarter
+- [ ] Flag vehicles with repairs exceeding thresholds
+
+**Utilization Analysis:**
+- [ ] Count trips per vehicle
+- [ ] Identify underutilized vehicles (< 50% of fleet average)
+- [ ] Determine if underutilization is fixable
+
+**Strategic Decisions:**
+- [ ] List vehicles to replace (poor performance, high repairs)
+- [ ] Identify vehicle types to acquire more of (good performers)
+- [ ] Note vehicles to monitor closely next quarter
+- [ ] Budget implications of recommended actions
+
+### Sample Quarterly Report
+
+```
+Q1 2026 Fleet Performance Review
+
+TOP PERFORMERS:
+1. KCA 123A (Truck) - KES 720,000 profit, 47% expense ratio
+2. KDA 789D (Truck) - KES 680,000 profit, 54% expense ratio
+3. KFB 345H (Canter) - KES 495,000 profit, 49% expense ratio
+
+UNDERPERFORMERS:
+1. KBZ 456C (Truck) - KES 285,000 profit, 74% expense ratio
+2. KFC 678J (Canter) - KES 165,000 profit, 68% expense ratio
+
+RECOMMENDATIONS:
+→ Replace KBZ 456C immediately (deteriorating monthly, high repairs)
+→ Monitor KFC 678J (investigate high costs)
+→ Acquire one more Truck (high demand, good ROI)
+→ Consider reassigning KFC 678J to shorter routes
+
+BUDGET IMPLICATIONS:
+- Vehicle replacement: KES 2,500,000
+- Expected monthly profit increase: KES 145,000
+- Payback period: 17 months
+```
+
+## Best Practices
+
+<Tip>
+**Regular analysis schedule:**
+- **Weekly:** Quick Dashboard check for anomalies
+- **Monthly:** Full performance review with calculations
+- **Quarterly:** Strategic decisions (repair/replace/expand)
+- **Annually:** Fleet composition evaluation
+</Tip>
+
+### Document Everything
+
+Keep records of:
+- Monthly performance metrics per vehicle
+- Repair history and costs
+- Major decisions and rationale
+- Performance trends over time
+
+**Why:** When you need to justify a KES 2.5M vehicle purchase, historical data proves the business case.
+
+### Compare Fairly
+
+- Same vehicle type to same type
+- Account for different routes (long-distance vs local)
+- Consider age and ownership (owned vs hired)
+- Adjust for seasonal variations
+
+### Act on Insights
+
+Analysis is worthless without action:
+
+**If a vehicle is unprofitable:** Investigate → Fix → Replace if unfixable  
+**If a vehicle is excellent:** Document what makes it great → Replicate  
+**If utilization is low:** Find more work → Redeploy → Sell if unnecessary
+
+## Next Steps
+
+After mastering vehicle performance analysis:
+
+1. Apply insights to [Complete Trip Workflow](/guides/complete-trip-workflow) for better data collection
+2. Use findings in [Month-End Reporting](/guides/month-end-reporting) to inform stakeholders
+3. Leverage data for [Client Invoicing](/guides/client-invoicing) to justify rate increases
+4. Return to Dashboard regularly to monitor trends
+
+**Remember:** The best-performing vehicles aren't always the newest or most expensive - they're the ones that consistently deliver profit. Data helps you identify and replicate success.
