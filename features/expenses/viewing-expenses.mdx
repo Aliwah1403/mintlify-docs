@@ -1,108 +1,317 @@
 ---
 title: "Viewing All Expenses"
-description: "How to filter, analyze, and export your full expense history in Travada"
-icon: "receipt"
+description: "How to view, filter, and analyze your complete expense data"
+icon: "magnifying-glass-dollar"
 ---
 
-The All Expenses tab gives you a single, unified view of every cost recorded across your fleet — fuel, repairs, parking, clerk fees, and everything in between. It is your go-to view for totals, reconciliation, and full-picture cost analysis.
+The "All" tab in the Expenses section gives you a complete view of every cost your fleet has incurred. This is your go-to place for understanding total spending and generating expense reports.
 
-## What You See on This Page
+## What You See on the All Expenses Tab
 
-When you open the All Expenses tab, you will see:
+When you open the All tab, you'll see:
 
-- A list of every expense entry, pulled from trips recorded in Expenditure
-- The **total expense figure** displayed at the top right, updating automatically as you filter
-- Each entry showing the vehicle, trip date, destination, and cost breakdown
-- A date range filter to narrow results to any period
+**At the top right:**
+- **Total Expense** - Sum of all costs in the current view
 
-## How to Filter Expenses
+**In the main table:**
+- Vehicle registration
+- Driver name
+- Destination
+- Trip date
+- All expense categories:
+  - Fuel cost
+  - Clerk fee
+  - Milage fee
+  - Parking cost
+  - Repair cost
+  - Extra cost
+- Total cost per trip (sum of all categories)
+
+Each row represents one trip with all its associated costs.
+
+## Understanding the Total Expense
+
+The total expense amount at the top right updates dynamically based on your filters.
+
+**Example:**
+- **Without filters:** Shows total of ALL expenses in the system
+- **Filtered to January 2026:** Shows only January expenses
+- **Filtered to KCA 123A:** Shows only that vehicle's expenses
+- **Filtered to fuel only:** Shows total fuel across all trips
+
+This makes it easy to answer questions like:
+- "How much did we spend in total last month?" → KES 1,250,000
+- "What were KBZ 456C's total costs?" → KES 340,000
+- "How much have we spent on parking this year?" → KES 45,000
+
+## Filtering Expense Data
+
+Use filters to narrow down exactly what you want to see.
+
+### By Date Range
+
+The most common filter - see expenses for a specific period:
 
 <Steps>
-  <Step title="Open the Expenses section">
-    From the main menu, click **Expenses**, then select the **All** tab.
+  <Step title="Click the date filter">
+    Look for the date range selector at the top of the page
   </Step>
-
-  <Step title="Set your date range">
-    Enter a start date and end date in the date filter fields (e.g., 01 Jan 2026 - 31 Jan 2026).
+  
+  <Step title="Select start date">
+    Choose when you want the period to begin
   </Step>
-
-  <Step title="Review the results">
-    The table updates to show only expenses within that period. The total at the top right recalculates automatically.
+  
+  <Step title="Select end date">
+    Choose when you want the period to end
+  </Step>
+  
+  <Step title="Apply filter">
+    Click Apply or the filter icon - the table and total update automatically
   </Step>
 </Steps>
 
-<Tip>
-For month-end reporting, set the filter to the first and last day of the month. The total shown is the exact figure you need for your accounts.
-</Tip>
+**Common date filters:**
+- Last 7 days - Quick weekly review
+- Last 30 days - Monthly analysis
+- Custom range - Specific billing periods or project timelines
 
-## Understanding the Expense Total
+### By Vehicle
 
-The total displayed at the top right represents the sum of **all expense categories** for your selected period:
+See expenses for a specific vehicle:
 
-- Fuel Cost
-- Clerk Fee
-- Milage Fee
-- Parking Cost
-- Repair Cost
-- Extra Cost
+1. Click the vehicle filter dropdown
+2. Select the registration number
+3. All expenses for that vehicle appear
+4. Total shows that vehicle's total spend
 
-This is your true total cost of operations for that period, before accounting for income.
+**Use case:** "I want to see all costs for KCA 123A to calculate its profitability"
 
-## Generating an Expense Report
+### By Expense Category
 
-Once you have filtered to the period you need, you can generate a formal expense report.
+Filter to see only specific types of costs:
+
+- Show only fuel expenses
+- Show only repair costs
+- Show only parking fees
+- Combine multiple categories
+
+**Use case:** "Show me all fuel and repair costs for January to compare maintenance spending"
+
+### Combining Filters
+
+You can apply multiple filters simultaneously:
+
+**Example 1: Vehicle + Date**
+- Vehicle: KBZ 789C
+- Date: January 1-31, 2026
+- Result: All expenses for KBZ 789C in January
+
+**Example 2: Category + Date**
+- Category: Fuel
+- Date: Last 7 days
+- Result: All fuel expenses in the past week
+
+**Example 3: Vehicle + Category + Date**
+- Vehicle: KCA 123A
+- Category: Repair cost
+- Date: Last 6 months
+- Result: All repair expenses for KCA 123A in the past 6 months
+
+## Sorting Expense Data
+
+Click column headers to sort:
+
+- **By date** - See oldest or newest expenses first
+- **By amount** - Identify highest-cost trips
+- **By vehicle** - Group expenses by vehicle
+- **By destination** - See costs by route
+
+Sorting helps you quickly spot:
+- Which trips were most expensive
+- Unusual cost patterns
+- Trends over time
+
+## Generating Expense Reports
+
+The All tab lets you create simplified expense reports for management or accounting.
 
 <Note>
-**🔒 Admin Only** - Only Admin users can generate expense reports. Staff users can view and filter the data but cannot create reports.
+**🔒 Admin Only** - Only Admin users can generate expense reports. Staff can view data but cannot create reports.
 </Note>
 
+### How to Generate a Report
+
 <Steps>
-  <Step title="Filter to the period you need">
-    Set your date range so the table shows the correct expenses.
+  <Step title="Apply your filters">
+    First, filter to show exactly what you want in the report (specific date range, vehicle, etc.)
   </Step>
-
+  
   <Step title="Click Generate Report">
-    Look for the report generation option above the expense table.
+    Look for the "Generate Report" or "Create Report" button
   </Step>
-
-  <Step title="Enter a report name">
-    Give it a descriptive name, for example: "Fleet Expenses - January 2026".
+  
+  <Step title="Enter report name">
+    Give your report a descriptive name like "January 2026 Fleet Expenses" or "KCA 123A Q1 Costs"
   </Step>
-
-  <Step title="Save and access the report">
-    The report is saved to your Reports section where it can be opened, shared, or deleted.
+  
+  <Step title="Click Create">
+    The system generates the report and saves it to the Reports section
+  </Step>
+  
+  <Step title="Access the report">
+    Find your report in the Reports section to view, download, or share
   </Step>
 </Steps>
 
-Generated reports have a default expiry of 30 days. You can find and manage all reports in the [Reports section](/features/reports/overview).
+**What's included in the report:**
+- Report name and creation date
+- Date range covered
+- All expense data matching your filters
+- Total expenses
+- Breakdown by category
+- Professional formatting for sharing
 
-## Common Use Cases
+### Report Naming Best Practices
 
-**Reconciling with bank statements:**
-Set the date range to match your bank statement period. Compare the total in Travada against your actual bank outflows to verify accuracy.
-
-**Preparing for an audit:**
-Filter to the full financial year and generate a report. The structured format makes it easy to hand over to an accountant.
-
-**Spotting unusual costs:**
-Scroll through entries for the month and look for trips with unusually high totals. These often signal a repair or incident worth investigating.
-
-**Comparing months:**
-Run the filter for this month, note the total, then run it for last month. A quick way to see whether your cost base is growing.
-
-## Tips for Accurate Data
+Good report names are:
 
 <Tip>
-Expenses are only as accurate as the trips recorded in Expenditure. If staff are recording trips late or missing costs, your totals here will be incomplete. Encourage same-day trip entry for the most reliable data.
+**Clear and specific:**
+- ✅ "January 2026 All Fleet Expenses"
+- ✅ "KBZ 789C Repair Costs Q1 2026"
+- ✅ "Weekly Fuel Report Week of Jan 20"
+- ❌ "Report 1"
+- ❌ "Expenses"
+- ❌ "Test"
 </Tip>
 
-<Warning>
-If you notice a cost missing from this view, it means the trip was either not recorded yet or the cost field was left blank during entry. Go to Expenditure to find and edit the trip.
-</Warning>
+Include:
+- Time period (January, Q1, Week of Jan 20)
+- What it covers (All Fleet, KBZ 789C, Fuel Only)
+- Year (2026)
 
-## Related Pages
+This makes reports easy to find later when you have dozens of them.
 
-- [Fuel Cost Tracking](/features/expenses/fuel-costs) - Detailed view of fuel expenses and discounts
-- [Other Expenses](/features/expenses/other-expenses) - Non-fuel cost breakdown
-- [Generating Expense Reports](/features/reports/generating-expense-report) - Step-by-step report creation
-- [Editing a Trip](/features/expenditure/editing-trip) - Fix missing or incorrect expense entries
+## Common Workflows
+
+### Daily Review
+
+**Who:** Operations manager  
+**When:** End of each day  
+**How:**
+1. Filter to today's date
+2. Review all expenses entered
+3. Verify amounts look reasonable
+4. Flag any unusual costs for follow-up
+
+### Weekly Reconciliation
+
+**Who:** Finance team  
+**When:** Every Monday morning  
+**How:**
+1. Filter to previous week (Mon-Sun)
+2. Compare total to bank statements
+3. Identify any missing entries
+4. Generate weekly expense report
+5. Share with management
+
+### Monthly Analysis
+
+**Who:** Owner or CFO  
+**When:** First week of each month  
+**How:**
+1. Filter to previous month
+2. Review total spend vs budget
+3. Identify highest-cost categories
+4. Compare to same month last year
+5. Generate monthly expense report
+6. Use insights for budget planning
+
+### Vehicle Performance Review
+
+**Who:** Fleet manager  
+**When:** Quarterly  
+**How:**
+1. Filter to one vehicle at a time
+2. Review 3-month expense total
+3. Compare across all vehicles
+4. Identify vehicles with rising costs
+5. Make decisions about repairs vs replacement
+
+## Exporting Data
+
+Need expenses in Excel or for your accounting software?
+
+Most views allow data export:
+
+1. Apply your desired filters
+2. Look for "Export" or "Download" button
+3. Choose format (CSV, Excel, PDF)
+4. Open the downloaded file
+5. Import into your accounting system
+
+**Common export uses:**
+- Import into QuickBooks or other accounting software
+- Create custom analysis in Excel
+- Share with external accountants
+- Archive for record-keeping
+
+## Understanding Expense Timing
+
+When do expenses appear in this section?
+
+**Immediately after trip entry:**
+As soon as someone records a trip in Expenditure with costs, those costs appear here instantly. There's no delay or approval process.
+
+**Example timeline:**
+- 9:00 AM: Driver completes trip
+- 10:30 AM: Staff records trip with KES 8,000 fuel cost
+- 10:30 AM: KES 8,000 appears in All Expenses tab
+- 10:31 AM: Total Expense increases by KES 8,000
+
+This real-time visibility helps you stay on top of spending as it happens.
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Total doesn't match what I expected">
+    Check your filters - you might be viewing a subset of data. Clear all filters to see the true total, then reapply filters one by one to isolate the issue.
+  </Accordion>
+  
+  <Accordion title="I can't find a specific expense">
+    The trip might be recorded with a different date or vehicle than you remember. Try clearing filters and sorting by amount to find high-value expenses, or search by destination.
+  </Accordion>
+  
+  <Accordion title="Can I edit expenses here?">
+    No. Expenses are read-only views of trip data. To change an expense amount, you must edit (or delete and re-record) the original trip in the Expenditure section.
+  </Accordion>
+  
+  <Accordion title="Why can't I generate a report?">
+    Report generation is Admin-only. If you're a Staff user, you'll need to ask an Admin to generate the report for you, or request an upgrade to Admin access.
+  </Accordion>
+</AccordionGroup>
+
+## Tips for Effective Expense Tracking
+
+<Tip>
+**Monthly routine:**
+1. Week 1: Review last month's total expenses
+2. Week 2: Compare to budget and identify variances
+3. Week 3: Analyze category breakdowns for trends
+4. Week 4: Generate monthly report for stakeholders
+</Tip>
+
+**Red flags to watch for:**
+- Sudden spikes in repair costs (vehicle deteriorating?)
+- Fuel costs increasing faster than trip volume (efficiency declining?)
+- Extra costs growing (lack of cost control?)
+- One vehicle's expenses much higher than others (problem vehicle?)
+
+## Next Steps
+
+After mastering the All Expenses view:
+
+1. Learn about [Fuel Cost Tracking](/features/expenses/fuel-costs) for detailed fuel management
+2. Explore [Other Expenses](/features/expenses/other-expenses) for non-fuel cost analysis
+3. Review [Fuel Discounts](/features/expenses/fuel-discounts) to track savings
+4. Return to [Expenses Overview](/features/expenses/overview)
